@@ -1,615 +1,186 @@
 <!DOCTYPE html>
 <html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OUSSOUD - Football News & Live Matches</title>
+    <meta
+      name="description"
+      content="Stay updated with the latest football news, live match results, and CAN 2025 tournament coverage on OUSSOUD."
+    />
+    <meta name="author" content="OUSSOUD" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>OUSSOUD - Football News & Live Matches</title>
-  <meta name="description"
-    content="Stay updated with the latest football news, live match results, and CAN 2025 tournament coverage on OUSSOUD." />
-  <meta name="author" content="OUSSOUD" />
+    <!-- Google Fonts - Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- Google Fonts - Poppins -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
-    rel="stylesheet" />
+    <!-- Bootstrap 3 CSS -->
+    <link
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
 
-  <!-- Bootstrap 3 CSS -->
-  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" rel="stylesheet" />
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/custom.css" />
+    <link rel="stylesheet" href="css/components.css" />
+  </head>
 
-  <!-- Custom CSS -->
-  <link rel="stylesheet" href="css/custom.css" />
-  <link rel="stylesheet" href="css/components.css" />
-</head>
+  <body>
+    <main class="main-layout">
+      <!-- Navigation -->
+      <nav class="navbar navbar-default navbar-fixed-top navbar-custom">
+        <div class="container">
+          <div class="navbar-header">
+            <button
+              type="button"
+              class="navbar-toggle collapsed"
+              data-toggle="collapse"
+              data-target="#navbarNav"
+            >
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">
+              <img
+                src="assets/logo.svg"
+                alt="OUSSOUD Logo"
+                class="navbar-logo"
+              />
+            </a>
+          </div>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="nav navbar-nav navbar-center">
+              <li class="active dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                  Accueil
+                </a>
+              </li>
+              <li>
+                <a href="#">Actualités</a>
+              </li>
+              <li>
+                <a href="#">Vidéos</a>
+              </li>
+              <li>
+                <a href="#">Fast</a>
+              </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <li>
+                <a href="#" class="search-icon-link">
+                  <svg
+                    width="36"
+                    height="36"
+                    viewBox="0 0 36 36"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                  >
+                    <rect
+                      x="36"
+                      width="36"
+                      height="36"
+                      transform="rotate(90 36 0)"
+                      fill="url(#pattern0_55_13601)"
+                    />
+                    <defs>
+                      <pattern
+                        id="pattern0_55_13601"
+                        patternContentUnits="objectBoundingBox"
+                        width="1"
+                        height="1"
+                      >
+                        <use
+                          xlink:href="#image0_55_13601"
+                          transform="scale(0.0111111)"
+                        />
+                      </pattern>
+                      <image
+                        id="image0_55_13601"
+                        width="90"
+                        height="90"
+                        preserveAspectRatio="none"
+                        xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFoAAABaCAYAAAA4qEECAAAACXBIWXMAAAsTAAALEwEAmpwYAAAE0klEQVR4nO2cS49URRSADyaOAsOCEV9bY3Qh0URR1GhkQUATDejvmIHZKa4MMdENOAO6NQSfTGKMJhhjCKgRH6wV3KBCEHGA2bhgRuJ85qQPptPeqnt76Ln16PqS3nTf1D11uu6pU+dxRQqFQqFQKBQKhUKh8H+A1cBWYBdwAPgeOA3MAQv2mbPvvrNr9NotwKqKIQvXAG4DJoGvTZFLZcHG2Klj/neDYQd4EvgEuMrg+dvGfkKGFeAp4Cva40v9U2VYAO4ADgKLhGEGuF1yBnjBNrHQzAHbJTeAEWC6z1V8HngPmDBv4m5gLXCjfdbad/rbDrv2jz7GV1ne0LEkB4BR4IuGk58FpoCHruN+G+xPvdjwnp+rjJIywC3AiQaTPQOMAysHeO+V9jScbXD/H1RWSRE9OADfNnC/ppdzRZnCXwHma2Q5kdzKNptcZy5+Au5rUab1wMkGZiQdm22r1McHIY7KdI726t752CspADxX4128CdwQUL4VwB6PfCr785LAYcTnJ++TSAD2e+S8HHWcBHinxlwEW8m9qCw1ZuSARBy7cJmMH2MMX9Lx8U85ZF6MMhjlCRDNt+ld9Atwvycse1RiAnjM8wjulsgBXvPIH8+qtpiv68Q3sNPeMrt95xxz+FgiyozoCa+KcUkEOtmdKnRut8Ys4GwKq7knZOAKRE1IaCw/V8WUJAawzzGXYzHYNteO/aAkBvCwx3MK93Ra0L2K85IgdI7nFxxz2hxSsJcdQr0riULnBFvFiyGF0sKVODePJWL1IFW8LaGwKqEqtkiiAE875nQ8pFC/OoS6SxKFTsK3il9CCqXhxCrGJO08ZxUXQwrlcu1GJFHopOGqmA8pVI6Kvskxp4WQQuVoOtY55nQ5pFDDtBmeidG92yqJAjzjmNM3MR5Ydkii4I5GHgwplLYzVPG+JArwoWNOu0IKpX0mVWhgZoXkFVTaFDpY7nLxNkhiABs9WZbVsQb+pyUxcBfVHIk52jUbYy1HzdN5KdrcZ01ydiKT5OydEnm5wdkUVjWdlNzvjjkckljQIhPcvCqRA7yeRAGNYn18rsTmeokU4AGP5xR+E3R0wLqKHE8Gd48qANYAPztk1rk8KjFijZouZiIs2/0oubJdRTtSawrR90skAG955NSKpXUSM8CzGbRWbJcUsI5UaszIaCCb7DMX6TQLKdZCrK1kPk5pEXjL3oVr4+vmsKazJLEj7fGGDZ1rllmOJg2d3egiuVkSS91r+28d5yxmsmrACp70nPiyW9mjDcxI926vpbOPLCWebRvdRovCuQJEWStbbfbePl8jccEKDndamdY99uqIEfuMAffab5OWGfmzj/EXTabDWSlbAbZ5ShTaRJ+cbV11HFkqe8w2wH8Iw0xvT4o9Ia4IZJobZE/E7yjtccQXu8h2ZV8DeFxbzDzJg+tBxzzUNNSZvbK7SrH0jTHH+vR5e7lqq3d8KZmRoVB2z1tjNgMvaaW9vcnmtG2kC7ZSNXj1m1YQWdRQa0w2DSIc21DZn2Wh7NBkvUHGRlF2+8r+tKzsFijKbpGi7BYpym4Rc/3UtSuuXyTKTu7tDqkq+68Ua8RTVPaVmOpYclZ2uCb9zJU9ZebiisVn0npzb0pYzrLY5UKhUCgUCoVCQZaXfwHTxUWk6obW8wAAAABJRU5ErkJggg=="
+                      />
+                    </defs>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
 
-<body>
-  <main class="main-layout">
-    <!-- Navigation -->
-    <nav class="navbar navbar-default navbar-fixed-top navbar-custom">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbarNav">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#">
-            <img src="assets/logo.svg" alt="OUSSOUD Logo" class="navbar-logo" />
-          </a>
-        </div>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="nav navbar-nav navbar-center">
-            <li class="active dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                Accueil
-              </a>
-            </li>
-            <li>
-              <a href="#">Actualités</a>
-            </li>
-            <li>
-              <a href="#">Vidéos</a>
-            </li>
-            <li>
-              <a href="#">Fast</a>
-            </li>
-          </ul>
-          <ul class="nav navbar-nav navbar-right">
-            <li>
-              <a href="#" class="search-icon-link">
-                <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg"
-                  xmlns:xlink="http://www.w3.org/1999/xlink">
-                  <rect x="36" width="36" height="36" transform="rotate(90 36 0)" fill="url(#pattern0_55_13601)" />
-                  <defs>
-                    <pattern id="pattern0_55_13601" patternContentUnits="objectBoundingBox" width="1" height="1">
-                      <use xlink:href="#image0_55_13601" transform="scale(0.0111111)" />
-                    </pattern>
-                    <image id="image0_55_13601" width="90" height="90" preserveAspectRatio="none"
-                      xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFoAAABaCAYAAAA4qEECAAAACXBIWXMAAAsTAAALEwEAmpwYAAAE0klEQVR4nO2cS49URRSADyaOAsOCEV9bY3Qh0URR1GhkQUATDejvmIHZKa4MMdENOAO6NQSfTGKMJhhjCKgRH6wV3KBCEHGA2bhgRuJ85qQPptPeqnt76Ln16PqS3nTf1D11uu6pU+dxRQqFQqFQKBQKhUKh8H+A1cBWYBdwAPgeOA3MAQv2mbPvvrNr9NotwKqKIQvXAG4DJoGvTZFLZcHG2Klj/neDYQd4EvgEuMrg+dvGfkKGFeAp4Cva40v9U2VYAO4ADgKLhGEGuF1yBnjBNrHQzAHbJTeAEWC6z1V8HngPmDBv4m5gLXCjfdbad/rbDrv2jz7GV1ne0LEkB4BR4IuGk58FpoCHruN+G+xPvdjwnp+rjJIywC3AiQaTPQOMAysHeO+V9jScbXD/H1RWSRE9OADfNnC/ppdzRZnCXwHma2Q5kdzKNptcZy5+Au5rUab1wMkGZiQdm22r1McHIY7KdI726t752CspADxX4128CdwQUL4VwB6PfCr785LAYcTnJ++TSAD2e+S8HHWcBHinxlwEW8m9qCw1ZuSARBy7cJmMH2MMX9Lx8U85ZF6MMhjlCRDNt+ld9Atwvycse1RiAnjM8wjulsgBXvPIH8+qtpiv68Q3sNPeMrt95xxz+FgiyozoCa+KcUkEOtmdKnRut8Ys4GwKq7knZOAKRE1IaCw/V8WUJAawzzGXYzHYNteO/aAkBvCwx3MK93Ra0L2K85IgdI7nFxxz2hxSsJcdQr0riULnBFvFiyGF0sKVODePJWL1IFW8LaGwKqEqtkiiAE875nQ8pFC/OoS6SxKFTsK3il9CCqXhxCrGJO08ZxUXQwrlcu1GJFHopOGqmA8pVI6Kvskxp4WQQuVoOtY55nQ5pFDDtBmeidG92yqJAjzjmNM3MR5Ydkii4I5GHgwplLYzVPG+JArwoWNOu0IKpX0mVWhgZoXkFVTaFDpY7nLxNkhiABs9WZbVsQb+pyUxcBfVHIk52jUbYy1HzdN5KdrcZ01ydiKT5OydEnm5wdkUVjWdlNzvjjkckljQIhPcvCqRA7yeRAGNYn18rsTmeokU4AGP5xR+E3R0wLqKHE8Gd48qANYAPztk1rk8KjFijZouZiIs2/0oubJdRTtSawrR90skAG955NSKpXUSM8CzGbRWbJcUsI5UaszIaCCb7DMX6TQLKdZCrK1kPk5pEXjL3oVr4+vmsKazJLEj7fGGDZ1rllmOJg2d3egiuVkSS91r+28d5yxmsmrACp70nPiyW9mjDcxI926vpbOPLCWebRvdRovCuQJEWStbbfbePl8jccEKDndamdY99uqIEfuMAffab5OWGfmzj/EXTabDWSlbAbZ5ShTaRJ+cbV11HFkqe8w2wH8Iw0xvT4o9Ia4IZJobZE/E7yjtccQXu8h2ZV8DeFxbzDzJg+tBxzzUNNSZvbK7SrH0jTHH+vR5e7lqq3d8KZmRoVB2z1tjNgMvaaW9vcnmtG2kC7ZSNXj1m1YQWdRQa0w2DSIc21DZn2Wh7NBkvUHGRlF2+8r+tKzsFijKbpGi7BYpym4Rc/3UtSuuXyTKTu7tDqkq+68Ua8RTVPaVmOpYclZ2uCb9zJU9ZebiisVn0npzb0pYzrLY5UKhUCgUCoVCQZaXfwHTxUWk6obW8wAAAABJRU5ErkJggg==" />
-                  </defs>
-                </svg>
+      <!-- Header Icons -->
+      <header class="container">
+        <section class="header-icons">
+          <div class="header-icon">
+            <img src="assets/icons/CAF 1.png" alt="CAF" />
+          </div>
+          <div class="header-icon">
+            <img
+              src="assets/icons/Africa_Cup_of_Nation_official_logo 1.png"
+              alt="Africa Cup of Nations"
+            />
+          </div>
+          <div class="header-icon">
+            <img
+              src="assets/icons/CAF_Champions_League_-_Fr_-_Full_Colour 1.png"
+              alt="CAF Champions League"
+            />
+          </div>
+          <div class="header-icon">
+            <img
+              src="assets/icons/Icon-coupe-du-monde- 1.png"
+              alt="World Cup"
+            />
+          </div>
+          <div class="header-icon">
+            <img src="assets/icons/CAF 2.png" alt="CAF" />
+          </div>
+        </section>
+      </header>
 
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-
-    <!-- Header Icons -->
-    <header class="container">
-      <section class="header-icons">
-        <div class="header-icon">
-          <img src="assets/icons/CAF 1.png" alt="CAF" />
-        </div>
-        <div class="header-icon">
-          <img src="assets/icons/Africa_Cup_of_Nation_official_logo 1.png" alt="Africa Cup of Nations" />
-        </div>
-        <div class="header-icon">
-          <img src="assets/icons/CAF_Champions_League_-_Fr_-_Full_Colour 1.png" alt="CAF Champions League" />
-        </div>
-        <div class="header-icon">
-          <img src="assets/icons/Icon-coupe-du-monde- 1.png" alt="World Cup" />
-        </div>
-        <div class="header-icon">
-          <img src="assets/icons/CAF 2.png" alt="CAF" />
-        </div>
+      <!-- Live Matches Section - Ready for development -->
+      <section class="container main-content">
+        <!-- Live matches content will be added here -->
       </section>
-    </header>
-
-    <!-- Live Matches -->
-    <section class="container main-content">
-      <div class="row">
-        <div class="col-xs-12">
-          <h2 class="section-title">Live Matchs</h2>
-        </div>
-      </div>
-      <div class="row live-matches-row">
-        <div class="col-md-3 col-sm-6">
-          <div class="live-match-card">
-            <div class="live-match-header">
-              <div class="live-info">
-                <div class="live-indicator"></div>
-                <small class="text-primary-custom">LIVE</small>
-              </div>
-              <div class="match-info">
-                <img src="https://images.unsplash.com/photo-1584874427577-b78878237331?w=100&h=100&fit=crop" alt="Match"
-                  class="match-image" />
-                <span class="text-muted-custom">En direct</span>
-              </div>
-            </div>
-            <div class="match-team">
-              <div class="team-left">
-                <img src="https://flagcdn.com/24x18/ma.png" alt="Maroc" class="team-flag" />
-                <span>Maroc</span>
-              </div>
-              <div class="match-score">2-0</div>
-              <div class="team-right">
-                <span>Sénégal</span>
-                <img src="https://flagcdn.com/24x18/sn.png" alt="Sénégal" class="team-flag" />
-              </div>
-            </div>
-            <div class="text-center">
-              <span class="match-time">33 minutes</span>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-3 col-sm-6">
-          <div class="live-match-card">
-            <div class="live-match-header">
-              <span class="text-muted-custom">CAN Morocco 2025</span>
-              <span class="text-muted-custom">Journée 2</span>
-            </div>
-            <div class="match-team">
-              <div class="team-left">
-                <img src="https://flagcdn.com/24x18/ma.png" alt="Maroc" class="team-flag" />
-                <span>Maroc</span>
-              </div>
-              <div class="match-score">2-0</div>
-              <div class="team-right">
-                <span>Sénégal</span>
-                <img src="https://flagcdn.com/24x18/sn.png" alt="Sénégal" class="team-flag" />
-              </div>
-            </div>
-            <div class="text-center">
-              <span class="match-time">33 minutes</span>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-3 col-sm-6">
-          <div class="live-match-card">
-            <div class="live-match-header">
-              <span class="text-muted-custom">CAN Morocco 2025</span>
-              <span class="text-muted-custom">Journée 2</span>
-            </div>
-            <div class="match-team">
-              <div class="team-left">
-                <img src="https://flagcdn.com/24x18/ml.png" alt="Mali" class="team-flag" />
-                <span>Mali</span>
-              </div>
-              <div class="match-score">2-0</div>
-              <div class="team-right">
-                <span>Tanzania</span>
-                <img src="https://flagcdn.com/24x18/tz.png" alt="Tanzania" class="team-flag" />
-              </div>
-            </div>
-            <div class="text-center">
-              <span class="match-time">33 minutes</span>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-3 col-sm-6">
-          <div class="live-match-card">
-            <div class="live-match-header">
-              <span class="text-muted-custom">CAN Morocco 2025</span>
-              <span class="text-muted-custom">Journée 2</span>
-            </div>
-            <div class="match-team">
-              <div class="team-left">
-                <img src="https://flagcdn.com/24x18/tn.png" alt="Tunisie" class="team-flag" />
-                <span>Tunisie</span>
-              </div>
-              <div class="match-score">2-0</div>
-              <div class="team-right">
-                <span>A du Sud</span>
-                <img src="https://flagcdn.com/24x18/za.png" alt="A du Sud" class="team-flag" />
-              </div>
-            </div>
-            <div class="text-center">
-              <span class="match-time">33 minutes</span>
-            </div>
-          </div>
-        </div>
-      </div>
-      </div>
 
       <!-- Main Content -->
       <section class="container main-content">
-        <div class="row">
-          <!-- Left Column - News & Videos -->
-          <div class="col-lg-8 col-md-8">
-            <!-- Infos principales -->
-            <div class="section-block">
-              <div class="section-header">
-                <div class="section-title">
-                  <h3>Infos principales</h3>
-                </div>
-                <a href="#" class="text-primary-custom voir-plus">Voir plus</a>
-              </div>
-              <div class="row news-grid">
-                <div class="col-md-6 col-sm-6">
-                  <div class="news-card">
-                    <img src="https://images.unsplash.com/photo-1594736797933-d0ad6ba4f9a7?w=600&h=400&fit=crop"
-                      alt="News" />
-                    <div class="news-badge">CAN Morocco 2025</div>
-                    <div class="news-content">
-                      <h5 class="news-title">
-                        Lorem ipsum dolor sit amet consectetur adipiscing elit sed
-                      </h5>
-                      <small class="text-muted-custom">Il y a 2h</small>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-6 col-sm-6">
-                  <div class="news-card">
-                    <img src="https://images.unsplash.com/photo-1579952363873-27d3bfad9c0d?w=600&h=400&fit=crop"
-                      alt="News" />
-                    <div class="news-badge">CAN Morocco 2025</div>
-                    <div class="news-content">
-                      <h5 class="news-title">
-                        Lorem ipsum dolor sit amet consectetur adipiscing elit sed
-                      </h5>
-                      <small class="text-muted-custom">Il y a 3h</small>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-6 col-sm-6">
-                  <div class="news-card">
-                    <img src="https://images.unsplash.com/photo-1574629810360-7efbbe195018?w=600&h=400&fit=crop"
-                      alt="News" />
-                    <div class="news-badge">CAN Morocco 2025</div>
-                    <div class="news-content">
-                      <h5 class="news-title">
-                        Lorem ipsum dolor sit amet consectetur adipiscing elit sed
-                      </h5>
-                      <small class="text-muted-custom">Il y a 4h</small>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-6 col-sm-6">
-                  <div class="news-card">
-                    <img src="https://images.unsplash.com/photo-1606758865946-9205b7fd5b1c?w=600&h=400&fit=crop"
-                      alt="News" />
-                    <div class="news-badge">CAN Morocco 2025</div>
-                    <div class="news-content">
-                      <h5 class="news-title">
-                        Lorem ipsum dolor sit amet consectetur adipiscing elit sed
-                      </h5>
-                      <small class="text-muted-custom">Il y a 5h</small>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Quick Play -->
-            <div class="section-block">
-              <div class="section-header">
-                <div class="section-title">
-                  <h3>Quick Play</h3>
-                </div>
-                <a href="#" class="text-primary-custom voir-plus">Voir plus</a>
-              </div>
-              <div class="quick-play-grid">
-                <div class="quick-play-item">
-                  <img src="https://images.unsplash.com/photo-1594736797933-d0ad6ba4f9a7?w=300&h=300&fit=crop"
-                    alt="Video" />
-                  <div class="overlay">
-                    <div class="play-icon">
-                      <i class="fa fa-play"></i>
-                    </div>
-                  </div>
-                </div>
-                <div class="quick-play-item">
-                  <img src="https://images.unsplash.com/photo-1579952363873-27d3bfad9c0d?w=300&h=300&fit=crop"
-                    alt="Video" />
-                  <div class="overlay">
-                    <div class="play-icon">
-                      <i class="fa fa-play"></i>
-                    </div>
-                  </div>
-                </div>
-                <div class="quick-play-item">
-                  <img src="https://images.unsplash.com/photo-1574629810360-7efbbe195018?w=300&h=300&fit=crop"
-                    alt="Video" />
-                  <div class="overlay">
-                    <div class="play-icon">
-                      <i class="fa fa-play"></i>
-                    </div>
-                  </div>
-                </div>
-                <div class="quick-play-item">
-                  <img src="https://images.unsplash.com/photo-1606758865946-9205b7fd5b1c?w=300&h=300&fit=crop"
-                    alt="Video" />
-                  <div class="overlay">
-                    <div class="play-icon">
-                      <i class="fa fa-play"></i>
-                    </div>
-                  </div>
-                </div>
-                <div class="quick-play-item">
-                  <img src="https://images.unsplash.com/photo-1594736797933-d0ad6ba4f9a7?w=300&h=300&fit=crop"
-                    alt="Video" />
-                  <div class="overlay">
-                    <div class="play-icon">
-                      <i class="fa fa-play"></i>
-                    </div>
-                  </div>
-                </div>
-                <div class="quick-play-item">
-                  <img src="https://images.unsplash.com/photo-1579952363873-27d3bfad9c0d?w=300&h=300&fit=crop"
-                    alt="Video" />
-                  <div class="overlay">
-                    <div class="play-icon">
-                      <i class="fa fa-play"></i>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Videos -->
-            <div class="section-block">
-              <div class="section-header">
-                <div class="section-title">
-                  <h3>Vidéos</h3>
-                </div>
-                <a href="#" class="text-primary-custom voir-plus">Voir plus</a>
-              </div>
-              <div class="video-grid">
-                <div class="video-card">
-                  <img src="https://images.unsplash.com/photo-1594736797933-d0ad6ba4f9a7?w=600&h=400&fit=crop"
-                    alt="Video" />
-                  <div class="video-duration">05:00</div>
-                  <div class="video-content">
-                    <h6 class="video-title">
-                      Coupe d'Afrique des nations de football 2025
-                    </h6>
-                    <small class="text-muted-custom">Match Maroc vs Nigéria</small>
-                    <div class="video-play-btn">
-                      <div class="play-icon">
-                        <i class="fa fa-play"></i>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="video-card">
-                  <img src="https://images.unsplash.com/photo-1579952363873-27d3bfad9c0d?w=600&h=400&fit=crop"
-                    alt="Video" />
-                  <div class="video-duration">05:00</div>
-                  <div class="video-content">
-                    <h6 class="video-title">
-                      Coupe d'Afrique des nations de football 2025
-                    </h6>
-                    <small class="text-muted-custom">Match Maroc vs Nigéria</small>
-                    <div class="video-play-btn">
-                      <div class="play-icon">
-                        <i class="fa fa-play"></i>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="video-card">
-                  <img src="https://images.unsplash.com/photo-1574629810360-7efbbe195018?w=600&h=400&fit=crop"
-                    alt="Video" />
-                  <div class="video-duration">05:00</div>
-                  <div class="video-content">
-                    <h6 class="video-title">
-                      Coupe d'Afrique des nations de football 2025
-                    </h6>
-                    <small class="text-muted-custom">Match Maroc vs Nigéria</small>
-                    <div class="video-play-btn">
-                      <div class="play-icon">
-                        <i class="fa fa-play"></i>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Right Column - Sidebar -->
-          <div class="col-lg-4 col-md-4">
-            <!-- Derniers résultats -->
-            <div class="sidebar">
-              <div class="sidebar-header">
-                <h5>Derniers résultats</h5>
-              </div>
-              <div class="sidebar-content">
-                <div class="match-result">
-                  <div class="result-team">
-                    <div class="team-info">
-                      <img src="https://flagcdn.com/24x18/ng.png" alt="Nigeria" class="result-flag" />
-                      <span>Nigéria</span>
-                    </div>
-                    <div class="match-score">2:0</div>
-                    <div class="team-info">
-                      <span>Botswana</span>
-                      <img src="https://flagcdn.com/24x18/bw.png" alt="Botswana" class="result-flag" />
-                    </div>
-                  </div>
-                  <div class="text-center">
-                    <small class="text-muted-custom">Jeudi 10 Déc 2025</small>
-                  </div>
-                </div>
-                <div class="text-center">
-                  <button class="btn btn-primary-custom btn-block">
-                    Voir plus
-                  </button>
-                </div>
-              </div>
-            </div>
-
-            <!-- Prochains rendez vous -->
-            <div class="sidebar">
-              <div class="sidebar-header">
-                <h5>Prochains rendez vous</h5>
-              </div>
-              <div class="sidebar-content">
-                <div class="next-match">
-                  <div class="time">20:00</div>
-                  <div class="date">Mercredi 09 Déc 2025</div>
-                  <div class="match-result">
-                    <div class="result-team">
-                      <div class="team-info">
-                        <img src="https://flagcdn.com/24x18/ma.png" alt="Maroc" class="result-flag" />
-                        <span>Maroc</span>
-                      </div>
-                      <div class="match-score">vs</div>
-                      <div class="team-info">
-                        <span>Sénégal</span>
-                        <img src="https://flagcdn.com/24x18/sn.png" alt="Sénégal" class="result-flag" />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="text-center">
-                  <button class="btn btn-primary-custom btn-block">
-                    Voir plus
-                  </button>
-                </div>
-              </div>
-            </div>
-
-            <!-- Classement -->
-            <div class="sidebar">
-              <div class="sidebar-header">
-                <h5>Classement</h5>
-              </div>
-              <div class="sidebar-content">
-                <table class="ranking-table">
-                  <thead>
-                    <tr>
-                      <th>Équipe</th>
-                      <th class="text-center">J</th>
-                      <th class="text-center">G</th>
-                      <th class="text-center">N</th>
-                      <th class="text-center">P</th>
-                      <th class="text-center">Pts</th>
-                      <th class="text-center">+/-</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>
-                        <div class="team-row">
-                          <span class="text-muted-custom position">1-</span>
-                          <img src="https://flagcdn.com/24x18/ma.png" alt="Maroc" class="table-flag" />
-                          <span>Maroc</span>
-                        </div>
-                      </td>
-                      <td class="text-center">2</td>
-                      <td class="text-center">1</td>
-                      <td class="text-center">1</td>
-                      <td class="text-center">0</td>
-                      <td class="text-center"><strong>4</strong></td>
-                      <td class="text-center">2</td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <div class="team-row">
-                          <span class="text-muted-custom position">2-</span>
-                          <img src="https://flagcdn.com/24x18/sn.png" alt="Sénégal" class="table-flag" />
-                          <span>Sénégal</span>
-                        </div>
-                      </td>
-                      <td class="text-center">2</td>
-                      <td class="text-center">1</td>
-                      <td class="text-center">1</td>
-                      <td class="text-center">0</td>
-                      <td class="text-center"><strong>4</strong></td>
-                      <td class="text-center">2</td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <div class="team-row">
-                          <span class="text-muted-custom position">3-</span>
-                          <img src="https://flagcdn.com/24x18/cd.png" alt="RD Congo" class="table-flag" />
-                          <span>RD Congo</span>
-                        </div>
-                      </td>
-                      <td class="text-center">2</td>
-                      <td class="text-center">1</td>
-                      <td class="text-center">1</td>
-                      <td class="text-center">0</td>
-                      <td class="text-center"><strong>4</strong></td>
-                      <td class="text-center">2</td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <div class="team-row">
-                          <span class="text-muted-custom position">4-</span>
-                          <img src="https://flagcdn.com/24x18/ng.png" alt="Nigéria" class="table-flag" />
-                          <span>Nigéria</span>
-                        </div>
-                      </td>
-                      <td class="text-center">2</td>
-                      <td class="text-center">1</td>
-                      <td class="text-center">1</td>
-                      <td class="text-center">0</td>
-                      <td class="text-center"><strong>4</strong></td>
-                      <td class="text-center">2</td>
-                    </tr>
-                  </tbody>
-                </table>
-                <div class="text-center">
-                  <button class="btn btn-primary-custom btn-block">
-                    Voir plus
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        </div>
+        <!-- Content will be added here -->
       </section>
 
       <!-- Footer -->
       <footer class="footer">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-6">
-              <div class="footer-logo">
-                <img
-                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/OUSSOUD_Logo.svg/100px-OUSSOUD_Logo.svg.png"
-                  alt="OUSSOUD Logo" />
-                <h4>OUSSOUD</h4>
-              </div>
-              <p class="text-muted-custom footer-description">
-                Lorem ipsum dolor sit amet consectetur. Arcu lacus laoreet in
-                dictum. Adipiscing at laoreet amet tortor mi viverra aliquam.
-                Ultrices vestibulum orci sapien tempor. Vitae dolor condimentum
-                facilisis gravida sed ridiculus nulla maecenas.Lorem ipsum dolor
-                sit amet consectetur. Arcu lacus laoreet in dictum. Adipiscing at
-                laoreet amet tortor mi viverra aliquam. Ultrices vestibulum orci
-                sapien tempor. Vitae dolor condimentum facilisis gravida sed
-                ridiculus
-              </p>
-            </div>
-            <div class="col-md-6">
-              <h5>Souscrir vòtre email</h5>
-              <div class="newsletter-form">
-                <div class="input-group">
-                  <input type="email" class="form-control" placeholder="Votre adresse e-mail" />
-                  <span class="input-group-btn">
-                    <button class="btn btn-primary-custom" type="button">
-                      S'abonner
-                    </button>
-                  </span>
-                </div>
-              </div>
-              <div class="app-download">
-                <a href="#"><img
-                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/App_Store_badge.svg/120px-App_Store_badge.svg.png"
-                    alt="App Store" /></a>
-                <a href="#"><img
-                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Google_Play_Badge.svg/120px-Google_Play_Badge.svg.png"
-                    alt="Google Play" /></a>
-              </div>
-            </div>
-          </div>
-        </div>
+        <!-- Footer content will be added here -->
       </footer>
 
       <!-- jQuery (required for Bootstrap 3) -->
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
       <!-- Bootstrap 3 JS -->
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  </main>
-</body>
 
+      <!-- Navbar Scroll Effect -->
+      <script>
+        $(window).scroll(function () {
+          if ($(window).scrollTop() > 100) {
+            $(".navbar-custom").addClass("scrolled");
+          } else {
+            $(".navbar-custom").removeClass("scrolled");
+          }
+        });
+      </script>
+    </main>
+  </body>
 </html>
