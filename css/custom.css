@@ -390,7 +390,7 @@ body {
   height: 17px;
   flex-shrink: 0;
   border-radius: 8px;
-  background: #FF1904;
+  background: #ff1904;
 }
 
 .section-header {
@@ -680,6 +680,183 @@ body {
 .voir-plus:hover {
   color: var(--football-primary-hover);
   text-decoration: none;
+}
+
+/* ===== STANDINGS SECTION ===== */
+.standings-card {
+  width: 100%;
+  max-width: 405px;
+  flex-shrink: 0;
+  background: transparent;
+  padding: 0;
+  margin-bottom: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.standings-header {
+  width: 100%;
+  max-width: 405px;
+  height: 45px;
+  flex-shrink: 0;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  padding: 0 12px;
+  border-bottom: 1px solid rgba(152, 152, 152, 0.2);
+  box-sizing: border-box;
+}
+
+.team-col {
+  color: #000;
+  font-family: "Urbanist", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px;
+  flex: 1;
+}
+
+.stats-cols {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 140px;
+  gap: 4px;
+}
+
+.stats-cols span {
+  color: #000;
+  font-family: "Urbanist", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px;
+  min-width: 18px;
+  text-align: center;
+  flex: 1;
+}
+
+.group-header {
+  background: linear-gradient(90deg, #f00 0%, #a21717 100%);
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 8px 12px;
+  text-align: center;
+  margin-bottom: 0;
+  margin-top: 20px;
+}
+
+.group-header:first-child {
+  margin-top: 10px;
+}
+
+.standings-row {
+  width: 397.23px;
+  height: 39px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 12px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  border: 1px solid rgba(152, 152, 152, 0.3);
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(7.25px);
+  transition: all 0.2s ease;
+  box-sizing: border-box;
+}
+
+.standings-row:hover {
+  background: rgba(0, 0, 0, 0.45);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.position {
+  color: #fff;
+  font-family: "Urbanist", sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px;
+  width: 20px;
+  margin-right: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.team-info {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex: 1;
+}
+
+.standings-flag {
+  width: 20px !important;
+  height: 14px !important;
+  border-radius: 2px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  object-fit: cover;
+  object-position: center;
+}
+
+.team-info .team-name {
+  color: #fff;
+  font-family: "Urbanist", sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px;
+}
+
+.stats-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 140px;
+  gap: 2px;
+}
+
+.stats-row span {
+  color: #fff;
+  font-family: "Urbanist", sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px;
+  min-width: 18px;
+  text-align: center;
+  flex: 1;
+}
+
+.arrow-icon {
+  color: #fff;
+  font-family: "Urbanist", sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px;
+  margin-left: 8px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 20px;
+}
+
+.standings-card .voir-plus-btn {
+  width: 100%;
+  border-radius: 0 0 8px 8px;
+  position: relative;
+  bottom: auto;
+  left: auto;
+  right: auto;
 }
 
 .section-block {
