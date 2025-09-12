@@ -384,10 +384,13 @@ body {
   content: "";
   position: absolute;
   left: 0;
-  top: 0;
-  bottom: 0;
-  width: 3px;
-  background-color: var(--football-primary);
+  top: 50%;
+  transform: translateY(-50%);
+  width: 4px;
+  height: 17px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  background: #FF1904;
 }
 
 .section-header {
