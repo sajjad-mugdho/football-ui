@@ -402,7 +402,7 @@ body {
 
 /* ===== INFO CARDS ===== */
 .info-card {
-  width: 100%;
+  width: 400px;
   height: 363px;
   flex-shrink: 0;
   border-radius: 12px;
@@ -503,6 +503,190 @@ body {
   line-clamp: 3;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+
+/* ===== NEW GLASS MORPHISM CARDS ===== */
+.new-cards-section {
+  width: 100%;
+}
+
+.glass-card {
+  width: 400px;
+  height: 161px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  border: 1px solid rgba(152, 152, 152, 0.3);
+  background: linear-gradient(
+    265deg,
+    rgba(255, 255, 255, 0.1) -2.57%,
+    rgba(0, 0, 0, 0.1) 96.13%
+  );
+  backdrop-filter: blur(7.25px);
+  display: flex;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.glass-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.glass-card-image {
+  width: 91.022px;
+  height: 145.904px;
+  flex-shrink: 0;
+  border-radius: 4px;
+  overflow: hidden;
+  margin: 8px;
+  background: lightgray 50% / cover no-repeat;
+}
+
+.glass-card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.glass-card-content {
+  flex: 1;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.glass-card-badge {
+  width: 55px;
+  height: 21px;
+  flex-shrink: 0;
+  border-radius: 4px;
+  background: linear-gradient(90deg, #f00 0%, #a21717 100%);
+  color: white;
+  font-size: 8px;
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.glass-card-text {
+  flex: 1;
+}
+
+.glass-card-text h3 {
+  color: #fff;
+  font-family: "Urbanist", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 18px;
+  margin: 0 0 8px 0;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  line-clamp: 3;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.glass-card-text p {
+  color: rgba(255, 255, 255, 0.7);
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  margin: 0;
+  margin-top: auto;
+}
+
+/* ===== QUICK PLAY SECTION ===== */
+.quick-play-section {
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  width: 100vw;
+  padding: 40px 0;
+  background: transparent;
+  overflow: hidden;
+}
+
+.quick-play-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.voir-plus-link {
+  color: var(--football-text);
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.voir-plus-link:hover {
+  color: var(--football-primary);
+  text-decoration: none;
+}
+
+.quick-play-cards {
+  display: flex;
+  gap: 12px;
+  overflow-x: auto;
+  padding-bottom: 10px;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255, 255, 255, 0.3) transparent;
+}
+
+.quick-play-cards::-webkit-scrollbar {
+  height: 6px;
+}
+
+.quick-play-cards::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.quick-play-cards::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 3px;
+}
+
+.quick-play-cards::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.quick-play-card {
+  width: 194.34px;
+  height: 329.533px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+}
+
+.quick-play-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.quick-play-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
 }
 
 /* ===== RESULTS SECTION ===== */
@@ -1695,6 +1879,42 @@ body {
   .main-content-container {
     padding: 0 20px;
   }
+
+  /* Glass Cards Medium Screen */
+  .glass-card {
+    width: 100%;
+    max-width: 370px;
+    height: 150px;
+    margin: 0 auto 18px;
+  }
+
+  .glass-card-image {
+    width: 85px;
+    height: 135px;
+  }
+
+  .glass-card-content {
+    padding: 13px;
+  }
+
+  .glass-card-text h3 {
+    font-size: 13px;
+    line-height: 17px;
+  }
+
+  /* Quick Play Responsive - Medium Screen */
+  .quick-play-section {
+    padding: 30px 0;
+  }
+
+  .quick-play-card {
+    width: 160px;
+    height: 270px;
+  }
+
+  .quick-play-cards {
+    gap: 10px;
+  }
 }
 
 @media (max-width: 576px) {
@@ -1704,5 +1924,60 @@ body {
 
   .main-content-full-width {
     padding: 30px 0;
+  }
+
+  /* Glass Cards Responsive */
+  .glass-card {
+    width: 100%;
+    max-width: 350px;
+    height: 140px;
+    margin: 0 auto 15px;
+  }
+
+  .glass-card-image {
+    width: 80px;
+    height: 125px;
+    margin: 7px;
+  }
+
+  .glass-card-content {
+    padding: 12px;
+  }
+
+  .glass-card-text h3 {
+    font-size: 13px;
+    line-height: 16px;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+  }
+
+  .glass-card-text p {
+    font-size: 11px;
+  }
+
+  .glass-card-badge {
+    width: 50px;
+    height: 18px;
+    font-size: 7px;
+  }
+
+  /* Quick Play Responsive - Mobile */
+  .quick-play-section {
+    padding: 25px 0;
+  }
+
+  .quick-play-card {
+    width: 140px;
+    height: 240px;
+  }
+
+  .quick-play-cards {
+    gap: 8px;
+    padding: 0 15px;
+  }
+
+  .quick-play-header {
+    padding: 0 15px;
+    margin-bottom: 20px;
   }
 }
