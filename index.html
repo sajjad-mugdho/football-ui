@@ -10,13 +10,16 @@
     />
     <meta name="author" content="OUSSOUD" />
 
-    <!-- Google Fonts - Poppins & Urbanist -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Urbanist:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
+    <!-- Font Preloading for Performance -->
+    <link rel="preload" href="assets/fonts/poppins/poppins-regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="assets/fonts/poppins/poppins-semibold.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="assets/fonts/poppins/poppins-bold.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="assets/fonts/urbanist/urbanist-regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="assets/fonts/urbanist/urbanist-semibold.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="assets/fonts/urbanist/urbanist-bold.woff2" as="font" type="font/woff2" crossorigin>
+
+    <!-- Local Fonts - Poppins, Urbanist & Roboto -->
+    <link rel="stylesheet" href="assets/fonts/fonts.css" />
 
     <!-- Bootstrap 3 CSS -->
     <link
@@ -191,7 +194,7 @@
                 <div class="info-card">
                   <div class="card-image">
                     <img
-                      src="images/info-p-.png"
+                      src="images/info-2.png"
                       alt="Football News"
                       class="img-responsive"
                     />
@@ -214,7 +217,7 @@
                 <div class="info-card">
                   <div class="card-image">
                     <img
-                      src="images/info-p-.png"
+                      src="images/info-3.png"
                       alt="Football News"
                       class="img-responsive"
                     />
@@ -238,7 +241,7 @@
                 <div class="info-card">
                   <div class="card-image">
                     <img
-                      src="images/info-p-.png"
+                      src="images/info-4.png"
                       alt="Football News"
                       class="img-responsive"
                     />
@@ -383,6 +386,20 @@
             $(".navbar-custom").removeClass("scrolled");
           }
         });
+
+        // Font Loading Optimization
+        if ('fonts' in document) {
+          Promise.all([
+            document.fonts.load('400 1em Poppins'),
+            document.fonts.load('600 1em Poppins'),
+            document.fonts.load('700 1em Poppins'),
+            document.fonts.load('400 1em Urbanist'),
+            document.fonts.load('600 1em Urbanist'),
+            document.fonts.load('700 1em Urbanist')
+          ]).then(function() {
+            document.documentElement.classList.add('fonts-loaded');
+          });
+        }
       </script>
     </main>
   </body>
