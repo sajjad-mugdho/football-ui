@@ -309,6 +309,322 @@ body {
   border: none !important;
 }
 
+/* ========================================
+   MOBILE NAVBAR STYLES
+   ======================================== */
+
+/* Hide/Show Desktop and Mobile Navbars */
+.desktop-only {
+  display: block;
+}
+
+.mobile-only {
+  display: none;
+}
+
+/* Mobile Navbar */
+.mobile-navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  background: rgba(0, 0, 0, 0.9);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  z-index: 1000;
+}
+
+.mobile-nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  padding: 0 20px;
+}
+
+/* Mobile Breadcrumb Button */
+.mobile-breadcrumb-btn {
+  background: none;
+  border: none;
+  padding: 8px;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+
+.mobile-breadcrumb-btn:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.mobile-breadcrumb-btn svg {
+  display: block;
+}
+
+/* Mobile Logo Container */
+.mobile-logo-container {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.mobile-logo-link {
+  display: block;
+}
+
+.mobile-navbar-logo {
+  height: 35px;
+  width: auto;
+}
+
+/* Mobile Search Button */
+.mobile-search-btn {
+  background: none;
+  border: none;
+  padding: 8px;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+
+.mobile-search-btn:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.mobile-search-btn svg {
+  width: 24px;
+  height: 24px;
+}
+
+/* ========================================
+   MOBILE SIDEBAR STYLES (GLASSMORPHISM)
+   ======================================== */
+
+/* Mobile Menu Toggle Button */
+.mobile-menu-toggle {
+  background: none !important;
+  border: none !important;
+  padding: 8px;
+  margin-right: 15px;
+}
+
+.mobile-menu-toggle .hamburger-line {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: #05944b;
+  margin: 4px 0;
+  transition: 0.3s;
+  border-radius: 2px;
+}
+
+.mobile-menu-toggle:focus .hamburger-line,
+.mobile-menu-toggle:hover .hamburger-line {
+  background-color: #04723a;
+}
+
+/* Mobile Sidebar Overlay */
+.mobile-sidebar-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 998;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
+}
+
+.mobile-sidebar-overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Mobile Sidebar - Glassmorphism */
+.mobile-sidebar {
+  position: fixed;
+  top: 0;
+  left: -300px;
+  width: 300px;
+  height: 100vh;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 2px 0 30px rgba(0, 0, 0, 0.1);
+  z-index: 999;
+  transition: all 0.3s ease;
+  overflow-y: auto;
+}
+
+.mobile-sidebar.active {
+  left: 0;
+}
+
+/* Sidebar Header - Glassmorphism */
+.mobile-sidebar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.05);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.sidebar-logo {
+  height: 40px;
+  width: auto;
+  filter: brightness(0) invert(1);
+}
+
+.sidebar-close {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 30px;
+  cursor: pointer;
+  padding: 0;
+  line-height: 1;
+  transition: all 0.3s ease;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sidebar-close:hover {
+  color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Breadcrumb Navigation - Glassmorphism */
+.sidebar-breadcrumb {
+  padding: 15px 20px;
+  background-color: rgba(255, 255, 255, 0.03);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}
+
+.sidebar-breadcrumb a {
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.3s ease;
+}
+
+.sidebar-breadcrumb a:hover {
+  color: white;
+}
+
+.breadcrumb-separator {
+  color: rgba(255, 255, 255, 0.6);
+  margin: 0 8px;
+}
+
+.current-page {
+  color: white;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+/* Sidebar Content - Glassmorphism */
+.mobile-sidebar-content {
+  padding: 20px 0;
+}
+
+.mobile-nav-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.mobile-nav-item {
+  margin-bottom: 5px;
+}
+
+.mobile-nav-link {
+  display: flex;
+  align-items: center;
+  padding: 15px 20px;
+  color: rgba(255, 255, 255, 0.9);
+  text-decoration: none;
+  font-family: "Urbanist", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  border-left: 4px solid transparent;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}
+
+.mobile-nav-link:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
+  text-decoration: none;
+  border-left-color: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.mobile-nav-item.active .mobile-nav-link {
+  background-color: rgba(255, 255, 255, 0.15);
+  color: white;
+  border-left-color: white;
+  font-weight: 600;
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+}
+
+.nav-icon {
+  margin-right: 12px;
+  font-size: 18px;
+  width: 24px;
+  text-align: center;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .desktop-only {
+    display: none !important;
+  }
+
+  .mobile-only {
+    display: block !important;
+  }
+
+  /* Adjust content padding for mobile navbar */
+  .main-layout {
+    padding-top: 60px;
+  }
+}
+
+@media (min-width: 769px) {
+  .mobile-sidebar,
+  .mobile-sidebar-overlay,
+  .mobile-only {
+    display: none !important;
+  }
+
+  .desktop-only {
+    display: block !important;
+  }
+}
+
+/* Body scroll lock when sidebar is open */
+body.sidebar-open {
+  overflow: hidden;
+}
+
 /* Remove focus outline from navbar toggle */
 .navbar-custom .navbar-toggle:focus,
 .navbar-custom .navbar-toggle:active {
