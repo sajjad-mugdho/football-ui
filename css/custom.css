@@ -3073,7 +3073,7 @@ body.sidebar-open {
 .live-matches-section .video-icon {
   position: absolute;
   top: 10px;
-  left: 10px;
+  left: 15px;
   z-index: 10;
 }
 
