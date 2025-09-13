@@ -2939,3 +2939,168 @@ body.sidebar-open {
     transform: scale(0.7);
   }
 }
+
+/* ========================================
+   MOBILE FONT SIZE ADJUSTMENTS
+   ======================================== */
+
+/* Mobile devices - reduce all font sizes */
+@media (max-width: 768px) {
+  
+  /* Main section titles */
+  .section-title,
+  h1, h2, h3, h4, h5, h6 {
+    font-size: 0.85em !important;
+  }
+  
+  /* News card titles */
+  .news-title {
+    font-size: 14px !important;
+  }
+  
+  /* Video card titles */
+  .video-title {
+    font-size: 14px !important;
+  }
+  
+  /* Glass video titles */
+  .glass-video-title {
+    font-size: 12px !important;
+    line-height: 16px !important;
+  }
+  
+  /* Glass video descriptions */
+  .glass-video-description {
+    font-size: 9px !important;
+    line-height: 12px !important;
+  }
+  
+  /* Video links and "Lire la suite" */
+  .video-link,
+  .glass-video-bottom-overlay .video-link {
+    font-size: 9px !important;
+  }
+  
+  /* See more links */
+  .see-more,
+  .read-more,
+  .learn-more {
+    font-size: 10px !important;
+  }
+  
+  /* Voir plus buttons and links - match title size */
+  .voir-plus-btn,
+  .voir-plus-link {
+    font-size: 14px !important;
+  }
+  
+  /* News card descriptions */
+  .news-description,
+  .news-content p {
+    font-size: 12px !important;
+    line-height: 1.3 !important;
+  }
+  
+  /* Video descriptions */
+  .video-description,
+  .video-content p {
+    font-size: 12px !important;
+    line-height: 1.3 !important;
+  }
+  
+  /* Date and time elements */
+  .video-date,
+  .news-date,
+  .date-time {
+    font-size: 9px !important;
+  }
+  
+  /* Badge text */
+  .news-badge,
+  .video-badge {
+    font-size: 8px !important;
+  }
+  
+  /* Navigation links */
+  .mobile-nav-link {
+    font-size: 14px !important;
+  }
+  
+  /* Button texts */
+  button,
+  .btn {
+    font-size: 12px !important;
+  }
+  
+  /* Footer text */
+  .footer-content,
+  .footer-description {
+    font-size: 12px !important;
+  }
+  
+  /* Card content */
+  .card-content,
+  .content-card p {
+    font-size: 12px !important;
+  }
+  
+  /* Match info */
+  .match-info,
+  .team-name {
+    font-size: 11px !important;
+  }
+  
+  /* Stats text */
+  .video-stat-text,
+  .stat-text {
+    font-size: 8px !important;
+  }
+  
+  /* Header titles */
+  .header-title {
+    font-size: 20px !important;
+  }
+  
+  /* Subtitle elements */
+  .subtitle {
+    font-size: 13px !important;
+  }
+}
+
+/* Extra small mobile devices - further reduce font sizes */
+@media (max-width: 480px) {
+  
+  /* Even smaller fonts for very small screens */
+  .news-title {
+    font-size: 13px !important;
+  }
+  
+  .video-title {
+    font-size: 13px !important;
+  }
+  
+  .glass-video-title {
+    font-size: 11px !important;
+    line-height: 14px !important;
+  }
+  
+  .glass-video-description {
+    font-size: 8px !important;
+    line-height: 10px !important;
+  }
+  
+  .video-link,
+  .glass-video-bottom-overlay .video-link {
+    font-size: 8px !important;
+  }
+  
+  .mobile-nav-link {
+    font-size: 13px !important;
+  }
+  
+  /* Voir plus buttons and links - match title size for extra small screens */
+  .voir-plus-btn,
+  .voir-plus-link {
+    font-size: 13px !important;
+  }
+}
