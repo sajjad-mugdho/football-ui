@@ -3022,29 +3022,36 @@ body.sidebar-open {
   }
 }
 
-/* Live Matches Section */
+/* ===== SCOPED LIVE MATCHES SECTION - PREVENTS CONFLICTS WITH VIDEOS SECTION ===== */
 .live-matches-section {
+  padding: 40px 0;
+  background: transparent;
   position: relative;
   left: 50%;
   right: 50%;
   margin-left: -50vw;
   margin-right: -50vw;
   width: 100vw;
-
-  background: transparent;
   min-height: 300px;
   overflow: hidden;
 }
 
-.live-matches-grid {
+.live-matches-section .main-content-container {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+.live-matches-section .live-matches-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 20px;
   margin-top: 30px;
 }
 
-/* Live Video Cards */
-.live-video-card {
+/* Scope all live video card styles to prevent conflicts with videos section */
+.live-matches-section .live-video-card {
   width: 260px;
   height: 158px;
   flex-shrink: 0;
@@ -3057,13 +3064,21 @@ body.sidebar-open {
   transition: all 0.3s ease;
 }
 
-.live-video-card:hover {
+.live-matches-section .live-video-card:hover {
   transform: translateY(-2px);
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
 }
 
-/* Card Content Layout */
-.card-content-layout {
+/* Scoped video icon - different from videos section */
+.live-matches-section .video-icon {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 10;
+}
+
+/* Scoped card content layout */
+.live-matches-section .card-content-layout {
   display: flex;
   align-items: center;
   height: 100%;
@@ -3071,7 +3086,7 @@ body.sidebar-open {
   gap: 10px;
 }
 
-.card-thumbnail {
+.live-matches-section .card-thumbnail {
   width: 89px;
   height: 75px;
   flex-shrink: 0;
@@ -3080,13 +3095,13 @@ body.sidebar-open {
   position: relative;
 }
 
-.card-thumbnail img {
+.live-matches-section .card-thumbnail img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-.card-info {
+.live-matches-section .card-info {
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -3096,30 +3111,8 @@ body.sidebar-open {
   height: 100%;
 }
 
-.video-icon {
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  z-index: 10;
-}
-
-.video-thumbnail {
-  position: absolute;
-  top: 30%;
-  left: 15px;
-  border-radius: 4px;
-  width: 90px;
-  height: 75px;
-  overflow: hidden;
-}
-
-.video-thumbnail img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.play-overlay {
+/* Scoped play overlay - different from videos section */
+.live-matches-section .play-overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -3133,28 +3126,28 @@ body.sidebar-open {
   transition: opacity 0.3s ease;
 }
 
-.live-video-card:hover .play-overlay {
+.live-matches-section .live-video-card:hover .play-overlay {
   opacity: 1;
 }
 
-.play-button {
+.live-matches-section .play-button {
   cursor: pointer;
   transition: transform 0.2s ease;
 }
 
-.play-button:hover {
+.live-matches-section .play-button:hover {
   transform: scale(1.1);
 }
 
-.video-description {
+/* Scoped video description - different from videos section */
+.live-matches-section .video-description {
   position: absolute;
   bottom: 50px;
-
   right: 10px;
   z-index: 10;
 }
 
-.video-description p {
+.live-matches-section .video-description p {
   color: white;
   font-size: 12px;
   font-weight: 500;
@@ -3165,7 +3158,8 @@ body.sidebar-open {
   text-align: left;
 }
 
-.live-status {
+/* Scoped live status */
+.live-matches-section .live-status {
   position: absolute;
   bottom: 15px;
   left: 15px;
@@ -3175,117 +3169,24 @@ body.sidebar-open {
   z-index: 10;
 }
 
-.live-status span:not(.live-dot) {
+.live-matches-section .live-status span:not(.live-dot) {
   color: white;
   font-size: 12px;
   font-weight: 600;
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.7);
 }
 
-.live-dot {
+.live-matches-section .live-dot {
   width: 8px;
   height: 8px;
   background: #f00;
   border-radius: 50%;
-  animation: pulse 2s infinite;
+  animation: live-matches-pulse 2s infinite;
   margin-right: 8px;
 }
 
-.progress-bar {
-  width: 235.247px;
-  height: 6.094px;
-  flex-shrink: 0;
-  border-radius: 2.5px;
-  background: #f00;
-  position: absolute;
-  bottom: 5px;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-.progress-fill {
-  display: none;
-}
-
-/* Match Card Header Styles */
-.match-card-header {
-  text-align: center;
-  margin-bottom: 15px;
-  padding-top: 10px;
-}
-
-.tournament-title {
-  color: #ffffff;
-  font-family: "Poppins", sans-serif;
-  font-weight: 600;
-  font-size: 14px;
-  margin-bottom: 4px;
-}
-
-.match-day {
-  color: #05944b;
-  font-family: "urbanist", sans-serif;
-  font-weight: 600;
-  font-style: normal;
-  font-size: 8px;
-}
-
-/* Match Teams Layout */
-.match-teams-layout {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0 15px;
-  margin-top: 20px;
-  gap: 20px;
-}
-
-.team-info {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
-}
-
-.team-flag-large {
-  width: 54px;
-  height: 35px;
-  flex-shrink: 0;
-  aspect-ratio: 54/35;
-  border-radius: 4px;
-  object-fit: cover;
-}
-
-.team-name-large {
-  color: #ffffff;
-  font-family: "Poppins", sans-serif;
-  font-weight: 500;
-  font-size: 12px;
-  text-align: center;
-}
-
-.match-score-large {
-  color: #ffffff;
-  font-family: "Poppins", sans-serif;
-  font-weight: 700;
-  font-size: 32px;
-  margin: 0 0 15px 0;
-  line-height: 1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-/* Live Matches Section Title */
-.live-matches-section .section-title {
-  color: #ffffff;
-  font-size: 24px;
-  font-weight: bold;
-  margin-bottom: 0;
-}
-
-@keyframes pulse {
+/* Unique animation name to prevent conflicts */
+@keyframes live-matches-pulse {
   0% {
     opacity: 1;
   }
@@ -3297,228 +3198,192 @@ body.sidebar-open {
   }
 }
 
-.match-content {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 20px;
+.live-matches-section .progress-bar {
+  width: 235.247px;
+  height: 6.094px;
+  flex-shrink: 0;
+  border-radius: 2.5px;
+  background: #f00;
+  position: absolute;
+  bottom: 8px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
 }
 
-.team {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 8px;
-  flex: 1;
+/* Match Card Header Styles - Scoped */
+.live-matches-section .match-card-header {
+  text-align: center;
+  margin-bottom: 15px;
+  padding-top: 10px;
 }
 
-.team-flag {
-  width: 45px;
-  height: 45px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 2px solid #444;
-}
-
-.team-name {
+.live-matches-section .tournament-title {
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-size: 14px;
-  color: #ffffff;
-  text-align: center;
+  margin-bottom: 4px;
 }
 
-.match-score {
+.live-matches-section .match-day {
+  color: #05944b;
+  font-family: "Urbanist", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 8px;
+}
+
+/* Match Teams Layout - Scoped */
+.live-matches-section .match-teams-layout {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 15px;
+  margin-top: 20px;
+  gap: 20px;
+}
+
+/* Scope team-info to live matches only - prevents conflicts with standings */
+.live-matches-section .team-info {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 5px;
-  margin: 0 20px;
+  justify-content: center;
+  gap: 8px;
 }
 
-.score {
-  font-size: 24px;
-  font-weight: bold;
-  color: #ffffff;
-}
-
-.match-time {
-  font-size: 12px;
-  color: #ccc;
-  background: rgba(255, 255, 255, 0.1);
-  padding: 2px 8px;
-  border-radius: 8px;
-}
-
-.match-status {
-  text-align: center;
-}
-
-.status-badge {
-  padding: 4px 12px;
-  border-radius: 6px;
-  font-size: 10px;
-  font-weight: 600;
-  text-transform: uppercase;
-}
-
-.status-badge.live {
-  background: #ff4444;
-  color: white;
-}
-
-.status-badge.finished {
-  background: #666;
-  color: white;
-}
-
-.status-badge.upcoming {
-  background: #17a2b8;
-  color: white;
-}
-
-/* Featured Live Match */
-.live-match-featured {
-  grid-column: 1 / -1;
-  background: #2a2a2a;
-  border: 1px solid #333;
-  border-radius: 12px;
-  overflow: hidden;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-  transition: all 0.3s ease;
-}
-
-.live-match-featured:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
-}
-
-.featured-image {
-  position: relative;
-  height: 200px;
-  overflow: hidden;
-}
-
-.featured-image img {
-  width: 100%;
-  height: 100%;
+.live-matches-section .team-flag-large {
+  width: 54px;
+  height: 35px;
+  flex-shrink: 0;
+  aspect-ratio: 54/35;
+  border-radius: 4px;
   object-fit: cover;
 }
 
-.featured-overlay {
-  position: absolute;
-  top: 15px;
-  left: 15px;
-  right: 15px;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
+.live-matches-section .team-name-large {
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  text-align: center;
 }
 
-.live-indicator.large {
-  background: rgba(0, 0, 0, 0.7);
-  backdrop-filter: blur(10px);
-  padding: 8px 16px;
-  border-radius: 20px;
-  color: white;
-}
-
-.featured-content {
-  padding: 20px;
-}
-
-.featured-title {
-  font-size: 22px;
-  font-weight: bold;
-  color: #333;
-  margin-bottom: 15px;
-  line-height: 1.4;
-}
-
-.featured-teams {
+.live-matches-section .match-score-large {
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  margin: 0 0 15px 0;
+  line-height: 1;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.team-vs {
-  display: flex;
-  align-items: center;
-  gap: 15px;
-}
-
-.team-flag-small {
-  width: 25px;
-  height: 25px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 2px solid #444;
-}
-
-.team-vs span {
-  font-weight: bold;
-  color: #ccc;
-  font-size: 14px;
-}
-
-/* Mobile Responsive for Live Matches */
+/* Mobile Responsive for Live Matches - Scoped */
 @media (max-width: 768px) {
   .live-matches-section {
     padding: 30px 0;
   }
 
-  .live-matches-grid {
+  .live-matches-section .main-content-container {
+    padding: 0 20px;
+  }
+
+  .live-matches-section .live-matches-grid {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 15px;
     margin-top: 20px;
   }
 
-  .live-video-card {
+  .live-matches-section .live-video-card {
     width: 100%;
     max-width: 250px;
     height: 140px;
     margin: 0 auto;
   }
 
-  .video-description p {
+  .live-matches-section .video-description p {
     font-size: 12px;
   }
 
-  .live-status span:not(.live-dot) {
+  .live-matches-section .live-status span:not(.live-dot) {
     font-size: 11px;
+  }
+
+  .live-matches-section .tournament-title {
+    font-size: 12px;
+  }
+
+  .live-matches-section .match-score-large {
+    font-size: 24px;
+  }
+
+  .live-matches-section .team-name-large {
+    font-size: 10px;
   }
 }
 
 @media (max-width: 576px) {
-  .live-matches-grid {
+  .live-matches-section .main-content-container {
+    padding: 0 15px;
+  }
+
+  .live-matches-section .live-matches-grid {
     grid-template-columns: 1fr;
     gap: 15px;
   }
 
-  .live-video-card {
+  .live-matches-section .live-video-card {
     width: 100%;
     max-width: 300px;
     height: 140px;
   }
 
-  .video-description p {
+  .live-matches-section .video-description p {
     font-size: 11px;
   }
 
-  .live-status span:not(.live-dot) {
+  .live-matches-section .live-status span:not(.live-dot) {
     font-size: 10px;
+  }
+
+  .live-matches-section .tournament-title {
+    font-size: 11px;
+  }
+
+  .live-matches-section .match-score-large {
+    font-size: 20px;
+  }
+
+  .live-matches-section .team-flag-large {
+    width: 45px;
+    height: 30px;
   }
 }
 
 @media (max-width: 480px) {
-  .live-video-card {
+  .live-matches-section .live-video-card {
     height: 130px;
   }
 
-  .video-description {
+  .live-matches-section .video-description {
     bottom: 35px;
   }
 
-  .video-description p {
+  .live-matches-section .video-description p {
     font-size: 10px;
   }
-} /* ===== GLASS VIDEOS SECTION ===== */
+
+  .live-matches-section .tournament-title {
+    font-size: 10px;
+  }
+
+  .live-matches-section .match-score-large {
+    font-size: 18px;
+  }
+}
+
+/* ===== GLASS VIDEOS SECTION ===== */
