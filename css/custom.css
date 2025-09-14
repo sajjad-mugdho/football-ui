@@ -2621,7 +2621,7 @@ body.sidebar-open {
   left: 0;
   right: 0;
   background: linear-gradient(182deg, rgba(0, 0, 0, 0.3) 10%, #000 90%);
-  padding: 175px 15px 15px 15px;
+  padding: 200px 15px 15px 15px;
   z-index: 5;
 }
 
