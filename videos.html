@@ -11,12 +11,48 @@
     <meta name="author" content="OUSSOUD" />
 
     <!-- Font Preloading for Performance -->
-    <link rel="preload" href="assets/fonts/poppins/poppins-regular.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="assets/fonts/poppins/poppins-semibold.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="assets/fonts/poppins/poppins-bold.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="assets/fonts/urbanist/urbanist-regular.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="assets/fonts/urbanist/urbanist-semibold.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="assets/fonts/urbanist/urbanist-bold.woff2" as="font" type="font/woff2" crossorigin>
+    <link
+      rel="preload"
+      href="assets/fonts/poppins/poppins-regular.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="assets/fonts/poppins/poppins-semibold.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="assets/fonts/poppins/poppins-bold.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="assets/fonts/urbanist/urbanist-regular.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="assets/fonts/urbanist/urbanist-semibold.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="assets/fonts/urbanist/urbanist-bold.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
 
     <!-- Local Fonts - Poppins, Urbanist & Roboto -->
     <link rel="stylesheet" href="assets/fonts/fonts.css" />
@@ -39,7 +75,9 @@
   <body>
     <main class="main-layout">
       <!-- Desktop Navigation -->
-      <nav class="navbar navbar-default navbar-fixed-top navbar-custom desktop-only">
+      <nav
+        class="navbar navbar-default navbar-fixed-top navbar-custom desktop-only"
+      >
         <div class="container">
           <div class="navbar-header">
             <a class="navbar-brand" href="index.html">
@@ -50,13 +88,11 @@
               />
             </a>
           </div>
-          
+
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="nav navbar-nav navbar-center">
               <li class="dropdown">
-                <a href="index.html" class="dropdown-toggle">
-                  Accueil
-                </a>
+                <a href="index.html" class="dropdown-toggle"> Accueil </a>
               </li>
               <li>
                 <a href="index.html">Actualités</a>
@@ -119,8 +155,20 @@
         <div class="mobile-nav-container">
           <!-- Left: Breadcrumb Menu -->
           <button class="mobile-breadcrumb-btn" onclick="toggleMobileSidebar()">
-            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
-              <path d="M1 13H13M1 7H13M1 1H7.85714" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="14"
+              height="14"
+              viewBox="0 0 14 14"
+              fill="none"
+            >
+              <path
+                d="M1 13H13M1 7H13M1 1H7.85714"
+                stroke="white"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
             </svg>
           </button>
 
@@ -178,22 +226,28 @@
       </nav>
 
       <!-- Mobile Sidebar Overlay -->
-      <div class="mobile-sidebar-overlay" id="mobileSidebarOverlay" onclick="toggleMobileSidebar()"></div>
+      <div
+        class="mobile-sidebar-overlay"
+        id="mobileSidebarOverlay"
+        onclick="toggleMobileSidebar()"
+      ></div>
 
       <!-- Mobile Sidebar -->
       <div class="mobile-sidebar" id="mobileSidebar">
         <div class="mobile-sidebar-header">
           <img src="assets/logo.svg" alt="OUSSOUD Logo" class="sidebar-logo" />
-          <button class="sidebar-close" onclick="toggleMobileSidebar()">&times;</button>
+          <button class="sidebar-close" onclick="toggleMobileSidebar()">
+            &times;
+          </button>
         </div>
-        
+
         <!-- Breadcrumb Navigation -->
         <div class="sidebar-breadcrumb">
           <a href="index.html">Accueil</a>
           <span class="breadcrumb-separator">></span>
           <span class="current-page">Vidéos</span>
         </div>
-        
+
         <div class="mobile-sidebar-content">
           <ul class="mobile-nav-list">
             <li class="mobile-nav-item">
@@ -260,720 +314,6 @@
         </section>
       </header>
 
-      <!-- Live Matches Section -->
-        <section class="live-matches-section">
-          <div class="main-content-container">
-              <div class="section-header">
-                  <h2 class="section-title">Live Matchs</h2>
-              </div>
-
-              <div style="margin-right: 100px; margin-left: 100px;" class="live-matches-grid">
-              <!-- Live Video Card 1 -->
-                  <div class="live-video-card">
-                  <div class="video-icon">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="14" viewBox="0 0 20 14" fill="none">
-                      <path d="M13.3334 0.333313C13.5544 0.333313 13.7663 0.421111 13.9226 0.577391C14.0789 0.733671 14.1667 0.945633 14.1667 1.16665V4.66665L18.5109 1.62498C18.5733 1.58119 18.6466 1.55539 18.7227 1.5504C18.7989 1.5454 18.8749 1.5614 18.9426 1.59664C19.0102 1.63189 19.0669 1.68503 19.1064 1.75027C19.1459 1.81552 19.1668 1.89036 19.1667 1.96665V12.0333C19.1668 12.1096 19.1459 12.1844 19.1064 12.2497C19.0669 12.3149 19.0102 12.3681 18.9426 12.4033C18.8749 12.4386 18.7989 12.4546 18.7227 12.4496C18.6466 12.4446 18.5733 12.4188 18.5109 12.375L14.1667 9.33331V12.8333C14.1667 13.0543 14.0789 13.2663 13.9226 13.4226C13.7663 13.5788 13.5544 13.6666 13.3334 13.6666H1.66671C1.44569 13.6666 1.23373 13.5788 1.07745 13.4226C0.921171 13.2663 0.833374 13.0543 0.833374 12.8333V1.16665C0.833374 0.945633 0.921171 0.733671 1.07745 0.577391C1.23373 0.421111 1.44569 0.333313 1.66671 0.333313H13.3334ZM12.5 1.99998H2.50004V12H12.5V1.99998ZM6.16671 4.35748C6.23013 4.35731 6.29228 4.37523 6.34587 4.40915L9.97504 6.71915C10.0222 6.74929 10.061 6.79081 10.0878 6.83989C10.1147 6.88897 10.1288 6.94402 10.1288 6.99998C10.1288 7.05593 10.1147 7.11099 10.0878 7.16007C10.061 7.20915 10.0222 7.25067 9.97504 7.28081L6.34587 9.59165C6.29533 9.62387 6.23702 9.64186 6.17711 9.64373C6.11719 9.64561 6.05788 9.63129 6.00542 9.60228C5.95296 9.57328 5.90929 9.53067 5.87901 9.47893C5.84874 9.4272 5.83297 9.36826 5.83337 9.30831V4.69165C5.83337 4.50748 5.98337 4.35748 6.16671 4.35748ZM17.5 4.36665L14.1667 6.69998V7.29831L17.5 9.63165V4.36665Z" fill="#FF1904"/>
-                      </svg>
-                  </div>
-                  
-                  <!-- Card Content Layout -->
-                  <div class="card-content-layout">
-                      <div class="card-thumbnail">
-                      <img src="images/live-match-1.jpg" alt="Live Match" />
-                      <div class="play-overlay">
-                          <div class="play-button">
-                          <svg width="25" height="25" viewBox="0 0 40 40" fill="none">
-                              <circle cx="20" cy="20" r="20" fill="rgba(255, 255, 255, 0.9)"/>
-                              <path d="M16 12L28 20L16 28V12Z" fill="#000"/>
-                          </svg>
-                          </div>
-                      </div>
-                      </div>
-                      
-                      <div class="card-info">
-                      <div class="video-description">
-                          <p>Lorem ipsum dolor sit amet consectetur Dui consectetur</p>
-                      </div>
-                      
-                      <div class="live-status">
-                          <span class="live-dot"></span>
-                          <span>En direct</span>
-                      </div>
-                      </div>
-                  </div>
-                  
-                  <!-- Progress Bar - positioned separately -->
-                  <div class="progress-bar"></div>
-                  </div>
-
-                  <!-- live card 2nd style -->
-                  <div class="live-video-card">
-                  <div class="video-icon">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="14" viewBox="0 0 20 14" fill="none">
-                      <path d="M13.3334 0.333313C13.5544 0.333313 13.7663 0.421111 13.9226 0.577391C14.0789 0.733671 14.1667 0.945633 14.1667 1.16665V4.66665L18.5109 1.62498C18.5733 1.58119 18.6466 1.55539 18.7227 1.5504C18.7989 1.5454 18.8749 1.5614 18.9426 1.59664C19.0102 1.63189 19.0669 1.68503 19.1064 1.75027C19.1459 1.81552 19.1668 1.89036 19.1667 1.96665V12.0333C19.1668 12.1096 19.1459 12.1844 19.1064 12.2497C19.0669 12.3149 19.0102 12.3681 18.9426 12.4033C18.8749 12.4386 18.7989 12.4546 18.7227 12.4496C18.6466 12.4446 18.5733 12.4188 18.5109 12.375L14.1667 9.33331V12.8333C14.1667 13.0543 14.0789 13.2663 13.9226 13.4226C13.7663 13.5788 13.5544 13.6666 13.3334 13.6666H1.66671C1.44569 13.6666 1.23373 13.5788 1.07745 13.4226C0.921171 13.2663 0.833374 13.0543 0.833374 12.8333V1.16665C0.833374 0.945633 0.921171 0.733671 1.07745 0.577391C1.23373 0.421111 1.44569 0.333313 1.66671 0.333313H13.3334ZM12.5 1.99998H2.50004V12H12.5V1.99998ZM6.16671 4.35748C6.23013 4.35731 6.29228 4.37523 6.34587 4.40915L9.97504 6.71915C10.0222 6.74929 10.061 6.79081 10.0878 6.83989C10.1147 6.88897 10.1288 6.94402 10.1288 6.99998C10.1288 7.05593 10.1147 7.11099 10.0878 7.16007C10.061 7.20915 10.0222 7.25067 9.97504 7.28081L6.34587 9.59165C6.29533 9.62387 6.23702 9.64186 6.17711 9.64373C6.11719 9.64561 6.05788 9.63129 6.00542 9.60228C5.95296 9.57328 5.90929 9.53067 5.87901 9.47893C5.84874 9.4272 5.83297 9.36826 5.83337 9.30831V4.69165C5.83337 4.50748 5.98337 4.35748 6.16671 4.35748ZM17.5 4.36665L14.1667 6.69998V7.29831L17.5 9.63165V4.36665Z" fill="#FF1904"/>
-                      </svg>
-                  </div>
-                  
-                  <!-- Card Content Layout -->
-                  <div class="match-card-header">
-                    <div class="tournament-title">CAN Morocco 2025</div>
-                    <div class="match-day">Journée 2</div>
-                  </div>
-                  
-                  <div class="match-teams-layout">
-                    <div class="team-info">
-                      <img src="images/Flag_of_Morocco5.png" alt="Morocco Flag" class="team-flag-large" />
-                      <div class="team-name-large">Nigeria</div>
-                    </div>
-
-                    <div class="match-score-large">2-0</div>
-
-                    <div class="team-info">
-                      <img src="images/Flag_of_Morocco6.png" alt="Senegal Flag" class="team-flag-large" />
-                      <div class="team-name-large">Botswana</div>
-                    </div>
-                  </div>
-
-                <div style="position: absolute; bottom: -8px;
-                  left: 40%;
-                  z-index: 999; 
-                  border-radius: 4px;
-                  background: linear-gradient(90deg, #F00 0%, #A21717 100%);
-                  width: 60.945px;
-                  height: 19.502px;
-                  display: flex;
-                  align-items: center;
-                  justify-content: center;
-                  font-family: 'Poppins', sans-serif;
-                  font-style: normal;
-                  font-weight: 500;
-                  font-size: 8px;
-                  line-height: 18px;
-                  color: #FFFFFF;
-                  ">
-                  33 minutes
-                  </div>
-                  </div>
-                  <!-- live card 2nd style -->
-                  <div class="live-video-card">
-                  <div class="video-icon">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="14" viewBox="0 0 20 14" fill="none">
-                      <path d="M13.3334 0.333313C13.5544 0.333313 13.7663 0.421111 13.9226 0.577391C14.0789 0.733671 14.1667 0.945633 14.1667 1.16665V4.66665L18.5109 1.62498C18.5733 1.58119 18.6466 1.55539 18.7227 1.5504C18.7989 1.5454 18.8749 1.5614 18.9426 1.59664C19.0102 1.63189 19.0669 1.68503 19.1064 1.75027C19.1459 1.81552 19.1668 1.89036 19.1667 1.96665V12.0333C19.1668 12.1096 19.1459 12.1844 19.1064 12.2497C19.0669 12.3149 19.0102 12.3681 18.9426 12.4033C18.8749 12.4386 18.7989 12.4546 18.7227 12.4496C18.6466 12.4446 18.5733 12.4188 18.5109 12.375L14.1667 9.33331V12.8333C14.1667 13.0543 14.0789 13.2663 13.9226 13.4226C13.7663 13.5788 13.5544 13.6666 13.3334 13.6666H1.66671C1.44569 13.6666 1.23373 13.5788 1.07745 13.4226C0.921171 13.2663 0.833374 13.0543 0.833374 12.8333V1.16665C0.833374 0.945633 0.921171 0.733671 1.07745 0.577391C1.23373 0.421111 1.44569 0.333313 1.66671 0.333313H13.3334ZM12.5 1.99998H2.50004V12H12.5V1.99998ZM6.16671 4.35748C6.23013 4.35731 6.29228 4.37523 6.34587 4.40915L9.97504 6.71915C10.0222 6.74929 10.061 6.79081 10.0878 6.83989C10.1147 6.88897 10.1288 6.94402 10.1288 6.99998C10.1288 7.05593 10.1147 7.11099 10.0878 7.16007C10.061 7.20915 10.0222 7.25067 9.97504 7.28081L6.34587 9.59165C6.29533 9.62387 6.23702 9.64186 6.17711 9.64373C6.11719 9.64561 6.05788 9.63129 6.00542 9.60228C5.95296 9.57328 5.90929 9.53067 5.87901 9.47893C5.84874 9.4272 5.83297 9.36826 5.83337 9.30831V4.69165C5.83337 4.50748 5.98337 4.35748 6.16671 4.35748ZM17.5 4.36665L14.1667 6.69998V7.29831L17.5 9.63165V4.36665Z" fill="#FF1904"/>
-                      </svg>
-                  </div>
-                  
-                  <!-- Card Content Layout -->
-                  <div class="match-card-header">
-                    <div class="tournament-title">CAN Morocco 2025</div>
-                    <div class="match-day">Journée 2</div>
-                  </div>
-                  
-                  <div class="match-teams-layout">
-                    <div class="team-info">
-                      <img src="images/Flag_of_Morocco.png" alt="Morocco Flag" class="team-flag-large" />
-                      <div class="team-name-large">Morocco</div>
-                    </div>
-
-                    <div class="match-score-large">2-0</div>
-
-                    <div class="team-info">
-                      <img src="images/Flag_of_senegal.png" alt="Senegal Flag" class="team-flag-large" />
-                      <div class="team-name-large">Sénégal</div>
-                    </div>
-                  </div>
-
-                <div style="position: absolute; bottom: -8px;
-                  left: 40%;
-                  z-index: 999; 
-                  border-radius: 4px;
-                  background: linear-gradient(90deg, #F00 0%, #A21717 100%);
-                  width: 60.945px;
-                  height: 19.502px;
-                  display: flex;
-                  align-items: center;
-                  justify-content: center;
-                  font-family: 'Poppins', sans-serif;
-                  font-style: normal;
-                  font-weight: 500;
-                  font-size: 8px;
-                  line-height: 18px;
-                  color: #FFFFFF;
-                  ">
-                  33 minutes
-                  </div>
-                  </div>
-                  <!-- live card 3nd style -->
-                  <div class="live-video-card">
-                  <div class="video-icon">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="14" viewBox="0 0 20 14" fill="none">
-                      <path d="M13.3334 0.333313C13.5544 0.333313 13.7663 0.421111 13.9226 0.577391C14.0789 0.733671 14.1667 0.945633 14.1667 1.16665V4.66665L18.5109 1.62498C18.5733 1.58119 18.6466 1.55539 18.7227 1.5504C18.7989 1.5454 18.8749 1.5614 18.9426 1.59664C19.0102 1.63189 19.0669 1.68503 19.1064 1.75027C19.1459 1.81552 19.1668 1.89036 19.1667 1.96665V12.0333C19.1668 12.1096 19.1459 12.1844 19.1064 12.2497C19.0669 12.3149 19.0102 12.3681 18.9426 12.4033C18.8749 12.4386 18.7989 12.4546 18.7227 12.4496C18.6466 12.4446 18.5733 12.4188 18.5109 12.375L14.1667 9.33331V12.8333C14.1667 13.0543 14.0789 13.2663 13.9226 13.4226C13.7663 13.5788 13.5544 13.6666 13.3334 13.6666H1.66671C1.44569 13.6666 1.23373 13.5788 1.07745 13.4226C0.921171 13.2663 0.833374 13.0543 0.833374 12.8333V1.16665C0.833374 0.945633 0.921171 0.733671 1.07745 0.577391C1.23373 0.421111 1.44569 0.333313 1.66671 0.333313H13.3334ZM12.5 1.99998H2.50004V12H12.5V1.99998ZM6.16671 4.35748C6.23013 4.35731 6.29228 4.37523 6.34587 4.40915L9.97504 6.71915C10.0222 6.74929 10.061 6.79081 10.0878 6.83989C10.1147 6.88897 10.1288 6.94402 10.1288 6.99998C10.1288 7.05593 10.1147 7.11099 10.0878 7.16007C10.061 7.20915 10.0222 7.25067 9.97504 7.28081L6.34587 9.59165C6.29533 9.62387 6.23702 9.64186 6.17711 9.64373C6.11719 9.64561 6.05788 9.63129 6.00542 9.60228C5.95296 9.57328 5.90929 9.53067 5.87901 9.47893C5.84874 9.4272 5.83297 9.36826 5.83337 9.30831V4.69165C5.83337 4.50748 5.98337 4.35748 6.16671 4.35748ZM17.5 4.36665L14.1667 6.69998V7.29831L17.5 9.63165V4.36665Z" fill="#FF1904"/>
-                      </svg>
-                  </div>
-                  
-                  <!-- Card Content Layout -->
-                  <div class="match-card-header">
-                    <div class="tournament-title">CAN Morocco 2025</div>
-                    <div class="match-day">Journée 2</div>
-                  </div>
-                  
-                  <div class="match-teams-layout">
-                    <div class="team-info">
-                      <img src="images/Flag_of_Morocco5.png" alt="Morocco Flag" class="team-flag-large" />
-                      <div class="team-name-large">Mali</div>
-                    </div>
-
-                    <div class="match-score-large">2-0</div>
-
-                    <div class="team-info">
-                      <img src="images/Flag_of_tanzania.png" alt="Tanzania Flag" class="team-flag-large" />
-                      <div class="team-name-large">Tanzania</div>
-                    </div>
-                  </div>
-
-                <div style="position: absolute; bottom: -8px;
-                  left: 40%;
-                  z-index: 999; 
-                  border-radius: 4px;
-                  background: linear-gradient(90deg, #F00 0%, #A21717 100%);
-                  width: 60.945px;
-                  height: 19.502px;
-                  display: flex;
-                  align-items: center;
-                  justify-content: center;
-                  font-family: 'Poppins', sans-serif;
-                  font-style: normal;
-                  font-weight: 500;
-                  font-size: 8px;
-                  line-height: 18px;
-                  color: #FFFFFF;
-                  ">
-                  33 minutes
-                  </div>
-                  </div>
-              </div>
-          </div>
-
-      <!-- Main Content -->
-        <div class="main-content-container">
-          <div class="row">
-            <!-- Infos principales - 2/3 width -->
-            <div class="col-md-8">
-              <div class="section-header">
-                <h2 class="section-title">Infos principales</h2>
-              </div>
-              <div class="row">
-                <!-- Card 1 -->
-                <div class="col-md-6">
-                  <div class="info-card">
-                  <div class="card-image">
-                    <img
-                      src="images/info-p-.png"
-                      alt="Football News"
-                      class="img-responsive"
-                    />
-                  </div>
-                  <div class="card-overlay">
-                    <div class="card-content-group">
-                      <div class="news-badge">CAN Marcoce 2025</div>
-                      <div class="card-content">
-                        <h3 class="card-title">
-                          Lorem ipsum dolor sit amet consectetur urus et dictum
-                          velit metus est ac
-                        </h3>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- Card 2 -->
-              <div class="col-md-6">
-                <div class="info-card">
-                  <div class="card-image">
-                    <img
-                      src="images/info-2.png"
-                      alt="Football News"
-                      class="img-responsive"
-                    />
-                  </div>
-                  <div class="card-overlay">
-                    <div class="card-content-group">
-                      <div class="news-badge">CAN Marcoce 2025</div>
-                      <div class="card-content">
-                        <h3 class="card-title">
-                          Lorem ipsum dolor sit amet consectetur urus et dictum
-                          velit metus est ac
-                        </h3>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- Card 1 -->
-              <div class="col-md-6">
-                <div class="info-card">
-                  <div class="card-image">
-                    <img
-                      src="images/info-3.png"
-                      alt="Football News"
-                      class="img-responsive"
-                    />
-                  </div>
-                  <!--  -->
-                  <div class="card-overlay">
-                    <div class="card-content-group">
-                      <div class="news-badge">CAN Marcoce 2025</div>
-                      <div class="card-content">
-                        <h3 class="card-title">
-                          Lorem ipsum dolor sit amet consectetur urus et dictum
-                          velit metus est ac
-                        </h3>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- Card 2 -->
-              <div class="col-md-6">
-                <div class="info-card">
-                  <div class="card-image">
-                    <img
-                      src="images/info-4.png"
-                      alt="Football News"
-                      class="img-responsive"
-                    />
-                  </div>
-                  <div class="card-overlay">
-                    <div class="card-content-group">
-                      <div class="news-badge">CAN Marcoce 2025</div>
-                      <div class="card-content">
-                        <h3 class="card-title">
-                          Lorem ipsum dolor sit amet consectetur urus et dictum
-                          velit metus est ac
-                        </h3>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- New Glass Morphism Cards Section -->
-            <div class="new-cards-section" style="margin-top: 30px;">
-              <div class="row">
-                <!-- Glass Card 1 -->
-                <div class="col-md-6">
-                  <div class="glass-card">
-                    <div class="glass-card-image">
-                      <img src="images/info-p-.png" alt="Football News" />
-                    </div>
-                    <div class="glass-card-content">
-                      <div class="glass-card-badge">CAF U20</div>
-                      <div class="glass-card-text">
-                        <h3>La sélection U20 fait match nul et se maintient en tête du groupe B</h3>
-                        <p>1 M vues</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <!-- Glass Card 2 -->
-                <div class="col-md-6">
-                  <div class="glass-card">
-                    <div class="glass-card-image">
-                      <img src="images/info-2.png" alt="Football News" />
-                    </div>
-                    <div class="glass-card-content">
-                      <div class="glass-card-badge">CAF U20</div>
-                      <div class="glass-card-text">
-                        <h3>La sélection U20 fait match nul et se maintient en tête du groupe B</h3>
-                        <p>1 M vues</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="new-cards-section" style="margin-top: 30px;">
-              <div class="row">
-                <!-- Glass Card 1 -->
-                <div class="col-md-6">
-                  <div class="glass-card">
-                    <div class="glass-card-image">
-                      <img src="images/info-p-.png" alt="Football News" />
-                    </div>
-                    <div class="glass-card-content">
-                      <div class="glass-card-badge">CAF U20</div>
-                      <div class="glass-card-text">
-                        <h3>La sélection U20 fait match nul et se maintient en tête du groupe B</h3>
-                        <p>1 M vues</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <!-- Glass Card 2 -->
-                <div class="col-md-6">
-                  <div class="glass-card">
-                    <div class="glass-card-image">
-                      <img src="images/info-2.png" alt="Football News" />
-                    </div>
-                    <div class="glass-card-content">
-                      <div class="glass-card-badge">CAF U20</div>
-                      <div class="glass-card-text">
-                        <h3>La sélection U20 fait match nul et se maintient en tête du groupe B</h3>
-                        <p>1 M vues</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!--  -->
-            <div class="new-cards-section" style="margin-top: 30px;">
-              <div class="row">
-                <!-- Glass Card 1 -->
-                <div class="col-md-6">
-                  <div class="glass-card">
-                    <div class="glass-card-image">
-                      <img src="images/info-p-.png" alt="Football News" />
-                    </div>
-                    <div class="glass-card-content">
-                      <div class="glass-card-badge">CAF U20</div>
-                      <div class="glass-card-text">
-                        <h3>La sélection U20 fait match nul et se maintient en tête du groupe B</h3>
-                        <p>1 M vues</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <!-- Glass Card 2 -->
-                <div class="col-md-6">
-                  <div class="glass-card">
-                    <div class="glass-card-image">
-                      <img src="images/info-2.png" alt="Football News" />
-                    </div>
-                    <div class="glass-card-content">
-                      <div class="glass-card-badge">CAF U20</div>
-                      <div class="glass-card-text">
-                        <h3>La sélection U20 fait match nul et se maintient en tête du groupe B</h3>
-                        <p>1 M vues</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Derniers résultats - 1/3 width -->
-          <div class="col-md-4">
-            <!-- Derniers résultats Section -->
-            <div class="section-header">
-              <h2 class="section-title">Derniers résultats</h2>
-            </div>
-            <div class="results-card">
-              <div class="match-date">Jeudi 10 Déc 2025</div>
-              <div class="match-score-section">
-                <div class="team-section">
-                  <img src="images/Flag_of_Morocco5.png" alt="Nigeria Flag" class="team-flag nigeria-flag" />
-                  <span class="team-name">Nigeria</span>
-                </div>
-                <div class="score-section">
-                  <span class="final-score">2 : 0</span>
-                </div>
-                <div class="team-section">
-                  <img src="images/Flag_of_Morocco6.png" alt="Botswana Flag" class="team-flag botswana-flag" />
-                  <span class="team-name">Botswana</span>
-                </div>
-              </div>
-              <div class="tournament-badge">Attyaplus TNT</div>
-              <div class="text-success">Journée 2</div>
-              <button class="voir-plus-btn ">Voir plus</button>
-            </div>
-
-            <!-- Prochains rendez vous Section -->
-            <div class="section-header" style="margin-top: 30px;">
-              <h2 class="section-title">Prochains rendez vous</h2>
-            </div>
-            <div class="results-card">
-              <div class="match-date">Jeudi  10 Déc 2025</div>
-              <div class="match-score-section">
-                <div class="team-section">
-                  <img src="images/Flag_of_Morocco1.png" alt="Morocco Flag" class="team-flag morocco-flag" />
-                  <span class="team-name">Maroc</span>
-                </div>
-                <div class="score-section">
-                  <span class="final-score">20:00</span>
-                </div>
-                <div class="team-section">
-                  <img src="images/Flag_of_Morocco2.png" alt="Senegal Flag" class="team-flag senegal-flag" />
-                  <span class="team-name">Sénégal</span>
-                </div>
-              </div>
-              <div class="tournament-badge">Attyaplus TNT</div>
-              <div class="match-status upcoming">Journée 2</div>
-              <button class="voir-plus-btn ">Voir plus</button>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Standings Section -->
-      <section class="standings-section">
-        <div class="main-content-container">
-          <div class="section-header" style="margin-top: 30px;">
-            <h2 class="section-title">Classement</h2>
-          </div>
-            <div class="standings-card">
-              <!-- Table Header -->
-              <div class="standings-header">
-                <div class="team-col">Équipe</div>
-                <div class="stats-cols">
-                  <span>J</span>
-                  <span>G</span>
-                  <span>N</span>
-                  <span>P</span>
-                  <span>Pts</span>
-                  <span>+/-</span>
-                </div>
-              </div>
-
-              <!-- Group A -->
-              <div style="margin-bottom: 10px;" class="group-header">Groupe A</div>
-              <div class="standings-row">
-                <div class="position">1 -</div>
-                <div class="team-info">
-                  <img src="images/Flag_of_Morocco1.png" alt="Morocco Flag" class="standings-flag" />
-                  <span class="team-name">Maroc</span>
-                </div>
-                <div class="stats-row">
-                  <span>2</span>
-                  <span>1</span>
-                  <span>1</span>
-                  <span>0</span>
-                  <span>4</span>
-                  <span>2</span>
-                </div>
-                <div class="arrow-icon">></div>
-              </div>
-              <div class="standings-row">
-                <div class="position">2 -</div>
-                <div class="team-info">
-                  <img src="images/Flag_of_Morocco2.png" alt="Senegal Flag" class="standings-flag" />
-                  <span class="team-name">Sénégal</span>
-                </div>
-                <div class="stats-row">
-                  <span>2</span>
-                  <span>1</span>
-                  <span>1</span>
-                  <span>0</span>
-                  <span>4</span>
-                  <span>2</span>
-                </div>
-                <div class="arrow-icon">></div>
-              </div>
-              <div class="standings-row">
-                <div class="position">3 -</div>
-                <div class="team-info">
-                  <img src="images/Flag_of_Morocco.svg 3.png" alt="RD Congo Flag" class="standings-flag" />
-                  <span class="team-name">RD Congo</span>
-                </div>
-                <div class="stats-row">
-                  <span>2</span>
-                  <span>1</span>
-                  <span>1</span>
-                  <span>0</span>
-                  <span>4</span>
-                  <span>2</span>
-                </div>
-                <div class="arrow-icon">></div>
-              </div>
-              <div class="standings-row">
-                <div class="position">4 -</div>
-                <div class="team-info">
-                  <img src="images/Flag_of_Morocco5.png" alt="Nigeria Flag" class="standings-flag" />
-                  <span class="team-name">Nigeria</span>
-                </div>
-                <div class="stats-row">
-                  <span>2</span>
-                  <span>1</span>
-                  <span>1</span>
-                  <span>0</span>
-                  <span>4</span>
-                  <span>2</span>
-                </div>
-                <div class="arrow-icon">></div>
-              </div>
-
-              <!-- Group B -->
-              <div style="margin-bottom: 10px;" class="group-header">Groupe B</div>
-              <div class="standings-row">
-                <div class="position">1 -</div>
-                <div class="team-info">
-                  <img src="images/Flag_of_Morocco.svg 7.png" alt="Tunisia Flag" class="standings-flag" />
-                  <span class="team-name">Tunisie</span>
-                </div>
-                <div class="stats-row">
-                  <span>2</span>
-                  <span>1</span>
-                  <span>1</span>
-                  <span>0</span>
-                  <span>4</span>
-                  <span>2</span>
-                </div>
-                <div class="arrow-icon">></div>
-              </div>
-              <div class="standings-row">
-                <div class="position">2 -</div>
-                <div class="team-info">
-                  <img src="images/Flag_of_Morocco5.png" alt="Nigeria Flag" class="standings-flag" />
-                  <span class="team-name">Nigeria</span>
-                </div>
-                <div class="stats-row">
-                  <span>2</span>
-                  <span>1</span>
-                  <span>1</span>
-                  <span>0</span>
-                  <span>4</span>
-                  <span>2</span>
-                </div>
-                <div class="arrow-icon">></div>
-              </div>
-              <div class="standings-row">
-                <div class="position">3 -</div>
-                <div class="team-info">
-                  <img src="images/Flag_of_Morocco6.png" alt="Botswana Flag" class="standings-flag" />
-                  <span class="team-name">Botswana</span>
-                </div>
-                <div class="stats-row">
-                  <span>2</span>
-                  <span>1</span>
-                  <span>1</span>
-                  <span>0</span>
-                  <span>4</span>
-                  <span>2</span>
-                </div>
-                <div class="arrow-icon">></div>
-              </div>
-              <div class="standings-row">
-                <div class="position">4 -</div>
-                <div class="team-info">
-                  <img src="images/Flag_of_South_Africa.svg 1.png" alt="South Africa Flag" class="standings-flag" />
-                  <span class="team-name">A.du Sud</span>
-                </div>
-                <div class="stats-row">
-                  <span>2</span>
-                  <span>1</span>
-                  <span>1</span>
-                  <span>0</span>
-                  <span>4</span>
-                  <span>2</span>
-                </div>
-                <div class="arrow-icon">></div>
-              </div>
-
-              <!-- Group C -->
-              <div style="margin-bottom: 10px;" class="group-header">Groupe C</div>
-              <div class="standings-row">
-                <div class="position">1 -</div>
-                <div class="team-info">
-                  <img src="images/Flag_of_Morocco.svg 7.png" alt="Egypt Flag" class="standings-flag" />
-                  <span class="team-name">Égypte</span>
-                </div>
-                <div class="stats-row">
-                  <span>2</span>
-                  <span>1</span>
-                  <span>1</span>
-                  <span>0</span>
-                  <span>4</span>
-                  <span>2</span>
-                </div>
-                <div class="arrow-icon">></div>
-              </div>
-              <div class="standings-row">
-                <div class="position">2 -</div>
-                <div class="team-info">
-                  <img src="images/Flag_of_Morocco5.png" alt="Nigeria Flag" class="standings-flag" />
-                  <span class="team-name">Nigeria</span>
-                </div>
-                <div class="stats-row">
-                  <span>2</span>
-                  <span>1</span>
-                  <span>1</span>
-                  <span>0</span>
-                  <span>4</span>
-                  <span>2</span>
-                </div>
-                <div class="arrow-icon">></div>
-              </div>
-              <div class="standings-row">
-                <div class="position">3 -</div>
-                <div class="team-info">
-                  <img src="images/Flag_of_Morocco6.png" alt="Botswana Flag" class="standings-flag" />
-                  <span class="team-name">Botswana</span>
-                </div>
-                <div class="stats-row">
-                  <span>2</span>
-                  <span>1</span>
-                  <span>1</span>
-                  <span>0</span>
-                  <span>4</span>
-                  <span>2</span>
-                </div>
-                <div class="arrow-icon">></div>
-              </div>
-              <div class="standings-row">
-                <div class="position">4 -</div>
-                <div class="team-info">
-                  <img src="images/Flag_of_Morocco1.png" alt="Morocco Flag" class="standings-flag" />
-                  <span class="team-name">Maroc</span>
-                </div>
-                <div class="stats-row">
-                  <span>2</span>
-                  <span>1</span>
-                  <span>1</span>
-                  <span>0</span>
-                  <span>4</span>
-                  <span>2</span>
-                </div>
-                <div class="arrow-icon">></div>
-              </div>
-
-              <button class="voir-plus-btn">Voir plus</button>
-            </div>
-          </div>
-        </div>
-      </section>
-
-       <!-- Quick Play Section -->
-      <section class="quick-play-section">
-        <div class="main-content-container">
-          <div class="section-header quick-play-header">
-            <h2 class="section-title">Quick Play</h2>
-            <a href="#" class="voir-plus-link">Voir plus</a>
-          </div>
-          <div class="quick-play-cards">
-            <div class="quick-play-card">
-              <img src="images/q-play-2.png" alt="Quick Play Video 1" />
-            </div>
-            <div class="quick-play-card">
-              <img src="images/q-play-3.png" alt="Quick Play Video 2" />
-            </div>
-            <div class="quick-play-card">
-              <img src="images/q-play.png" alt="Quick Play Video 3" />
-            </div>
-            <div class="quick-play-card">
-              <img src="images/q-play-2.png" alt="Quick Play Video 4" />
-            </div>
-            <div class="quick-play-card">
-              <img src="images/q-play-3.png" alt="Quick Play Video 5" />
-            </div>
-            <div class="quick-play-card">
-              <img src="images/info-3.png" alt="Quick Play Video 6" />
-            </div>
-          </div>
-        </div>
-      </section>
-
       <!-- Vidéos section -->
       <section class="videos-section">
         <div class="main-content-container">
@@ -985,24 +325,59 @@
             <div class="video-card">
               <div class="video-thumbnail">
                 <div class="video-time-section">05:00</div>
-                <img src="images/info-p-.png" alt="Coupe d'Afrique des nations de football 2025" />
+                <img
+                  src="images/live-match-2.jpg"
+                  alt="Coupe d'Afrique des nations de football 2025"
+                />
                 <!-- Statistics Overlays -->
                 <!-- Bookmark Icon -->
                 <div class="video-bookmark">
-                 <svg xmlns="http://www.w3.org/2000/svg" width="13" height="23" viewBox="0 0 13 23" fill="none">
-  <path d="M11.9274 0.287842H1.1875C0.911358 0.287842 0.6875 0.511699 0.6875 0.787841V21.5806C0.6875 22.0252 1.22445 22.2487 1.5399 21.9353L6.20503 17.3004C6.40002 17.1067 6.71483 17.1067 6.90983 17.3004L11.575 21.9353C11.8904 22.2487 12.4274 22.0252 12.4274 21.5806V0.787842C12.4274 0.511699 12.2035 0.287842 11.9274 0.287842Z" fill="white"/>
-</svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="13"
+                    height="23"
+                    viewBox="0 0 13 23"
+                    fill="none"
+                  >
+                    <path
+                      d="M11.9274 0.287842H1.1875C0.911358 0.287842 0.6875 0.511699 0.6875 0.787841V21.5806C0.6875 22.0252 1.22445 22.2487 1.5399 21.9353L6.20503 17.3004C6.40002 17.1067 6.71483 17.1067 6.90983 17.3004L11.575 21.9353C11.8904 22.2487 12.4274 22.0252 12.4274 21.5806V0.787842C12.4274 0.511699 12.2035 0.287842 11.9274 0.287842Z"
+                      fill="white"
+                    />
+                  </svg>
                 </div>
                 <div class="video-play-overlay">
                   <div class="play-button-svg">
-                    <svg width="57" height="57" viewBox="0 0 57 57" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <ellipse cx="28.5" cy="28.5" rx="28.5" ry="28.5" fill="#191919" stroke="#05944B" stroke-width="2"/>
-                      <path fill-rule="evenodd" clip-rule="evenodd" d="M23 18L39 28.5L23 39V18Z" fill="white"/>
+                    <svg
+                      width="57"
+                      height="57"
+                      viewBox="0 0 57 57"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <ellipse
+                        cx="28.5"
+                        cy="28.5"
+                        rx="28.5"
+                        ry="28.5"
+                        fill="#191919"
+                        stroke="#05944B"
+                        stroke-width="2"
+                      />
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M23 18L39 28.5L23 39V18Z"
+                        fill="white"
+                      />
                     </svg>
                   </div>
                 </div>
                 <div class="video-bottom-overlay">
-                  <h3 class="video-title">Coupe d'Afrique <br/> des nations <br/> de football 2025</h3>
+                  <h3 class="video-title">
+                    Coupe d'Afrique <br />
+                    des nations <br />
+                    de football 2025
+                  </h3>
                   <div class="video-info-row">
                     <p class="video-meta">Match Maroc vs Négiria</p>
                     <p class="video-date">01/12/2025</p>
@@ -1013,23 +388,58 @@
             <div class="video-card">
               <div class="video-thumbnail">
                 <div class="video-time-section">04:30</div>
-                <img src="images/video-1.png" alt="Coupe d'Afrique des nations de football 2025" />
+                <img
+                  src="images/video-1.png"
+                  alt="Coupe d'Afrique des nations de football 2025"
+                />
                 <!-- Save Button -->
                 <div class="video-bookmark">
-                 <svg xmlns="http://www.w3.org/2000/svg" width="13" height="23" viewBox="0 0 13 23" fill="none">
-  <path d="M11.9274 0.287842H1.1875C0.911358 0.287842 0.6875 0.511699 0.6875 0.787841V21.5806C0.6875 22.0252 1.22445 22.2487 1.5399 21.9353L6.20503 17.3004C6.40002 17.1067 6.71483 17.1067 6.90983 17.3004L11.575 21.9353C11.8904 22.2487 12.4274 22.0252 12.4274 21.5806V0.787842C12.4274 0.511699 12.2035 0.287842 11.9274 0.287842Z" fill="white"/>
-</svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="13"
+                    height="23"
+                    viewBox="0 0 13 23"
+                    fill="none"
+                  >
+                    <path
+                      d="M11.9274 0.287842H1.1875C0.911358 0.287842 0.6875 0.511699 0.6875 0.787841V21.5806C0.6875 22.0252 1.22445 22.2487 1.5399 21.9353L6.20503 17.3004C6.40002 17.1067 6.71483 17.1067 6.90983 17.3004L11.575 21.9353C11.8904 22.2487 12.4274 22.0252 12.4274 21.5806V0.787842C12.4274 0.511699 12.2035 0.287842 11.9274 0.287842Z"
+                      fill="white"
+                    />
+                  </svg>
                 </div>
                 <div class="video-play-overlay">
                   <div class="play-button-svg">
-                    <svg width="57" height="57" viewBox="0 0 57 57" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <ellipse cx="28.5" cy="28.5" rx="28.5" ry="28.5" fill="#191919" stroke="#05944B" stroke-width="2"/>
-                      <path fill-rule="evenodd" clip-rule="evenodd" d="M23 18L39 28.5L23 39V18Z" fill="white"/>
+                    <svg
+                      width="57"
+                      height="57"
+                      viewBox="0 0 57 57"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <ellipse
+                        cx="28.5"
+                        cy="28.5"
+                        rx="28.5"
+                        ry="28.5"
+                        fill="#191919"
+                        stroke="#05944B"
+                        stroke-width="2"
+                      />
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M23 18L39 28.5L23 39V18Z"
+                        fill="white"
+                      />
                     </svg>
                   </div>
                 </div>
                 <div class="video-bottom-overlay">
-                  <h3 class="video-title">Coupe d'Afrique <br/> des nations <br/> de football 2025</h3>
+                  <h3 class="video-title">
+                    Coupe d'Afrique <br />
+                    des nations <br />
+                    de football 2025
+                  </h3>
                   <div class="video-info-row">
                     <p class="video-meta">Match Maroc vs Négiria</p>
                     <p class="video-date">01/12/2025</p>
@@ -1039,26 +449,64 @@
             </div>
             <div class="video-card">
               <div class="video-thumbnail">
-                <div class="video-time-section">08:00</div>
-                <img src="images/video-2.png" alt="Coupe d'Afrique des nations de football 2025" />
-                <!-- Save Button -->
+                <div class="video-time-section">05:00</div>
+                <img
+                  src="images/live-video-5.png"
+                  alt="Coupe d'Afrique des nations de football 2025"
+                />
+                <!-- Statistics Overlays -->
+                <!-- Bookmark Icon -->
                 <div class="video-bookmark">
-                 <svg xmlns="http://www.w3.org/2000/svg" width="13" height="23" viewBox="0 0 13 23" fill="none">
-  <path d="M11.9274 0.287842H1.1875C0.911358 0.287842 0.6875 0.511699 0.6875 0.787841V21.5806C0.6875 22.0252 1.22445 22.2487 1.5399 21.9353L6.20503 17.3004C6.40002 17.1067 6.71483 17.1067 6.90983 17.3004L11.575 21.9353C11.8904 22.2487 12.4274 22.0252 12.4274 21.5806V0.787842C12.4274 0.511699 12.2035 0.287842 11.9274 0.287842Z" fill="white"/>
-</svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="13"
+                    height="23"
+                    viewBox="0 0 13 23"
+                    fill="none"
+                  >
+                    <path
+                      d="M11.9274 0.287842H1.1875C0.911358 0.287842 0.6875 0.511699 0.6875 0.787841V21.5806C0.6875 22.0252 1.22445 22.2487 1.5399 21.9353L6.20503 17.3004C6.40002 17.1067 6.71483 17.1067 6.90983 17.3004L11.575 21.9353C11.8904 22.2487 12.4274 22.0252 12.4274 21.5806V0.787842C12.4274 0.511699 12.2035 0.287842 11.9274 0.287842Z"
+                      fill="white"
+                    />
+                  </svg>
                 </div>
                 <div class="video-play-overlay">
                   <div class="play-button-svg">
-                    <svg width="57" height="57" viewBox="0 0 57 57" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <ellipse cx="28.5" cy="28.5" rx="28.5" ry="28.5" fill="#191919" stroke="#05944B" stroke-width="2"/>
-                      <path fill-rule="evenodd" clip-rule="evenodd" d="M23 18L39 28.5L23 39V18Z" fill="white"/>
+                    <svg
+                      width="57"
+                      height="57"
+                      viewBox="0 0 57 57"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <ellipse
+                        cx="28.5"
+                        cy="28.5"
+                        rx="28.5"
+                        ry="28.5"
+                        fill="#191919"
+                        stroke="#05944B"
+                        stroke-width="2"
+                      />
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M23 18L39 28.5L23 39V18Z"
+                        fill="white"
+                      />
                     </svg>
                   </div>
                 </div>
                 <div class="video-bottom-overlay">
-                  <h3 class="video-title">Coupe d'Afrique <br/> des nations <br/> de football 2025</h3>
-                  <p class="video-meta">Match Afrique • Nigeria</p>
-                  <p class="video-date">07/12/2025</p>
+                  <h3 class="video-title">
+                    Coupe d'Afrique <br />
+                    des nations <br />
+                    de football 2025
+                  </h3>
+                  <div class="video-info-row">
+                    <p class="video-meta">Match Maroc vs Négiria</p>
+                    <p class="video-date">01/12/2025</p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -1072,57 +520,60 @@
           <div class="glass-videos-grid">
             <div class="glass-video-card">
               <div class="glass-video-thumbnail">
-                <img src="images/info-p-.png" alt="Coupe d'Afrique des nations de football 2025" />
+                <img
+                  src="images/info-p-.png"
+                  alt="Coupe d'Afrique des nations de football 2025"
+                />
                 <div class="video-play-overlay">
                   <div class="play-button-svg">
-                    <svg width="57" height="57" viewBox="0 0 57 57" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <ellipse cx="28.5" cy="28.5" rx="28.5" ry="28.5" fill="#191919" stroke="#05944B" stroke-width="2"/>
-                      <path fill-rule="evenodd" clip-rule="evenodd" d="M23 18L39 28.5L23 39V18Z" fill="white"/>
+                    <svg
+                      width="57"
+                      height="57"
+                      viewBox="0 0 57 57"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <ellipse
+                        cx="28.5"
+                        cy="28.5"
+                        rx="28.5"
+                        ry="28.5"
+                        fill="#191919"
+                        stroke="#05944B"
+                        stroke-width="2"
+                      />
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M23 18L39 28.5L23 39V18Z"
+                        fill="white"
+                      />
                     </svg>
                   </div>
                 </div>
               </div>
               <div class="glass-video-bottom-overlay">
                 <div class="news-badge">CAN Morocco 2025</div>
-               
+
                 <div class="video-bookmark">
-                 <svg xmlns="http://www.w3.org/2000/svg" width="13" height="23" viewBox="0 0 13 23" fill="none">
-  <path d="M11.9274 0.287842H1.1875C0.911358 0.287842 0.6875 0.511699 0.6875 0.787841V21.5806C0.6875 22.0252 1.22445 22.2487 1.5399 21.9353L6.20503 17.3004C6.40002 17.1067 6.71483 17.1067 6.90983 17.3004L11.575 21.9353C11.8904 22.2487 12.4274 22.0252 12.4274 21.5806V0.787842C12.4274 0.511699 12.2035 0.287842 11.9274 0.287842Z" fill="white"/>
-</svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="13"
+                    height="23"
+                    viewBox="0 0 13 23"
+                    fill="none"
+                  >
+                    <path
+                      d="M11.9274 0.287842H1.1875C0.911358 0.287842 0.6875 0.511699 0.6875 0.787841V21.5806C0.6875 22.0252 1.22445 22.2487 1.5399 21.9353L6.20503 17.3004C6.40002 17.1067 6.71483 17.1067 6.90983 17.3004L11.575 21.9353C11.8904 22.2487 12.4274 22.0252 12.4274 21.5806V0.787842C12.4274 0.511699 12.2035 0.287842 11.9274 0.287842Z"
+                      fill="white"
+                    />
+                  </svg>
                 </div>
-                
+
                 <div class="video-description-row">
-                  <p class="glass-video-description">Le président de laConfédération Africaine de Football-CAF</p>
-                  <a href="#" class="video-link">Lire la suite ></a>
-                </div>
-              </div>
-            </div>
-            
-           
-            
-            <div class="glass-video-card">
-              <div class="glass-video-thumbnail">
-                <img src="images/video-2.png" alt="Coupe d'Afrique des nations de football 2025" />
-                <div class="video-play-overlay">
-                  <div class="play-button-svg">
-                    <svg width="57" height="57" viewBox="0 0 57 57" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <ellipse cx="28.5" cy="28.5" rx="28.5" ry="28.5" fill="#191919" stroke="#05944B" stroke-width="2"/>
-                      <path fill-rule="evenodd" clip-rule="evenodd" d="M23 18L39 28.5L23 39V18Z" fill="white"/>
-                    </svg>
-                  </div>
-                </div>
-              </div>
-              <div class="glass-video-bottom-overlay">
-                <div class="news-badge">CAN Morocco 2025</div>
-              
-                <div class="video-bookmark">
-                 <svg xmlns="http://www.w3.org/2000/svg" width="13" height="23" viewBox="0 0 13 23" fill="none">
-  <path d="M11.9274 0.287842H1.1875C0.911358 0.287842 0.6875 0.511699 0.6875 0.787841V21.5806C0.6875 22.0252 1.22445 22.2487 1.5399 21.9353L6.20503 17.3004C6.40002 17.1067 6.71483 17.1067 6.90983 17.3004L11.575 21.9353C11.8904 22.2487 12.4274 22.0252 12.4274 21.5806V0.787842C12.4274 0.511699 12.2035 0.287842 11.9274 0.287842Z" fill="white"/>
-</svg>
-                </div>
-               
-                <div class="video-description-row">
-                  <p class="glass-video-description">Le président de laConfédération Africaine de Football-CAF</p>
+                  <p class="glass-video-description">
+                    Le président de laConfédération Africaine de Football-CAF
+                  </p>
                   <a href="#" class="video-link">Lire la suite ></a>
                 </div>
               </div>
@@ -1130,55 +581,428 @@
 
             <div class="glass-video-card">
               <div class="glass-video-thumbnail">
-                <img src="images/info-p-.png" alt="Coupe d'Afrique des nations de football 2025" />
+                <img
+                  src="images/video-2.png"
+                  alt="Coupe d'Afrique des nations de football 2025"
+                />
                 <div class="video-play-overlay">
                   <div class="play-button-svg">
-                    <svg width="57" height="57" viewBox="0 0 57 57" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <ellipse cx="28.5" cy="28.5" rx="28.5" ry="28.5" fill="#191919" stroke="#05944B" stroke-width="2"/>
-                      <path fill-rule="evenodd" clip-rule="evenodd" d="M23 18L39 28.5L23 39V18Z" fill="white"/>
+                    <svg
+                      width="57"
+                      height="57"
+                      viewBox="0 0 57 57"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <ellipse
+                        cx="28.5"
+                        cy="28.5"
+                        rx="28.5"
+                        ry="28.5"
+                        fill="#191919"
+                        stroke="#05944B"
+                        stroke-width="2"
+                      />
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M23 18L39 28.5L23 39V18Z"
+                        fill="white"
+                      />
                     </svg>
                   </div>
                 </div>
               </div>
               <div class="glass-video-bottom-overlay">
                 <div class="news-badge">CAN Morocco 2025</div>
-               
+
                 <div class="video-bookmark">
-                 <svg xmlns="http://www.w3.org/2000/svg" width="13" height="23" viewBox="0 0 13 23" fill="none">
-  <path d="M11.9274 0.287842H1.1875C0.911358 0.287842 0.6875 0.511699 0.6875 0.787841V21.5806C0.6875 22.0252 1.22445 22.2487 1.5399 21.9353L6.20503 17.3004C6.40002 17.1067 6.71483 17.1067 6.90983 17.3004L11.575 21.9353C11.8904 22.2487 12.4274 22.0252 12.4274 21.5806V0.787842C12.4274 0.511699 12.2035 0.287842 11.9274 0.287842Z" fill="white"/>
-</svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="13"
+                    height="23"
+                    viewBox="0 0 13 23"
+                    fill="none"
+                  >
+                    <path
+                      d="M11.9274 0.287842H1.1875C0.911358 0.287842 0.6875 0.511699 0.6875 0.787841V21.5806C0.6875 22.0252 1.22445 22.2487 1.5399 21.9353L6.20503 17.3004C6.40002 17.1067 6.71483 17.1067 6.90983 17.3004L11.575 21.9353C11.8904 22.2487 12.4274 22.0252 12.4274 21.5806V0.787842C12.4274 0.511699 12.2035 0.287842 11.9274 0.287842Z"
+                      fill="white"
+                    />
+                  </svg>
                 </div>
-                
+
                 <div class="video-description-row">
-                  <p class="glass-video-description">Le président de laConfédération Africaine de Football-CAF</p>
+                  <p class="glass-video-description">
+                    Le président de laConfédération Africaine de Football-CAF
+                  </p>
                   <a href="#" class="video-link">Lire la suite ></a>
                 </div>
               </div>
             </div>
-            
+
             <div class="glass-video-card">
               <div class="glass-video-thumbnail">
-                <img src="images/video-1.png" alt="Coupe d'Afrique des nations de football 2025" />
+                <img
+                  src="images/info-p-.png"
+                  alt="Coupe d'Afrique des nations de football 2025"
+                />
                 <div class="video-play-overlay">
                   <div class="play-button-svg">
-                    <svg width="57" height="57" viewBox="0 0 57 57" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <ellipse cx="28.5" cy="28.5" rx="28.5" ry="28.5" fill="#191919" stroke="#05944B" stroke-width="2"/>
-                      <path fill-rule="evenodd" clip-rule="evenodd" d="M23 18L39 28.5L23 39V18Z" fill="white"/>
+                    <svg
+                      width="57"
+                      height="57"
+                      viewBox="0 0 57 57"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <ellipse
+                        cx="28.5"
+                        cy="28.5"
+                        rx="28.5"
+                        ry="28.5"
+                        fill="#191919"
+                        stroke="#05944B"
+                        stroke-width="2"
+                      />
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M23 18L39 28.5L23 39V18Z"
+                        fill="white"
+                      />
                     </svg>
                   </div>
                 </div>
               </div>
               <div class="glass-video-bottom-overlay">
                 <div class="news-badge">CAN Morocco 2025</div>
-               
+
                 <div class="video-bookmark">
-                 <svg xmlns="http://www.w3.org/2000/svg" width="13" height="23" viewBox="0 0 13 23" fill="none">
-  <path d="M11.9274 0.287842H1.1875C0.911358 0.287842 0.6875 0.511699 0.6875 0.787841V21.5806C0.6875 22.0252 1.22445 22.2487 1.5399 21.9353L6.20503 17.3004C6.40002 17.1067 6.71483 17.1067 6.90983 17.3004L11.575 21.9353C11.8904 22.2487 12.4274 22.0252 12.4274 21.5806V0.787842C12.4274 0.511699 12.2035 0.287842 11.9274 0.287842Z" fill="white"/>
-</svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="13"
+                    height="23"
+                    viewBox="0 0 13 23"
+                    fill="none"
+                  >
+                    <path
+                      d="M11.9274 0.287842H1.1875C0.911358 0.287842 0.6875 0.511699 0.6875 0.787841V21.5806C0.6875 22.0252 1.22445 22.2487 1.5399 21.9353L6.20503 17.3004C6.40002 17.1067 6.71483 17.1067 6.90983 17.3004L11.575 21.9353C11.8904 22.2487 12.4274 22.0252 12.4274 21.5806V0.787842C12.4274 0.511699 12.2035 0.287842 11.9274 0.287842Z"
+                      fill="white"
+                    />
+                  </svg>
                 </div>
-               
+
                 <div class="video-description-row">
-                  <p class="glass-video-description">Le président de laConfédération Africaine de Football-CAF</p>
+                  <p class="glass-video-description">
+                    Le président de laConfédération Africaine de Football-CAF
+                  </p>
+                  <a href="#" class="video-link">Lire la suite ></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="glass-video-card">
+              <div class="glass-video-thumbnail">
+                <img
+                  src="images/video-1.png"
+                  alt="Coupe d'Afrique des nations de football 2025"
+                />
+                <div class="video-play-overlay">
+                  <div class="play-button-svg">
+                    <svg
+                      width="57"
+                      height="57"
+                      viewBox="0 0 57 57"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <ellipse
+                        cx="28.5"
+                        cy="28.5"
+                        rx="28.5"
+                        ry="28.5"
+                        fill="#191919"
+                        stroke="#05944B"
+                        stroke-width="2"
+                      />
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M23 18L39 28.5L23 39V18Z"
+                        fill="white"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <div class="glass-video-bottom-overlay">
+                <div class="news-badge">CAN Morocco 2025</div>
+
+                <div class="video-bookmark">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="13"
+                    height="23"
+                    viewBox="0 0 13 23"
+                    fill="none"
+                  >
+                    <path
+                      d="M11.9274 0.287842H1.1875C0.911358 0.287842 0.6875 0.511699 0.6875 0.787841V21.5806C0.6875 22.0252 1.22445 22.2487 1.5399 21.9353L6.20503 17.3004C6.40002 17.1067 6.71483 17.1067 6.90983 17.3004L11.575 21.9353C11.8904 22.2487 12.4274 22.0252 12.4274 21.5806V0.787842C12.4274 0.511699 12.2035 0.287842 11.9274 0.287842Z"
+                      fill="white"
+                    />
+                  </svg>
+                </div>
+
+                <div class="video-description-row">
+                  <p class="glass-video-description">
+                    Le président de laConfédération Africaine de Football-CAF
+                  </p>
+                  <a href="#" class="video-link">Lire la suite ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div style="margin-top: 16px" class="glass-videos-grid">
+            <div class="glass-video-card">
+              <div class="glass-video-thumbnail">
+                <img
+                  src="images/info-p-.png"
+                  alt="Coupe d'Afrique des nations de football 2025"
+                />
+                <div class="video-play-overlay">
+                  <div class="play-button-svg">
+                    <svg
+                      width="57"
+                      height="57"
+                      viewBox="0 0 57 57"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <ellipse
+                        cx="28.5"
+                        cy="28.5"
+                        rx="28.5"
+                        ry="28.5"
+                        fill="#191919"
+                        stroke="#05944B"
+                        stroke-width="2"
+                      />
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M23 18L39 28.5L23 39V18Z"
+                        fill="white"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <div class="glass-video-bottom-overlay">
+                <div class="news-badge">CAN Morocco 2025</div>
+
+                <div class="video-bookmark">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="13"
+                    height="23"
+                    viewBox="0 0 13 23"
+                    fill="none"
+                  >
+                    <path
+                      d="M11.9274 0.287842H1.1875C0.911358 0.287842 0.6875 0.511699 0.6875 0.787841V21.5806C0.6875 22.0252 1.22445 22.2487 1.5399 21.9353L6.20503 17.3004C6.40002 17.1067 6.71483 17.1067 6.90983 17.3004L11.575 21.9353C11.8904 22.2487 12.4274 22.0252 12.4274 21.5806V0.787842C12.4274 0.511699 12.2035 0.287842 11.9274 0.287842Z"
+                      fill="white"
+                    />
+                  </svg>
+                </div>
+
+                <div class="video-description-row">
+                  <p class="glass-video-description">
+                    Le président de laConfédération Africaine de Football-CAF
+                  </p>
+                  <a href="#" class="video-link">Lire la suite ></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="glass-video-card">
+              <div class="glass-video-thumbnail">
+                <img
+                  src="images/video-2.png"
+                  alt="Coupe d'Afrique des nations de football 2025"
+                />
+                <div class="video-play-overlay">
+                  <div class="play-button-svg">
+                    <svg
+                      width="57"
+                      height="57"
+                      viewBox="0 0 57 57"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <ellipse
+                        cx="28.5"
+                        cy="28.5"
+                        rx="28.5"
+                        ry="28.5"
+                        fill="#191919"
+                        stroke="#05944B"
+                        stroke-width="2"
+                      />
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M23 18L39 28.5L23 39V18Z"
+                        fill="white"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <div class="glass-video-bottom-overlay">
+                <div class="news-badge">CAN Morocco 2025</div>
+
+                <div class="video-bookmark">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="13"
+                    height="23"
+                    viewBox="0 0 13 23"
+                    fill="none"
+                  >
+                    <path
+                      d="M11.9274 0.287842H1.1875C0.911358 0.287842 0.6875 0.511699 0.6875 0.787841V21.5806C0.6875 22.0252 1.22445 22.2487 1.5399 21.9353L6.20503 17.3004C6.40002 17.1067 6.71483 17.1067 6.90983 17.3004L11.575 21.9353C11.8904 22.2487 12.4274 22.0252 12.4274 21.5806V0.787842C12.4274 0.511699 12.2035 0.287842 11.9274 0.287842Z"
+                      fill="white"
+                    />
+                  </svg>
+                </div>
+
+                <div class="video-description-row">
+                  <p class="glass-video-description">
+                    Le président de laConfédération Africaine de Football-CAF
+                  </p>
+                  <a href="#" class="video-link">Lire la suite ></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="glass-video-card">
+              <div class="glass-video-thumbnail">
+                <img
+                  src="images/info-p-.png"
+                  alt="Coupe d'Afrique des nations de football 2025"
+                />
+                <div class="video-play-overlay">
+                  <div class="play-button-svg">
+                    <svg
+                      width="57"
+                      height="57"
+                      viewBox="0 0 57 57"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <ellipse
+                        cx="28.5"
+                        cy="28.5"
+                        rx="28.5"
+                        ry="28.5"
+                        fill="#191919"
+                        stroke="#05944B"
+                        stroke-width="2"
+                      />
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M23 18L39 28.5L23 39V18Z"
+                        fill="white"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <div class="glass-video-bottom-overlay">
+                <div class="news-badge">CAN Morocco 2025</div>
+
+                <div class="video-bookmark">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="13"
+                    height="23"
+                    viewBox="0 0 13 23"
+                    fill="none"
+                  >
+                    <path
+                      d="M11.9274 0.287842H1.1875C0.911358 0.287842 0.6875 0.511699 0.6875 0.787841V21.5806C0.6875 22.0252 1.22445 22.2487 1.5399 21.9353L6.20503 17.3004C6.40002 17.1067 6.71483 17.1067 6.90983 17.3004L11.575 21.9353C11.8904 22.2487 12.4274 22.0252 12.4274 21.5806V0.787842C12.4274 0.511699 12.2035 0.287842 11.9274 0.287842Z"
+                      fill="white"
+                    />
+                  </svg>
+                </div>
+
+                <div class="video-description-row">
+                  <p class="glass-video-description">
+                    Le président de laConfédération Africaine de Football-CAF
+                  </p>
+                  <a href="#" class="video-link">Lire la suite ></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="glass-video-card">
+              <div class="glass-video-thumbnail">
+                <img
+                  src="images/video-1.png"
+                  alt="Coupe d'Afrique des nations de football 2025"
+                />
+                <div class="video-play-overlay">
+                  <div class="play-button-svg">
+                    <svg
+                      width="57"
+                      height="57"
+                      viewBox="0 0 57 57"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <ellipse
+                        cx="28.5"
+                        cy="28.5"
+                        rx="28.5"
+                        ry="28.5"
+                        fill="#191919"
+                        stroke="#05944B"
+                        stroke-width="2"
+                      />
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M23 18L39 28.5L23 39V18Z"
+                        fill="white"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <div class="glass-video-bottom-overlay">
+                <div class="news-badge">CAN Morocco 2025</div>
+
+                <div class="video-bookmark">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="13"
+                    height="23"
+                    viewBox="0 0 13 23"
+                    fill="none"
+                  >
+                    <path
+                      d="M11.9274 0.287842H1.1875C0.911358 0.287842 0.6875 0.511699 0.6875 0.787841V21.5806C0.6875 22.0252 1.22445 22.2487 1.5399 21.9353L6.20503 17.3004C6.40002 17.1067 6.71483 17.1067 6.90983 17.3004L11.575 21.9353C11.8904 22.2487 12.4274 22.0252 12.4274 21.5806V0.787842C12.4274 0.511699 12.2035 0.287842 11.9274 0.287842Z"
+                      fill="white"
+                    />
+                  </svg>
+                </div>
+
+                <div class="video-description-row">
+                  <p class="glass-video-description">
+                    Le président de laConfédération Africaine de Football-CAF
+                  </p>
                   <a href="#" class="video-link">Lire la suite ></a>
                 </div>
               </div>
@@ -1187,8 +1011,618 @@
         </div>
       </section>
 
-     
+      <div
+        style="display: flex; justify-content: center; align-items: center"
+        class="ads-container"
+      >
+        <div
+          style="
+            margin: 50px;
+            width: 1250px;
+            height: 100px;
+            background: rgba(0, 0, 0, 0.4);
+            position: relative;
+            line-height: 16px;
+            font-size: 26px;
+            color: white;
+          "
+        >
+          <p
+            style="
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+            "
+          >
+            ADS
+          </p>
+        </div>
+      </div>
 
+      <!-- Vidéos section -->
+      <section class="videos-section">
+        <div class="main-content-container">
+          <div class="videos-grid">
+            <div class="video-card">
+              <div class="video-thumbnail">
+                <div class="video-time-section">05:00</div>
+                <img
+                  src="images/live-match-2.jpg"
+                  alt="Coupe d'Afrique des nations de football 2025"
+                />
+                <!-- Statistics Overlays -->
+                <!-- Bookmark Icon -->
+                <div class="video-bookmark">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="13"
+                    height="23"
+                    viewBox="0 0 13 23"
+                    fill="none"
+                  >
+                    <path
+                      d="M11.9274 0.287842H1.1875C0.911358 0.287842 0.6875 0.511699 0.6875 0.787841V21.5806C0.6875 22.0252 1.22445 22.2487 1.5399 21.9353L6.20503 17.3004C6.40002 17.1067 6.71483 17.1067 6.90983 17.3004L11.575 21.9353C11.8904 22.2487 12.4274 22.0252 12.4274 21.5806V0.787842C12.4274 0.511699 12.2035 0.287842 11.9274 0.287842Z"
+                      fill="white"
+                    />
+                  </svg>
+                </div>
+                <div class="video-play-overlay">
+                  <div class="play-button-svg">
+                    <svg
+                      width="57"
+                      height="57"
+                      viewBox="0 0 57 57"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <ellipse
+                        cx="28.5"
+                        cy="28.5"
+                        rx="28.5"
+                        ry="28.5"
+                        fill="#191919"
+                        stroke="#05944B"
+                        stroke-width="2"
+                      />
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M23 18L39 28.5L23 39V18Z"
+                        fill="white"
+                      />
+                    </svg>
+                  </div>
+                </div>
+                <div class="video-bottom-overlay">
+                  <h3 class="video-title">
+                    Coupe d'Afrique <br />
+                    des nations <br />
+                    de football 2025
+                  </h3>
+                  <div class="video-info-row">
+                    <p class="video-meta">Match Maroc vs Négiria</p>
+                    <p class="video-date">01/12/2025</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="video-card">
+              <div class="video-thumbnail">
+                <div class="video-time-section">04:30</div>
+                <img
+                  src="images/video-1.png"
+                  alt="Coupe d'Afrique des nations de football 2025"
+                />
+                <!-- Save Button -->
+                <div class="video-bookmark">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="13"
+                    height="23"
+                    viewBox="0 0 13 23"
+                    fill="none"
+                  >
+                    <path
+                      d="M11.9274 0.287842H1.1875C0.911358 0.287842 0.6875 0.511699 0.6875 0.787841V21.5806C0.6875 22.0252 1.22445 22.2487 1.5399 21.9353L6.20503 17.3004C6.40002 17.1067 6.71483 17.1067 6.90983 17.3004L11.575 21.9353C11.8904 22.2487 12.4274 22.0252 12.4274 21.5806V0.787842C12.4274 0.511699 12.2035 0.287842 11.9274 0.287842Z"
+                      fill="white"
+                    />
+                  </svg>
+                </div>
+                <div class="video-play-overlay">
+                  <div class="play-button-svg">
+                    <svg
+                      width="57"
+                      height="57"
+                      viewBox="0 0 57 57"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <ellipse
+                        cx="28.5"
+                        cy="28.5"
+                        rx="28.5"
+                        ry="28.5"
+                        fill="#191919"
+                        stroke="#05944B"
+                        stroke-width="2"
+                      />
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M23 18L39 28.5L23 39V18Z"
+                        fill="white"
+                      />
+                    </svg>
+                  </div>
+                </div>
+                <div class="video-bottom-overlay">
+                  <h3 class="video-title">
+                    Coupe d'Afrique <br />
+                    des nations <br />
+                    de football 2025
+                  </h3>
+                  <div class="video-info-row">
+                    <p class="video-meta">Match Maroc vs Négiria</p>
+                    <p class="video-date">01/12/2025</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="video-card">
+              <div class="video-thumbnail">
+                <div class="video-time-section">05:00</div>
+                <img
+                  src="images/live-video-5.png"
+                  alt="Coupe d'Afrique des nations de football 2025"
+                />
+                <!-- Statistics Overlays -->
+                <!-- Bookmark Icon -->
+                <div class="video-bookmark">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="13"
+                    height="23"
+                    viewBox="0 0 13 23"
+                    fill="none"
+                  >
+                    <path
+                      d="M11.9274 0.287842H1.1875C0.911358 0.287842 0.6875 0.511699 0.6875 0.787841V21.5806C0.6875 22.0252 1.22445 22.2487 1.5399 21.9353L6.20503 17.3004C6.40002 17.1067 6.71483 17.1067 6.90983 17.3004L11.575 21.9353C11.8904 22.2487 12.4274 22.0252 12.4274 21.5806V0.787842C12.4274 0.511699 12.2035 0.287842 11.9274 0.287842Z"
+                      fill="white"
+                    />
+                  </svg>
+                </div>
+                <div class="video-play-overlay">
+                  <div class="play-button-svg">
+                    <svg
+                      width="57"
+                      height="57"
+                      viewBox="0 0 57 57"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <ellipse
+                        cx="28.5"
+                        cy="28.5"
+                        rx="28.5"
+                        ry="28.5"
+                        fill="#191919"
+                        stroke="#05944B"
+                        stroke-width="2"
+                      />
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M23 18L39 28.5L23 39V18Z"
+                        fill="white"
+                      />
+                    </svg>
+                  </div>
+                </div>
+                <div class="video-bottom-overlay">
+                  <h3 class="video-title">
+                    Coupe d'Afrique <br />
+                    des nations <br />
+                    de football 2025
+                  </h3>
+                  <div class="video-info-row">
+                    <p class="video-meta">Match Maroc vs Négiria</p>
+                    <p class="video-date">01/12/2025</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="videos-grid">
+            <div class="video-card">
+              <div class="video-thumbnail">
+                <div class="video-time-section">05:00</div>
+                <img
+                  src="images/live-match-2.jpg"
+                  alt="Coupe d'Afrique des nations de football 2025"
+                />
+                <!-- Statistics Overlays -->
+                <!-- Bookmark Icon -->
+                <div class="video-bookmark">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="13"
+                    height="23"
+                    viewBox="0 0 13 23"
+                    fill="none"
+                  >
+                    <path
+                      d="M11.9274 0.287842H1.1875C0.911358 0.287842 0.6875 0.511699 0.6875 0.787841V21.5806C0.6875 22.0252 1.22445 22.2487 1.5399 21.9353L6.20503 17.3004C6.40002 17.1067 6.71483 17.1067 6.90983 17.3004L11.575 21.9353C11.8904 22.2487 12.4274 22.0252 12.4274 21.5806V0.787842C12.4274 0.511699 12.2035 0.287842 11.9274 0.287842Z"
+                      fill="white"
+                    />
+                  </svg>
+                </div>
+                <div class="video-play-overlay">
+                  <div class="play-button-svg">
+                    <svg
+                      width="57"
+                      height="57"
+                      viewBox="0 0 57 57"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <ellipse
+                        cx="28.5"
+                        cy="28.5"
+                        rx="28.5"
+                        ry="28.5"
+                        fill="#191919"
+                        stroke="#05944B"
+                        stroke-width="2"
+                      />
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M23 18L39 28.5L23 39V18Z"
+                        fill="white"
+                      />
+                    </svg>
+                  </div>
+                </div>
+                <div class="video-bottom-overlay">
+                  <h3 class="video-title">
+                    Coupe d'Afrique <br />
+                    des nations <br />
+                    de football 2025
+                  </h3>
+                  <div class="video-info-row">
+                    <p class="video-meta">Match Maroc vs Négiria</p>
+                    <p class="video-date">01/12/2025</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="video-card">
+              <div class="video-thumbnail">
+                <div class="video-time-section">04:30</div>
+                <img
+                  src="images/video-1.png"
+                  alt="Coupe d'Afrique des nations de football 2025"
+                />
+                <!-- Save Button -->
+                <div class="video-bookmark">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="13"
+                    height="23"
+                    viewBox="0 0 13 23"
+                    fill="none"
+                  >
+                    <path
+                      d="M11.9274 0.287842H1.1875C0.911358 0.287842 0.6875 0.511699 0.6875 0.787841V21.5806C0.6875 22.0252 1.22445 22.2487 1.5399 21.9353L6.20503 17.3004C6.40002 17.1067 6.71483 17.1067 6.90983 17.3004L11.575 21.9353C11.8904 22.2487 12.4274 22.0252 12.4274 21.5806V0.787842C12.4274 0.511699 12.2035 0.287842 11.9274 0.287842Z"
+                      fill="white"
+                    />
+                  </svg>
+                </div>
+                <div class="video-play-overlay">
+                  <div class="play-button-svg">
+                    <svg
+                      width="57"
+                      height="57"
+                      viewBox="0 0 57 57"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <ellipse
+                        cx="28.5"
+                        cy="28.5"
+                        rx="28.5"
+                        ry="28.5"
+                        fill="#191919"
+                        stroke="#05944B"
+                        stroke-width="2"
+                      />
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M23 18L39 28.5L23 39V18Z"
+                        fill="white"
+                      />
+                    </svg>
+                  </div>
+                </div>
+                <div class="video-bottom-overlay">
+                  <h3 class="video-title">
+                    Coupe d'Afrique <br />
+                    des nations <br />
+                    de football 2025
+                  </h3>
+                  <div class="video-info-row">
+                    <p class="video-meta">Match Maroc vs Négiria</p>
+                    <p class="video-date">01/12/2025</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="video-card">
+              <div class="video-thumbnail">
+                <div class="video-time-section">05:00</div>
+                <img
+                  src="images/live-video-5.png"
+                  alt="Coupe d'Afrique des nations de football 2025"
+                />
+                <!-- Statistics Overlays -->
+                <!-- Bookmark Icon -->
+                <div class="video-bookmark">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="13"
+                    height="23"
+                    viewBox="0 0 13 23"
+                    fill="none"
+                  >
+                    <path
+                      d="M11.9274 0.287842H1.1875C0.911358 0.287842 0.6875 0.511699 0.6875 0.787841V21.5806C0.6875 22.0252 1.22445 22.2487 1.5399 21.9353L6.20503 17.3004C6.40002 17.1067 6.71483 17.1067 6.90983 17.3004L11.575 21.9353C11.8904 22.2487 12.4274 22.0252 12.4274 21.5806V0.787842C12.4274 0.511699 12.2035 0.287842 11.9274 0.287842Z"
+                      fill="white"
+                    />
+                  </svg>
+                </div>
+                <div class="video-play-overlay">
+                  <div class="play-button-svg">
+                    <svg
+                      width="57"
+                      height="57"
+                      viewBox="0 0 57 57"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <ellipse
+                        cx="28.5"
+                        cy="28.5"
+                        rx="28.5"
+                        ry="28.5"
+                        fill="#191919"
+                        stroke="#05944B"
+                        stroke-width="2"
+                      />
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M23 18L39 28.5L23 39V18Z"
+                        fill="white"
+                      />
+                    </svg>
+                  </div>
+                </div>
+                <div class="video-bottom-overlay">
+                  <h3 class="video-title">
+                    Coupe d'Afrique <br />
+                    des nations <br />
+                    de football 2025
+                  </h3>
+                  <div class="video-info-row">
+                    <p class="video-meta">Match Maroc vs Négiria</p>
+                    <p class="video-date">01/12/2025</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="videos-grid">
+            <div class="video-card">
+              <div class="video-thumbnail">
+                <div class="video-time-section">05:00</div>
+                <img
+                  src="images/live-match-2.jpg"
+                  alt="Coupe d'Afrique des nations de football 2025"
+                />
+                <!-- Statistics Overlays -->
+                <!-- Bookmark Icon -->
+                <div class="video-bookmark">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="13"
+                    height="23"
+                    viewBox="0 0 13 23"
+                    fill="none"
+                  >
+                    <path
+                      d="M11.9274 0.287842H1.1875C0.911358 0.287842 0.6875 0.511699 0.6875 0.787841V21.5806C0.6875 22.0252 1.22445 22.2487 1.5399 21.9353L6.20503 17.3004C6.40002 17.1067 6.71483 17.1067 6.90983 17.3004L11.575 21.9353C11.8904 22.2487 12.4274 22.0252 12.4274 21.5806V0.787842C12.4274 0.511699 12.2035 0.287842 11.9274 0.287842Z"
+                      fill="white"
+                    />
+                  </svg>
+                </div>
+                <div class="video-play-overlay">
+                  <div class="play-button-svg">
+                    <svg
+                      width="57"
+                      height="57"
+                      viewBox="0 0 57 57"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <ellipse
+                        cx="28.5"
+                        cy="28.5"
+                        rx="28.5"
+                        ry="28.5"
+                        fill="#191919"
+                        stroke="#05944B"
+                        stroke-width="2"
+                      />
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M23 18L39 28.5L23 39V18Z"
+                        fill="white"
+                      />
+                    </svg>
+                  </div>
+                </div>
+                <div class="video-bottom-overlay">
+                  <h3 class="video-title">
+                    Coupe d'Afrique <br />
+                    des nations <br />
+                    de football 2025
+                  </h3>
+                  <div class="video-info-row">
+                    <p class="video-meta">Match Maroc vs Négiria</p>
+                    <p class="video-date">01/12/2025</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="video-card">
+              <div class="video-thumbnail">
+                <div class="video-time-section">04:30</div>
+                <img
+                  src="images/video-1.png"
+                  alt="Coupe d'Afrique des nations de football 2025"
+                />
+                <!-- Save Button -->
+                <div class="video-bookmark">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="13"
+                    height="23"
+                    viewBox="0 0 13 23"
+                    fill="none"
+                  >
+                    <path
+                      d="M11.9274 0.287842H1.1875C0.911358 0.287842 0.6875 0.511699 0.6875 0.787841V21.5806C0.6875 22.0252 1.22445 22.2487 1.5399 21.9353L6.20503 17.3004C6.40002 17.1067 6.71483 17.1067 6.90983 17.3004L11.575 21.9353C11.8904 22.2487 12.4274 22.0252 12.4274 21.5806V0.787842C12.4274 0.511699 12.2035 0.287842 11.9274 0.287842Z"
+                      fill="white"
+                    />
+                  </svg>
+                </div>
+                <div class="video-play-overlay">
+                  <div class="play-button-svg">
+                    <svg
+                      width="57"
+                      height="57"
+                      viewBox="0 0 57 57"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <ellipse
+                        cx="28.5"
+                        cy="28.5"
+                        rx="28.5"
+                        ry="28.5"
+                        fill="#191919"
+                        stroke="#05944B"
+                        stroke-width="2"
+                      />
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M23 18L39 28.5L23 39V18Z"
+                        fill="white"
+                      />
+                    </svg>
+                  </div>
+                </div>
+                <div class="video-bottom-overlay">
+                  <h3 class="video-title">
+                    Coupe d'Afrique <br />
+                    des nations <br />
+                    de football 2025
+                  </h3>
+                  <div class="video-info-row">
+                    <p class="video-meta">Match Maroc vs Négiria</p>
+                    <p class="video-date">01/12/2025</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="video-card">
+              <div class="video-thumbnail">
+                <div class="video-time-section">05:00</div>
+                <img
+                  src="images/live-video-5.png"
+                  alt="Coupe d'Afrique des nations de football 2025"
+                />
+                <!-- Statistics Overlays -->
+                <!-- Bookmark Icon -->
+                <div class="video-bookmark">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="13"
+                    height="23"
+                    viewBox="0 0 13 23"
+                    fill="none"
+                  >
+                    <path
+                      d="M11.9274 0.287842H1.1875C0.911358 0.287842 0.6875 0.511699 0.6875 0.787841V21.5806C0.6875 22.0252 1.22445 22.2487 1.5399 21.9353L6.20503 17.3004C6.40002 17.1067 6.71483 17.1067 6.90983 17.3004L11.575 21.9353C11.8904 22.2487 12.4274 22.0252 12.4274 21.5806V0.787842C12.4274 0.511699 12.2035 0.287842 11.9274 0.287842Z"
+                      fill="white"
+                    />
+                  </svg>
+                </div>
+                <div class="video-play-overlay">
+                  <div class="play-button-svg">
+                    <svg
+                      width="57"
+                      height="57"
+                      viewBox="0 0 57 57"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <ellipse
+                        cx="28.5"
+                        cy="28.5"
+                        rx="28.5"
+                        ry="28.5"
+                        fill="#191919"
+                        stroke="#05944B"
+                        stroke-width="2"
+                      />
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M23 18L39 28.5L23 39V18Z"
+                        fill="white"
+                      />
+                    </svg>
+                  </div>
+                </div>
+                <div class="video-bottom-overlay">
+                  <h3 class="video-title">
+                    Coupe d'Afrique <br />
+                    des nations <br />
+                    de football 2025
+                  </h3>
+                  <div class="video-info-row">
+                    <p class="video-meta">Match Maroc vs Négiria</p>
+                    <p class="video-date">01/12/2025</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        style="display: flex; justify-content: center; align-items: center"
+      >
+        <button class="see-more-btn">Plus</button>
+      </section>
       <!-- Footer -->
       <footer class="footer-full-width">
         <div class="footer-container">
@@ -1258,7 +1692,7 @@
           const sidebar = document.getElementById('mobileSidebar');
           const overlay = document.getElementById('mobileSidebarOverlay');
           const body = document.body;
-          
+
           if (sidebar.classList.contains('active')) {
             // Close sidebar
             sidebar.classList.remove('active');
@@ -1273,10 +1707,10 @@
         }
 
         // Test Bootstrap functionality
-        $(document).ready(function() {
+        $(document).ready(function () {
           console.log('jQuery version:', $.fn.jquery);
           console.log('Bootstrap loaded:', typeof $.fn.modal !== 'undefined');
-          
+
           // Test Bootstrap collapse
           if (typeof $.fn.collapse !== 'undefined') {
             console.log('Bootstrap collapse is available');
@@ -1287,9 +1721,9 @@
 
         $(window).scroll(function () {
           if ($(window).scrollTop() > 100) {
-            $(".navbar-custom").addClass("scrolled");
+            $('.navbar-custom').addClass('scrolled');
           } else {
-            $(".navbar-custom").removeClass("scrolled");
+            $('.navbar-custom').removeClass('scrolled');
           }
         });
 
@@ -1301,8 +1735,8 @@
             document.fonts.load('700 1em Poppins'),
             document.fonts.load('400 1em Urbanist'),
             document.fonts.load('600 1em Urbanist'),
-            document.fonts.load('700 1em Urbanist')
-          ]).then(function() {
+            document.fonts.load('700 1em Urbanist'),
+          ]).then(function () {
             document.documentElement.classList.add('fonts-loaded');
           });
         }
