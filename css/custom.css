@@ -9,12 +9,12 @@
   --football-secondary: #1e1e1e;
 
   /* Font Stacks */
-  --font-primary: "Poppins", "Roboto", -apple-system, BlinkMacSystemFont,
-    "Segoe UI", "Helvetica Neue", Arial, sans-serif;
-  --font-secondary: "Urbanist", "Roboto", -apple-system, BlinkMacSystemFont,
-    "Segoe UI", "Helvetica Neue", Arial, sans-serif;
-  --font-mono: "Roboto Mono", "SF Mono", Monaco, Consolas, "Liberation Mono",
-    "Courier New", monospace;
+  --font-primary: 'Poppins', 'Roboto', -apple-system, BlinkMacSystemFont,
+    'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+  --font-secondary: 'Urbanist', 'Roboto', -apple-system, BlinkMacSystemFont,
+    'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+  --font-mono: 'Roboto Mono', 'SF Mono', Monaco, Consolas, 'Liberation Mono',
+    'Courier New', monospace;
 }
 
 /* Font Loading Optimization */
@@ -38,7 +38,7 @@ body {
       rgba(6, 8, 8, 0.8) 0%,
       rgba(1, 32, 15, 0.8) 100%
     ),
-    url("../images/bg-image.jpg");
+    url('../images/bg-image.jpg');
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -181,7 +181,7 @@ body {
 .navbar-custom .navbar-nav > li > a {
   color: #fff !important;
   text-align: center;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
@@ -217,7 +217,7 @@ body {
 }
 
 .navbar-custom .navbar-nav > li.active > a::after {
-  content: "";
+  content: '';
   position: absolute;
   bottom: 8px;
   left: 50%;
@@ -558,7 +558,7 @@ body {
   padding: 15px 20px;
   color: rgba(255, 255, 255, 0.9);
   text-decoration: none;
-  font-family: "Urbanist", sans-serif;
+  font-family: 'Urbanist', sans-serif;
   font-size: 16px;
   font-weight: 500;
   transition: all 0.3s ease;
@@ -692,12 +692,12 @@ body.sidebar-open {
   position: relative;
   color: var(--football-text);
   margin-bottom: 20px;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 600;
 }
 
 .section-title::before {
-  content: "";
+  content: '';
   position: absolute;
   left: 0;
   top: 50%;
@@ -787,7 +787,7 @@ body.sidebar-open {
   color: white;
   font-size: 10px;
   font-weight: 700;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   text-transform: uppercase;
   letter-spacing: 0.5px;
   display: flex;
@@ -806,7 +806,7 @@ body.sidebar-open {
 
 .card-title {
   color: #fff;
-  font-family: "Urbanist", sans-serif;
+  font-family: 'Urbanist', sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
@@ -884,7 +884,7 @@ body.sidebar-open {
   color: white;
   font-size: 8px;
   font-weight: 700;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   text-transform: uppercase;
   letter-spacing: 0.5px;
   display: flex;
@@ -899,7 +899,7 @@ body.sidebar-open {
 
 .glass-card-text h3 {
   color: #fff;
-  font-family: "Urbanist", sans-serif;
+  font-family: 'Urbanist', sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 700;
@@ -915,7 +915,7 @@ body.sidebar-open {
 
 .glass-card-text p {
   color: rgba(255, 255, 255, 0.7);
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 12px;
   font-weight: 400;
   margin: 0;
@@ -944,7 +944,7 @@ body.sidebar-open {
 
 .voir-plus-link {
   color: var(--football-text);
-  font-family: "Urbanist", sans-serif;
+  font-family: 'Urbanist', sans-serif;
   font-size: 24px;
   font-weight: 700;
   text-decoration: none;
@@ -1031,7 +1031,7 @@ body.sidebar-open {
 
 .match-date {
   color: #fff;
-  font-family: "Urbanist", sans-serif;
+  font-family: 'Urbanist', sans-serif;
   font-size: 12px;
   font-style: normal;
   font-weight: 700;
@@ -1075,7 +1075,7 @@ body.sidebar-open {
 
 .team-name {
   color: #fff;
-  font-family: "Urbanist", sans-serif;
+  font-family: 'Urbanist', sans-serif;
   font-size: 12px;
   font-style: normal;
   font-weight: 700;
@@ -1097,7 +1097,7 @@ body.sidebar-open {
 
 .final-score {
   color: #fff;
-  font-family: "Urbanist", sans-serif;
+  font-family: 'Urbanist', sans-serif;
   font-size: 32px;
   font-style: normal;
   font-weight: 700;
@@ -1108,7 +1108,7 @@ body.sidebar-open {
 
 .match-time {
   color: #fff;
-  font-family: "Urbanist", sans-serif;
+  font-family: 'Urbanist', sans-serif;
   font-size: 28px;
   font-style: normal;
   font-weight: 700;
@@ -1120,7 +1120,7 @@ body.sidebar-open {
 .tournament-badge {
   background: linear-gradient(90deg, #f00 0%, #a21717 100%);
   color: #fff;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 12px;
   font-weight: 700;
   padding: 4px 12px;
@@ -1134,7 +1134,7 @@ body.sidebar-open {
 .match-status,
 .text-success {
   color: #05944b !important;
-  font-family: "Urbanist", sans-serif !important;
+  font-family: 'Urbanist', sans-serif !important;
   font-size: 12px !important;
   font-style: normal;
   font-weight: 600 !important;
@@ -1156,7 +1156,7 @@ body.sidebar-open {
   border-radius: 0 0 8px 8px;
   background: linear-gradient(90deg, #f00 0%, #a21717 100%);
   color: #fff;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 16px;
   font-weight: 700;
 
@@ -1180,7 +1180,7 @@ body.sidebar-open {
   border-radius: 8px;
   background: linear-gradient(90deg, #f00 0%, #a21717 100%);
   color: #fff;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 24px;
   font-weight: 700;
   border: none;
@@ -1241,7 +1241,7 @@ body.sidebar-open {
 
 .team-col {
   color: #000;
-  font-family: "Urbanist", sans-serif;
+  font-family: 'Urbanist', sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
@@ -1259,7 +1259,7 @@ body.sidebar-open {
 
 .stats-cols span {
   color: #000;
-  font-family: "Urbanist", sans-serif;
+  font-family: 'Urbanist', sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
@@ -1272,7 +1272,7 @@ body.sidebar-open {
 .group-header {
   background: linear-gradient(90deg, #f00 0%, #a21717 100%);
   color: #fff;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 14px;
   font-weight: 700;
   padding: 8px 12px;
@@ -1310,7 +1310,7 @@ body.sidebar-open {
 
 .position {
   color: #fff;
-  font-family: "Urbanist", sans-serif;
+  font-family: 'Urbanist', sans-serif;
   font-size: 12px;
   font-style: normal;
   font-weight: 700;
@@ -1340,7 +1340,7 @@ body.sidebar-open {
 
 .team-info .team-name {
   color: #fff;
-  font-family: "Urbanist", sans-serif;
+  font-family: 'Urbanist', sans-serif;
   font-size: 12px;
   font-style: normal;
   font-weight: 700;
@@ -1357,7 +1357,7 @@ body.sidebar-open {
 
 .stats-row span {
   color: #fff;
-  font-family: "Urbanist", sans-serif;
+  font-family: 'Urbanist', sans-serif;
   font-size: 12px;
   font-style: normal;
   font-weight: 700;
@@ -1369,7 +1369,7 @@ body.sidebar-open {
 
 .arrow-icon {
   color: #fff;
-  font-family: "Urbanist", sans-serif;
+  font-family: 'Urbanist', sans-serif;
   font-size: 12px;
   font-style: normal;
   font-weight: 700;
@@ -1430,7 +1430,7 @@ body.sidebar-open {
   font-weight: 600;
   margin: 0 0 10px 0;
   line-height: 1.4;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 /* ===== QUICK PLAY GRID ===== */
@@ -1531,7 +1531,7 @@ body.sidebar-open {
   font-weight: 600;
   margin: 0 0 30px 0;
   line-height: 1.4;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 .video-play-btn {
@@ -1567,7 +1567,7 @@ body.sidebar-open {
 .sidebar-header h5 {
   margin: 0;
   font-weight: 600;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 .sidebar-content {
@@ -1605,7 +1605,7 @@ body.sidebar-open {
   font-size: 2rem;
   font-weight: 700;
   color: var(--football-primary);
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 .next-match .date {
@@ -1741,7 +1741,7 @@ body.sidebar-open {
   border-radius: 4px;
   background: linear-gradient(90deg, #f00 0%, #a21717 100%);
   color: #fff;
-  font-family: "Urbanist", sans-serif;
+  font-family: 'Urbanist', sans-serif;
   font-size: 10px;
   font-style: normal;
   font-weight: 600;
@@ -1758,7 +1758,7 @@ body.sidebar-open {
   right: 50px;
   background: rgba(0, 0, 0, 0.8);
   color: white;
-  font-family: "Urbanist", sans-serif;
+  font-family: 'Urbanist', sans-serif;
   font-size: 10px;
   font-weight: 600;
   padding: 4px 6px;
@@ -1781,7 +1781,7 @@ body.sidebar-open {
 }
 
 .glass-video-title {
-  font-family: "Urbanist", sans-serif;
+  font-family: 'Urbanist', sans-serif;
   font-size: 14px;
   font-weight: 600;
   line-height: 18px;
@@ -1802,7 +1802,7 @@ body.sidebar-open {
   justify-content: center;
   flex-shrink: 0;
   color: #fff;
-  font-family: "Urbanist", sans-serif;
+  font-family: 'Urbanist', sans-serif;
   font-size: 10px;
   font-style: normal;
   font-weight: 600;
@@ -1833,7 +1833,7 @@ body.sidebar-open {
 }
 
 .glass-video-bottom-overlay .video-date {
-  font-family: "Urbanist", sans-serif;
+  font-family: 'Urbanist', sans-serif;
   font-size: 10px;
   font-weight: 600;
   line-height: 14px;
@@ -1842,7 +1842,7 @@ body.sidebar-open {
 }
 
 .glass-video-bottom-overlay .video-link {
-  font-family: "Urbanist", sans-serif;
+  font-family: 'Urbanist', sans-serif;
   font-size: 10px;
   font-weight: 600;
   line-height: 14px;
@@ -2077,7 +2077,7 @@ body.sidebar-open {
   justify-content: center;
   flex-shrink: 0;
   color: #fff;
-  font-family: "Urbanist", sans-serif;
+  font-family: 'Urbanist', sans-serif;
   font-size: 12px;
   font-style: normal;
   font-weight: 600;
@@ -2095,7 +2095,7 @@ body.sidebar-open {
 
 .newsletter-title {
   color: #fff;
-  font-family: "Urbanist", sans-serif;
+  font-family: 'Urbanist', sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
@@ -2118,7 +2118,7 @@ body.sidebar-open {
   border-radius: 5px;
   background: transparent;
   color: #fff;
-  font-family: "Urbanist", sans-serif;
+  font-family: 'Urbanist', sans-serif;
   font-size: 12px;
   font-style: normal;
   font-weight: 600;
@@ -2130,7 +2130,7 @@ body.sidebar-open {
 
 .newsletter-input::placeholder {
   color: #999;
-  font-family: "Urbanist", sans-serif;
+  font-family: 'Urbanist', sans-serif;
   font-size: 12px;
   font-weight: 600;
 }
@@ -2146,7 +2146,7 @@ body.sidebar-open {
   background: #f2403f;
   color: #fff;
   text-align: center;
-  font-family: "Urbanist", sans-serif;
+  font-family: 'Urbanist', sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 700;
@@ -2169,7 +2169,7 @@ body.sidebar-open {
 
 .app-label {
   color: #ffffff;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 16px;
   font-weight: 500;
 }
@@ -2351,7 +2351,7 @@ body.sidebar-open {
   .match-status,
   .text-success {
     color: #05944b !important;
-    font-family: "Urbanist", sans-serif !important;
+    font-family: 'Urbanist', sans-serif !important;
     font-size: 12px !important;
     font-style: normal;
     font-weight: 600 !important;
@@ -2603,7 +2603,7 @@ body.sidebar-open {
   justify-content: center;
   flex-shrink: 0;
   color: #fff;
-  font-family: "Urbanist", sans-serif;
+  font-family: 'Urbanist', sans-serif;
   font-size: 8px;
   font-style: normal;
   font-weight: 700;
@@ -2627,7 +2627,7 @@ body.sidebar-open {
 
 .video-title {
   color: #fff;
-  font-family: "Urbanist", sans-serif;
+  font-family: 'Urbanist', sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
@@ -2639,7 +2639,7 @@ body.sidebar-open {
 
 .video-meta {
   color: #fff;
-  font-family: "Urbanist", sans-serif;
+  font-family: 'Urbanist', sans-serif;
   font-size: 8px;
   font-weight: 700;
   margin: 0;
@@ -2648,7 +2648,7 @@ body.sidebar-open {
 
 .video-date {
   color: #fff;
-  font-family: "Urbanist", sans-serif;
+  font-family: 'Urbanist', sans-serif;
   font-size: 8px;
   font-weight: 700;
   margin: 0;
@@ -2667,7 +2667,7 @@ body.sidebar-open {
   position: absolute;
   background: rgba(255, 0, 0, 0.8);
   color: white;
-  font-family: "Urbanist", sans-serif;
+  font-family: 'Urbanist', sans-serif;
   font-size: 10px;
   font-weight: 700;
   padding: 2px 6px;
@@ -3252,7 +3252,7 @@ body.sidebar-open {
 
 .live-matches-section .tournament-title {
   color: #ffffff;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 600;
   font-size: 14px;
   margin-bottom: 4px;
@@ -3260,7 +3260,7 @@ body.sidebar-open {
 
 .live-matches-section .match-day {
   color: #05944b;
-  font-family: "Urbanist", sans-serif;
+  font-family: 'Urbanist', sans-serif;
   font-weight: 600;
   font-style: normal;
   font-size: 8px;
@@ -3296,7 +3296,7 @@ body.sidebar-open {
 
 .live-matches-section .team-name-large {
   color: #ffffff;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 500;
   font-size: 12px;
   text-align: center;
@@ -3304,7 +3304,7 @@ body.sidebar-open {
 
 .live-matches-section .match-score-large {
   color: #ffffff;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 700;
   font-size: 32px;
   margin: 0 0 15px 0;
