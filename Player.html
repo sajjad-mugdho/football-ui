@@ -321,7 +321,6 @@
       <section class="main-content-full-width">
         <div class="main-content-container">
           <div class="row">
-            <!-- Infos principales -->
             <div class="col-md-8">
               <div class="section-header">
                 <h2 class="section-title">CAN Morocco 2025</h2>
@@ -329,33 +328,126 @@
             </div>
           </div>
 
-          <!-- Banner Section -->
-          <div class="banner">
-            <img
-              src="images/Player/Player-1.jpg"
-              alt="Banner"
-              class="banner-img"
-            />
+          <div class="video-player-container">
+            <div class="video-player">
+              <img
+                src="images/Player/Player-1.jpg"
+                alt="Match Video"
+                class="video-thumbnail"
+              />
+
+              <!-- Play Button Overlay -->
+              <div class="video-play-overlay">
+                <div class="play-button">
+                  <svg
+                    width="80"
+                    height="80"
+                    viewBox="0 0 80 80"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <circle cx="40" cy="40" r="40" fill="rgba(0, 0, 0, 0.8)" />
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M32 24L60 40L32 56V24Z"
+                      fill="white"
+                    />
+                  </svg>
+                </div>
+              </div>
+
+              <!-- Video Controls -->
+              <div class="video-controls">
+                <!-- Control Bar -->
+                <div class="control-bar">
+                  <div class="control-left">
+                    <span class="time-display">2:35 / 5:00</span>
+                  </div>
+
+                  <div class="control-right">
+                    <button class="control-btn fullscreen-btn">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="21"
+                        height="21"
+                        viewBox="0 0 21 21"
+                        fill="none"
+                      >
+                        <path
+                          d="M1.875 7.625V1.875H7.625M13.375 1.875H19.125V7.625M1.875 13.375V19.125H7.625M19.125 13.375V19.125H13.375"
+                          stroke="white"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <!-- Progress Bar -->
+                <div class="progress-container">
+                  <svg
+                    width="100%"
+                    height="10"
+                    viewBox="0 0 1160 10"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <rect
+                      width="1160"
+                      height="9.74991"
+                      rx="2.5"
+                      transform="matrix(1 -9.56849e-08 -3.23499e-08 -1 0 10)"
+                      fill="#CCCCCC"
+                    />
+                    <rect
+                      width="439"
+                      height="9.99996"
+                      rx="2.5"
+                      transform="matrix(1 -9.56849e-08 -3.23499e-08 -1 0 10)"
+                      fill="#D12222"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
           </div>
+          <p style="margin-left: 130px; margin-top: 20px">17/04/2025</p>
         </div>
       </section>
 
       <!-- Vidéos section -->
+
       <section class="videos-section">
         <div class="main-content-container">
           <div class="section-header videos-header">
-            <h2 class="Player-title">Réaction match maroc vs sénégal</h2>
+            <h2 class="section-title">Réaction match maroc vs sénégal</h2>
           </div>
           <div class="videos-grid">
             <div class="video-card">
               <div class="video-thumbnail">
                 <div class="video-time-section">05:00</div>
                 <img
-                  src="images/info-p-.png"
+                  src="images/live-match-2.jpg"
                   alt="Coupe d'Afrique des nations de football 2025"
                 />
                 <!-- Statistics Overlays -->
-
+                <!-- Bookmark Icon -->
+                <div class="video-bookmark">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="13"
+                    height="23"
+                    viewBox="0 0 13 23"
+                    fill="none"
+                  >
+                    <path
+                      d="M11.9274 0.287842H1.1875C0.911358 0.287842 0.6875 0.511699 0.6875 0.787841V21.5806C0.6875 22.0252 1.22445 22.2487 1.5399 21.9353L6.20503 17.3004C6.40002 17.1067 6.71483 17.1067 6.90983 17.3004L11.575 21.9353C11.8904 22.2487 12.4274 22.0252 12.4274 21.5806V0.787842C12.4274 0.511699 12.2035 0.287842 11.9274 0.287842Z"
+                      fill="white"
+                    />
+                  </svg>
+                </div>
                 <div class="video-play-overlay">
                   <div class="play-button-svg">
                     <svg
@@ -404,6 +496,20 @@
                   alt="Coupe d'Afrique des nations de football 2025"
                 />
                 <!-- Save Button -->
+                <div class="video-bookmark">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="13"
+                    height="23"
+                    viewBox="0 0 13 23"
+                    fill="none"
+                  >
+                    <path
+                      d="M11.9274 0.287842H1.1875C0.911358 0.287842 0.6875 0.511699 0.6875 0.787841V21.5806C0.6875 22.0252 1.22445 22.2487 1.5399 21.9353L6.20503 17.3004C6.40002 17.1067 6.71483 17.1067 6.90983 17.3004L11.575 21.9353C11.8904 22.2487 12.4274 22.0252 12.4274 21.5806V0.787842C12.4274 0.511699 12.2035 0.287842 11.9274 0.287842Z"
+                      fill="white"
+                    />
+                  </svg>
+                </div>
                 <div class="video-play-overlay">
                   <div class="play-button-svg">
                     <svg
@@ -446,12 +552,27 @@
             </div>
             <div class="video-card">
               <div class="video-thumbnail">
-                <div class="video-time-section">08:00</div>
+                <div class="video-time-section">05:00</div>
                 <img
-                  src="images/video-2.png"
+                  src="images/live-video-5.png"
                   alt="Coupe d'Afrique des nations de football 2025"
                 />
-                <!-- Save Button -->
+                <!-- Statistics Overlays -->
+                <!-- Bookmark Icon -->
+                <div class="video-bookmark">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="13"
+                    height="23"
+                    viewBox="0 0 13 23"
+                    fill="none"
+                  >
+                    <path
+                      d="M11.9274 0.287842H1.1875C0.911358 0.287842 0.6875 0.511699 0.6875 0.787841V21.5806C0.6875 22.0252 1.22445 22.2487 1.5399 21.9353L6.20503 17.3004C6.40002 17.1067 6.71483 17.1067 6.90983 17.3004L11.575 21.9353C11.8904 22.2487 12.4274 22.0252 12.4274 21.5806V0.787842C12.4274 0.511699 12.2035 0.287842 11.9274 0.287842Z"
+                      fill="white"
+                    />
+                  </svg>
+                </div>
                 <div class="video-play-overlay">
                   <div class="play-button-svg">
                     <svg
@@ -485,8 +606,10 @@
                     des nations <br />
                     de football 2025
                   </h3>
-                  <p class="video-meta">Match Afrique • Nigeria</p>
-                  <p class="video-date">07/12/2025</p>
+                  <div class="video-info-row">
+                    <p class="video-meta">Match Maroc vs Négiria</p>
+                    <p class="video-date">01/12/2025</p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -560,55 +683,55 @@
       <script>
         // Mobile Sidebar Toggle Function
         function toggleMobileSidebar() {
-          const sidebar = document.getElementById("mobileSidebar");
-          const overlay = document.getElementById("mobileSidebarOverlay");
+          const sidebar = document.getElementById('mobileSidebar');
+          const overlay = document.getElementById('mobileSidebarOverlay');
           const body = document.body;
 
-          if (sidebar.classList.contains("active")) {
+          if (sidebar.classList.contains('active')) {
             // Close sidebar
-            sidebar.classList.remove("active");
-            overlay.classList.remove("active");
-            body.classList.remove("sidebar-open");
+            sidebar.classList.remove('active');
+            overlay.classList.remove('active');
+            body.classList.remove('sidebar-open');
           } else {
             // Open sidebar
-            sidebar.classList.add("active");
-            overlay.classList.add("active");
-            body.classList.add("sidebar-open");
+            sidebar.classList.add('active');
+            overlay.classList.add('active');
+            body.classList.add('sidebar-open');
           }
         }
 
         // Test Bootstrap functionality
         $(document).ready(function () {
-          console.log("jQuery version:", $.fn.jquery);
-          console.log("Bootstrap loaded:", typeof $.fn.modal !== "undefined");
+          console.log('jQuery version:', $.fn.jquery);
+          console.log('Bootstrap loaded:', typeof $.fn.modal !== 'undefined');
 
           // Test Bootstrap collapse
-          if (typeof $.fn.collapse !== "undefined") {
-            console.log("Bootstrap collapse is available");
+          if (typeof $.fn.collapse !== 'undefined') {
+            console.log('Bootstrap collapse is available');
           } else {
-            console.error("Bootstrap collapse not working");
+            console.error('Bootstrap collapse not working');
           }
         });
 
         $(window).scroll(function () {
           if ($(window).scrollTop() > 100) {
-            $(".navbar-custom").addClass("scrolled");
+            $('.navbar-custom').addClass('scrolled');
           } else {
-            $(".navbar-custom").removeClass("scrolled");
+            $('.navbar-custom').removeClass('scrolled');
           }
         });
 
         // Font Loading Optimization
-        if ("fonts" in document) {
+        if ('fonts' in document) {
           Promise.all([
-            document.fonts.load("400 1em Poppins"),
-            document.fonts.load("600 1em Poppins"),
-            document.fonts.load("700 1em Poppins"),
-            document.fonts.load("400 1em Urbanist"),
-            document.fonts.load("600 1em Urbanist"),
-            document.fonts.load("700 1em Urbanist"),
+            document.fonts.load('400 1em Poppins'),
+            document.fonts.load('600 1em Poppins'),
+            document.fonts.load('700 1em Poppins'),
+            document.fonts.load('400 1em Urbanist'),
+            document.fonts.load('600 1em Urbanist'),
+            document.fonts.load('700 1em Urbanist'),
           ]).then(function () {
-            document.documentElement.classList.add("fonts-loaded");
+            document.documentElement.classList.add('fonts-loaded');
           });
         }
       </script>
