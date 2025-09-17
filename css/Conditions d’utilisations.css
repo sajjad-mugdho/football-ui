@@ -1,0 +1,17 @@
+.conditions-paragraph {
+  font: 'Urbanist';
+  font-style: semiBold;
+  font-size: 12px;
+  line-height: 26px;
+}
+
+.conditions-subtitle {
+  font: 'Urbanist';
+  font-style: bold;
+}
+.brand-name {
+  font: 'Urbanist';
+  font-style: bold;
+  line-height: 16px;
+  color: #ff1904;
+}
