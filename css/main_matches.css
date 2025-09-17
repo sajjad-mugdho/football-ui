@@ -1,0 +1,139 @@
+/* Main Matches Navigation Styles */
+
+/* Container styling - remove background, make items align horizontally with title */
+.matches-nav-container {
+  background: transparent;
+  border-bottom: none;
+  position: static;
+  z-index: auto;
+  padding: 0;
+  min-height: auto;
+}
+
+.matches-nav-container .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: auto;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 20px 40px;
+  width: 100%;
+}
+
+.matches-nav-container .section-header {
+  margin: 0;
+  flex: 0 0 auto;
+}
+
+.matches-nav-container .section-title {
+  margin: 0;
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+/* Make navbar collapse centered in the middle */
+.matches-nav-container .navbar-collapse {
+  display: block !important;
+  height: auto !important;
+  padding: 0;
+  border: none;
+  box-shadow: none;
+  width: auto;
+  float: none;
+  flex: 1;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Navigation items inline */
+.matches-nav-container .navbar-nav {
+  float: none;
+  margin: 0;
+  display: flex;
+  gap: 40px;
+}
+
+/* Override navbar styling for inline layout and white text */
+.matches-nav-container .navbar-nav > li {
+  float: none;
+  display: inline-block;
+  position: relative;
+}
+
+.matches-nav-container .navbar-nav > li > a {
+  color: white !important;
+  background: transparent !important;
+  padding: 8px 0 !important;
+  height: auto !important;
+  display: inline-block !important;
+  border-radius: 0 !important;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.2;
+  position: relative;
+  outline: none !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.matches-nav-container .navbar-nav > li > a:hover,
+.matches-nav-container .navbar-nav > li > a:focus,
+.matches-nav-container .navbar-nav > li > a:active,
+.matches-nav-container .navbar-nav > li > a:visited {
+  color: white !important;
+  background: transparent !important;
+  outline: none !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+/* Red underline ONLY for active navigation item */
+.matches-nav-container .navbar-nav > li.active > a::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background: #d12222;
+  opacity: 1;
+}
+
+/* Tab content styling */
+.matches-tab-content {
+  min-height: 500px;
+  padding: 20px 0;
+}
+
+.matches-tab-pane {
+  display: none;
+}
+
+.matches-tab-pane.active {
+  display: block;
+}
+
+/* Mobile responsive adjustments */
+@media (max-width: 768px) {
+  .matches-nav-container .container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .matches-nav-container .navbar-nav {
+    gap: 30px;
+    overflow-x: auto;
+    width: 100%;
+  }
+
+  .matches-nav-container .navbar-nav > li > a::after {
+    height: 3px;
+    bottom: -6px;
+  }
+}
