@@ -557,55 +557,55 @@
       <script>
         // Mobile Sidebar Toggle Function
         function toggleMobileSidebar() {
-          const sidebar = document.getElementById("mobileSidebar");
-          const overlay = document.getElementById("mobileSidebarOverlay");
+          const sidebar = document.getElementById('mobileSidebar');
+          const overlay = document.getElementById('mobileSidebarOverlay');
           const body = document.body;
 
-          if (sidebar.classList.contains("active")) {
+          if (sidebar.classList.contains('active')) {
             // Close sidebar
-            sidebar.classList.remove("active");
-            overlay.classList.remove("active");
-            body.classList.remove("sidebar-open");
+            sidebar.classList.remove('active');
+            overlay.classList.remove('active');
+            body.classList.remove('sidebar-open');
           } else {
             // Open sidebar
-            sidebar.classList.add("active");
-            overlay.classList.add("active");
-            body.classList.add("sidebar-open");
+            sidebar.classList.add('active');
+            overlay.classList.add('active');
+            body.classList.add('sidebar-open');
           }
         }
 
         // Test Bootstrap functionality
         $(document).ready(function () {
-          console.log("jQuery version:", $.fn.jquery);
-          console.log("Bootstrap loaded:", typeof $.fn.modal !== "undefined");
+          console.log('jQuery version:', $.fn.jquery);
+          console.log('Bootstrap loaded:', typeof $.fn.modal !== 'undefined');
 
           // Test Bootstrap collapse
-          if (typeof $.fn.collapse !== "undefined") {
-            console.log("Bootstrap collapse is available");
+          if (typeof $.fn.collapse !== 'undefined') {
+            console.log('Bootstrap collapse is available');
           } else {
-            console.error("Bootstrap collapse not working");
+            console.error('Bootstrap collapse not working');
           }
         });
 
         $(window).scroll(function () {
           if ($(window).scrollTop() > 100) {
-            $(".navbar-custom").addClass("scrolled");
+            $('.navbar-custom').addClass('scrolled');
           } else {
-            $(".navbar-custom").removeClass("scrolled");
+            $('.navbar-custom').removeClass('scrolled');
           }
         });
 
         // Font Loading Optimization
-        if ("fonts" in document) {
+        if ('fonts' in document) {
           Promise.all([
-            document.fonts.load("400 1em Poppins"),
-            document.fonts.load("600 1em Poppins"),
-            document.fonts.load("700 1em Poppins"),
-            document.fonts.load("400 1em Urbanist"),
-            document.fonts.load("600 1em Urbanist"),
-            document.fonts.load("700 1em Urbanist"),
+            document.fonts.load('400 1em Poppins'),
+            document.fonts.load('600 1em Poppins'),
+            document.fonts.load('700 1em Poppins'),
+            document.fonts.load('400 1em Urbanist'),
+            document.fonts.load('600 1em Urbanist'),
+            document.fonts.load('700 1em Urbanist'),
           ]).then(function () {
-            document.documentElement.classList.add("fonts-loaded");
+            document.documentElement.classList.add('fonts-loaded');
           });
         }
       </script>

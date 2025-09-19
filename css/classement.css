@@ -86,6 +86,55 @@
   justify-content: space-between;
 }
 
+.expand-area-wrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 0 40px 20px 40px;
+  box-sizing: border-box;
+}
+.expand-area {
+  margin-top: -20px;
+  max-width: 1370px;
+  min-width: 1370px;
+  height: 300px;
+  padding: 20px 50px;
+  border: 1px solid rgba(152, 152, 152, 0.3);
+  background: linear-gradient(
+    265deg,
+    rgba(0, 0, 0, 0.1) -2.57%,
+    rgba(0, 0, 0, 0.1) 96.13%
+  );
+  backdrop-filter: blur(7.25px);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.flag-details-area {
+  display: flex;
+  align-items: center;
+
+  padding: 10px 20px;
+  gap: 20px;
+}
+.flag-details-area img {
+  width: 150px;
+  height: 100px;
+  object-fit: cover;
+}
+.team-details {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: centers;
+  color: #fff;
+  font-family: 'Urbanist', sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px;
+}
+
 /* Start Section: Team Info (No + Flag + Name) */
 .team-info-2 {
   display: flex;
