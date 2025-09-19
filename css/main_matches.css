@@ -57,6 +57,16 @@ html {
   white-space: nowrap;
 }
 
+.match-time-2 {
+  color: white;
+  font-family: 'Urbanist', sans-serif;
+  font-size: 32px;
+  font-weight: 600;
+  margin-left: 60px;
+  line-height: 16px;
+  white-space: nowrap;
+}
+
 .match-teams {
   display: flex;
   align-items: center;
@@ -106,15 +116,19 @@ html {
   display: flex;
   flex-direction: column;
   justify-content: center;
-
   align-items: center;
-  gap: 10px;
 }
 
 .vs-text {
   color: white;
   font-family: 'Poppins', sans-serif;
   font-size: 18px;
+  font-weight: 600;
+}
+.vs-text-2 {
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-size: 48px;
   font-weight: 600;
 }
 
@@ -240,6 +254,20 @@ html {
   position: absolute;
   top: 16px;
   right: 16px;
+}
+
+.text-videos {
+  color: white;
+  width: 100%;
+  font-family: 'Urbanist', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 16px;
+  white-space: nowrap;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Responsive Design */
