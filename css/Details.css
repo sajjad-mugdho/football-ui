@@ -1,0 +1,118 @@
+/* General Styles for demonstration */
+body {
+  color: white;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+}
+
+/* Container for the match details section */
+.match-details-container {
+  border-radius: 10px;
+  padding: 20px;
+  max-width: 600px;
+  margin: 20px auto;
+}
+
+/* Header for "Titulaires" and "Fin du match" */
+.match-details-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #333;
+  margin-bottom: 20px;
+}
+
+.match-details-header h4 {
+  margin: 0;
+  font-size: 1.5em;
+  color: white;
+  font-weight: bold;
+}
+
+.match-status {
+  font-size: 1.2em;
+  color: #ccc;
+}
+
+/* Timeline section */
+.timeline-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.timeline-bar {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 2px;
+  transform: translateX(-50%);
+}
+
+.timeline-event-list {
+  list-style: none;
+  padding: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.timeline-event {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 100%;
+}
+
+/* Update the base style for all event circles */
+.event-circle {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: white; /* Change background to white */
+  border: none; /* Remove the border to match the requested look */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  color: black; /* Change text color to black */
+  flex-shrink: 0;
+  z-index: 1;
+  margin-right: 20px;
+}
+
+/* Specific color for the circles to match the image */
+.event-circle.red {
+  background-color: #ff0000;
+  color: white;
+}
+
+.event-circle.yellow {
+  background-color: #ffc107;
+  color: black;
+}
+
+.event-circle.normal {
+  background-color: white;
+  color: black;
+}
+
+.player-name-left,
+.player-name-right {
+  flex-grow: 1;
+  padding: 0 20px;
+  font-size: 1.1em;
+}
+
+.player-name-left {
+  text-align: right;
+}
+
+.player-name-right {
+  text-align: left;
+}
