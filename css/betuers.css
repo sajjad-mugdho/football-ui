@@ -1,0 +1,629 @@
+/* Buteurs Section Title Container */
+.equipe-title-container {
+  margin: 26px 0;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  min-height: 45px;
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+
+.equipe-title-area {
+  background: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 60px;
+  font-family: 'Urbanist', sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px;
+  color: black;
+  width: 100%;
+  max-width: 1370px;
+  min-width: 320px;
+  text-align: center;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+/* Player Cards Container */
+.buteurs-table-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 10px;
+  gap: 16px;
+  box-sizing: border-box;
+}
+
+/* Individual Player Card */
+.buteurs-table {
+  width: 100%;
+  max-width: 1370px;
+  height: 150px;
+  border-radius: 8px;
+  border: 1px solid rgba(152, 152, 152, 0.3);
+
+  background: var(
+    --Dg,
+    linear-gradient(
+      265deg,
+      rgba(255, 255, 255, 0.1) -2.57%,
+      rgba(0, 0, 0, 0.1) 96.13%
+    )
+  );
+  backdrop-filter: blur(7.25px);
+  display: flex;
+  align-items: center;
+  padding: 20px 80px 20px 40px;
+  box-sizing: border-box;
+  position: relative;
+  overflow: hidden;
+}
+
+/* All content should be above the overlay */
+.buteurs-table > * {
+  position: relative;
+  z-index: 2;
+}
+
+/* Left Side: Country Flag */
+.player-flag-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 100px;
+  margin-right: 60px;
+}
+
+.country-flag {
+  width: 90px;
+  height: 60px;
+  object-fit: cover;
+
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Center: Player Information */
+.player-info-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 0 20px;
+}
+
+.player-main-name {
+  font-family: 'Urbanist', sans-serif;
+  font-size: 28px;
+  font-weight: 600;
+  color: #ffffff;
+  line-height: 32px;
+  margin: 0;
+}
+
+.player-details {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.player-birth-date {
+  font-family: 'Urbanist', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.4);
+  line-height: 16px;
+}
+
+.player-club {
+  font-family: 'Urbanist', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.9);
+  line-height: 1.2;
+}
+
+/* Right Side: Goals and Player Image */
+.player-goals-section {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  min-width: 200px;
+  justify-content: flex-end;
+}
+
+.goals-info {
+  text-align: right;
+  font-family: 'Urbanist', sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  color: #ffffff;
+  line-height: 16px;
+  margin-right: 40px;
+}
+
+.goals-count {
+  font-family: 'Urbanist', sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 1;
+  margin: 0;
+}
+
+.goals-label {
+  font-family: 'Urbanist', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 1;
+  margin: 2px 0 0 0;
+}
+
+.player-image {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
+}
+
+/* Hover Effects */
+.buteurs-table:hover {
+  transform: translateY(-2px);
+  /* box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4); */
+  transition: all 0.3s ease;
+}
+
+.buteurs-table:hover::before {
+  background: linear-gradient(
+    135deg,
+    rgba(26, 77, 77, 0.95) 0%,
+    rgba(13, 51, 51, 0.95) 100%
+  );
+}
+
+.player-buts-area {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 10px;
+  gap: 16px;
+  box-sizing: border-box;
+}
+.player-buts-card {
+  display: flex;
+  align-items: center;
+  max-width: 1370px;
+  min-width: 1370px;
+  height: 70px;
+  border-radius: 6px;
+  border: 1px solid rgba(152, 152, 152, 0.3);
+  background: linear-gradient(
+    265deg,
+    rgba(255, 255, 255, 0.1) -2.57%,
+    rgba(0, 0, 0, 0.1) 96.13%
+  );
+  backdrop-filter: blur(7.25px);
+}
+.player-buts-img {
+  width: 70px;
+  height: 70px;
+
+  object-fit: cover;
+}
+
+.player-sm-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 20px;
+}
+.player-name-sm {
+  color: #fff;
+  font-family: 'Urbanist', sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 16px;
+}
+
+.player-dob-sm {
+  color: rgba(255, 255, 255, 0.4);
+  font-family: 'Urbanist', sans-serif;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 16px;
+  margin-bottom: 10px;
+}
+
+.player-buts-stats {
+  margin-left: auto;
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+}
+.player-goals-sm {
+  color: #fff;
+  font-family: 'Urbanist', sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px;
+}
+
+/* Legacy Support - Hide old elements */
+.team-info-2,
+.buteurs-player-info,
+.team-end,
+.ranking-position,
+.team-flag,
+.team-name,
+.player-name,
+.buteurs-goals,
+.arrow-icon {
+  display: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .buteurs-table {
+    max-width: 100%;
+    height: auto;
+    min-height: 120px;
+    padding: 16px 20px;
+    flex-direction: row;
+  }
+
+  .player-flag-section {
+    min-width: 60px;
+    margin-right: 16px;
+  }
+
+  .country-flag {
+    width: 50px;
+    height: 33px;
+  }
+
+  .player-info-section {
+    padding: 0 12px;
+  }
+
+  .player-main-name {
+    font-size: 24px;
+  }
+
+  .player-birth-date {
+    font-size: 12px;
+  }
+
+  .player-club {
+    font-size: 14px;
+  }
+
+  .player-goals-section {
+    min-width: 120px;
+    gap: 12px;
+  }
+
+  .goals-count {
+    font-size: 28px;
+  }
+
+  .goals-label {
+    font-size: 12px;
+  }
+
+  .player-image {
+    width: 55px;
+    height: 55px;
+  }
+}
+
+@media (max-width: 480px) {
+  .buteurs-table {
+    padding: 12px 16px;
+  }
+
+  .player-main-name {
+    font-size: 20px;
+  }
+
+  .goals-count {
+    font-size: 24px;
+  }
+
+  .player-image {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+/* Start Section: Team Info (Position + Flag + Team Name) */
+.team-info-2 {
+  display: flex;
+  max-width: 250px;
+  align-items: center;
+}
+
+.ranking-position {
+  display: flex;
+  width: 60px;
+  height: 31.738px;
+  flex-direction: column;
+  justify-content: center;
+  flex-shrink: 0;
+  color: #fff;
+  font-family: 'Urbanist', sans-serif;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px;
+  text-align: left;
+  margin-right: 20px;
+}
+
+.team-flag {
+  width: 70.661px;
+  height: 47.117px;
+  flex-shrink: 0;
+  object-fit: cover;
+  border-radius: 4px;
+  margin-right: 15px;
+}
+
+.team-name {
+  color: #fff;
+  font-family: 'Urbanist', sans-serif;
+  font-size: 26px;
+  min-width: 150px;
+  max-width: 250px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px;
+}
+
+/* Middle Section: Player Info */
+.buteurs-player-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+}
+
+.player-name {
+  color: #fff;
+  font-family: 'Urbanist', sans-serif;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px;
+  text-align: center;
+}
+
+/* Legacy support for team-stats (if needed) */
+.team-stats {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+}
+
+.stat-value {
+  color: #fff;
+  font-family: 'Urbanist', sans-serif;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px;
+  text-align: center;
+  min-width: 30px;
+}
+
+/* End Section: Goals + Enhanced SVG Arrow */
+.team-end {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  min-width: 100px;
+}
+
+.buteurs-goals {
+  color: #fff;
+  font-family: 'Urbanist', sans-serif;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px;
+  text-align: center;
+  min-width: 30px;
+  margin-right: 20px;
+}
+
+/* Legacy support for team-points */
+.team-points {
+  color: #fff;
+  font-family: 'Urbanist', sans-serif;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px;
+  text-align: center;
+  min-width: 30px;
+  margin-right: 20px;
+}
+
+/* Enhanced SVG Arrow Icon Styles */
+.arrow-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  padding: 5px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.arrow-icon:hover {
+  background: rgba(5, 148, 75, 0.2);
+  border: 1px solid rgba(5, 148, 75, 0.3);
+  transform: scale(1.1);
+}
+
+.arrow-icon svg {
+  transition: all 0.3s ease;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
+}
+
+.arrow-icon:hover svg {
+  filter: drop-shadow(0 2px 8px rgba(5, 148, 75, 0.5));
+}
+
+.arrow-icon svg path {
+  transition: stroke 0.3s ease;
+}
+
+.arrow-icon:hover svg path {
+  stroke: #07d65f;
+}
+
+/* Interactive States for SVG */
+.arrow-icon:active {
+  transform: scale(0.95);
+  background: rgba(5, 148, 75, 0.3);
+}
+
+/* Responsive Design */
+@media (max-width: 1300px) {
+  .buteurs-table {
+    width: 95%;
+    max-width: 1265px;
+    padding: 0 15px;
+  }
+
+  .team-stats {
+    gap: 20px;
+  }
+
+  .team-name,
+  .player-name {
+    font-size: 22px;
+    min-width: 100px;
+  }
+
+  .ranking-position,
+  .stat-value,
+  .team-points,
+  .buteurs-goals {
+    font-size: 22px;
+  }
+
+  .arrow-icon {
+    padding: 4px;
+  }
+
+  .arrow-icon svg {
+    width: 18px;
+    height: 18px;
+  }
+}
+
+@media (max-width: 768px) {
+  .buteurs-table {
+    width: 95%;
+    height: auto;
+    min-height: 84px;
+    padding: 10px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .team-flag {
+    width: 50px;
+    height: 33px;
+  }
+
+  .team-name,
+  .player-name,
+  .ranking-position,
+  .stat-value,
+  .team-points,
+  .buteurs-goals {
+    font-size: 18px;
+  }
+
+  .team-stats {
+    gap: 15px;
+  }
+
+  .arrow-icon {
+    padding: 3px;
+  }
+
+  .arrow-icon svg {
+    width: 16px;
+    height: 16px;
+  }
+
+  .equipe-title-area {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+
+  .equipe-title-area .header-start {
+    max-width: 150px;
+    min-width: 150px;
+  }
+
+  .equipe-title-area .header-end {
+    min-width: 80px;
+    max-width: 80px;
+  }
+}
+
+/* Additional SVG Animation Effects */
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(5, 148, 75, 0.7);
+  }
+  70% {
+    box-shadow: 0 0 0 10px rgba(5, 148, 75, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(5, 148, 75, 0);
+  }
+}
+
+.arrow-icon.pulse {
+  animation: pulse 2s infinite;
+}
+
+/* SVG Path Animation */
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+.arrow-icon svg path {
+  stroke-dasharray: 50;
+  stroke-dashoffset: 50;
+  animation: dash 1s ease-in-out forwards;
+}
