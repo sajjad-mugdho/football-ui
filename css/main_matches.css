@@ -69,14 +69,17 @@ html {
   display: flex;
   align-items: center;
   gap: 10px;
+  min-width: 120px;
 }
 
 .team-left {
   flex-direction: row;
+  justify-content: flex-end;
 }
 
 .team-right {
   flex-direction: row-reverse;
+  justify-content: flex-end;
 }
 
 .team-flag {
@@ -92,6 +95,11 @@ html {
   font-size: 16px;
   font-weight: 600;
   line-height: 16px;
+  width: 80px;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .match-vs {
@@ -231,6 +239,7 @@ html {
 
   .team {
     gap: 15px;
+    min-width: 200px;
   }
 
   .team-flag {
@@ -240,6 +249,7 @@ html {
 
   .team-name {
     font-size: 20px;
+    width: 120px;
   }
 
   .vs-text {
@@ -276,6 +286,10 @@ html {
     gap: 60px;
   }
 
+  .team {
+    min-width: 160px;
+  }
+
   .team-flag {
     width: 80px;
     height: 60px;
@@ -283,6 +297,7 @@ html {
 
   .team-name {
     font-size: 18px;
+    width: 100px;
   }
 
   .vs-text {
@@ -321,6 +336,10 @@ html {
     gap: 40px;
   }
 
+  .team {
+    min-width: 140px;
+  }
+
   .team-flag {
     width: 70px;
     height: 50px;
@@ -328,6 +347,7 @@ html {
 
   .team-name {
     font-size: 16px;
+    width: 90px;
   }
 
   .vs-text {
@@ -371,6 +391,10 @@ html {
     order: 2;
   }
 
+  .team {
+    min-width: 120px;
+  }
+
   .team-flag {
     width: 60px;
     height: 40px;
@@ -378,6 +402,7 @@ html {
 
   .team-name {
     font-size: 16px;
+    width: 80px;
   }
 
   .vs-text {
@@ -417,6 +442,10 @@ html {
     gap: 25px;
   }
 
+  .team {
+    min-width: 100px;
+  }
+
   .team-flag {
     width: 50px;
     height: 35px;
@@ -424,6 +453,7 @@ html {
 
   .team-name {
     font-size: 14px;
+    width: 70px;
   }
 
   .vs-text {
@@ -478,6 +508,7 @@ html {
 
   .team {
     justify-content: center;
+    min-width: 90px;
   }
 
   .team-flag {
@@ -487,6 +518,7 @@ html {
 
   .team-name {
     font-size: 13px;
+    width: 60px;
   }
 
   .vs-text {
