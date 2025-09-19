@@ -71,7 +71,7 @@
     <link rel="stylesheet" href="/css/custom.css" />
     <link rel="stylesheet" href="/css/components.css" />
     <link rel="stylesheet" href="/css/main_matches.css" />
-    <link rel="stylesheet" href="/css/matches.css" />
+    
   </head>
 
   <body>
@@ -246,7 +246,7 @@
             </div>
             <div class="collapse navbar-collapse" id="navbarNav">
               <ul class="nav navbar-nav navbar-center">
-                <li class="active">
+                <li >
                   <a href="#calendrier" data-tab="calendrier"> Calendrier </a>
                 </li>
                 <li>
@@ -255,7 +255,7 @@
                 <li>
                   <a href="#buteurs" data-tab="buteurs">Buteurs</a>
                 </li>
-                <li>
+                <li class="active">
                   <a href="#actualites" data-tab="actualites">Actualités</a>
                 </li>
               </ul>
@@ -264,14 +264,11 @@
         </div>
 
          <!-- Main Content -->
-      <section class="main-content-full-width">
         <div class="main-content-container">
           <div class="row">
             <!-- Infos principales - 2/3 width -->
             <div class="col-md-8">
-              <div class="section-header">
-                <h2 class="section-title">Infos principales</h2>
-              </div>
+             
               <div class="row">
                 <!-- Card 1 -->
                 <div class="col-md-6">
@@ -321,9 +318,8 @@
               </div>
             </div>
 
-            <!-- New Glass Morphism Cards Section -->
-            <div class="new-cards-section" style="margin-top: 30px;">
-             <div class="row">
+            <div class="new-cards-section" style="margin-top: 50px">
+                <div class="row">
                   <!-- Glass Card 1-->
                   <div class="col-md-6">
                     <div class="glass-card">
@@ -333,118 +329,155 @@
                           alt="Football News"
                         />
                       </div>
-                      <div class="icon-image-save">
+                      <div class="icon-image-save-2">
                         <!-- icon image -->
-                        <svg width="16" height="20" viewBox="0 0 16 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M15.5 0H0.5C0.223858 0 0 0.223857 0 0.499999V19.0801C0 19.4765 0.439287 19.7153 0.771948 19.4997L7.72805 14.9911C7.8935 14.8838 8.10651 14.8838 8.27195 14.9911L15.2281 19.4997C15.5607 19.7153 16 19.4765 16 19.0801V0.5C16 0.223858 15.7761 0 15.5 0Z" fill="white"/>
-                          </svg>
-
+                        <svg
+                          width="16"
+                          height="20"
+                          viewBox="0 0 16 20"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M15.5 0H0.5C0.223858 0 0 0.223857 0 0.499999V19.0801C0 19.4765 0.439287 19.7153 0.771948 19.4997L7.72805 14.9911C7.8935 14.8838 8.10651 14.8838 8.27195 14.9911L15.2281 19.4997C15.5607 19.7153 16 19.4765 16 19.0801V0.5C16 0.223858 15.7761 0 15.5 0Z"
+                            fill="white"
+                          />
+                        </svg>
                       </div>
                       <div class="glass-card-content">
                         <div class="glass-card-badge">CAF U20</div>
                         <div class="glass-card-text">
                           <h3>
-                            La sélection U20 fait match nul et se maintient en tête du groupe B
+                            La sélection U20 fait match nul et se maintient en
+                            tête du groupe B
+                          </h3>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Glass Card 2 -->
+                  <div class="col-md-6">
+                    <div class="glass-card">
+                      <div class="glass-card-image">
+                        <img
+                          src="images/article/article-4.png"
+                          alt="Football News"
+                        />
+                      </div>
+                      <div class="icon-image-save-2">
+                        <!-- icon image -->
+                        <svg
+                          width="16"
+                          height="20"
+                          viewBox="0 0 16 20"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M15.5 0H0.5C0.223858 0 0 0.223857 0 0.499999V19.0801C0 19.4765 0.439287 19.7153 0.771948 19.4997L7.72805 14.9911C7.8935 14.8838 8.10651 14.8838 8.27195 14.9911L15.2281 19.4997C15.5607 19.7153 16 19.4765 16 19.0801V0.5C16 0.223858 15.7761 0 15.5 0Z"
+                            fill="white"
+                          />
+                        </svg>
+                      </div>
+                      <div class="glass-card-content">
+                        <div class="glass-card-badge">CAF U20</div>
+                        <div class="glass-card-text">
+                          <h3>
+                            La sélection U20 fait match nul et se maintient en
+                            tête du groupe B
                           </h3>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
-            </div>
-            <div class="new-cards-section" style="margin-top: 30px;">
-              <div class="row">
-                <!-- Glass Card 1 -->
-                <div class="col-md-6">
-                  <div class="glass-card">
-                    <div class="glass-card-image">
-                      <img src="images/info-p-.png" alt="Football News" />
-                    </div>
-                    <div class="glass-card-content">
-                      <div class="glass-card-badge">CAF U20</div>
-                      <div class="glass-card-text">
-                        <h3>La sélection U20 fait match nul et se maintient en tête du groupe B</h3>
-                        <p>1 M vues</p>
+                <div class="row">
+                  <!-- Glass Card 1-->
+                  <div class="col-md-6">
+                    <div class="glass-card">
+                      <div class="glass-card-image">
+                        <img
+                          src="images/article/article-3.png"
+                          alt="Football News"
+                        />
+                      </div>
+                      <div class="icon-image-save-2">
+                        <!-- icon image -->
+                        <svg
+                          width="16"
+                          height="20"
+                          viewBox="0 0 16 20"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M15.5 0H0.5C0.223858 0 0 0.223857 0 0.499999V19.0801C0 19.4765 0.439287 19.7153 0.771948 19.4997L7.72805 14.9911C7.8935 14.8838 8.10651 14.8838 8.27195 14.9911L15.2281 19.4997C15.5607 19.7153 16 19.4765 16 19.0801V0.5C16 0.223858 15.7761 0 15.5 0Z"
+                            fill="white"
+                          />
+                        </svg>
+                      </div>
+                      <div class="glass-card-content">
+                        <div class="glass-card-badge">CAF U20</div>
+                        <div class="glass-card-text">
+                          <h3>
+                            La sélection U20 fait match nul et se maintient en
+                            tête du groupe B
+                          </h3>
+                        </div>
                       </div>
                     </div>
                   </div>
-                </div>
-                <!-- Glass Card 2 -->
-                <div class="col-md-6">
-                  <div class="glass-card">
-                    <div class="glass-card-image">
-                      <img src="images/info-2.png" alt="Football News" />
-                    </div>
-                    <div class="glass-card-content">
-                      <div class="glass-card-badge">CAF U20</div>
-                      <div class="glass-card-text">
-                        <h3>La sélection U20 fait match nul et se maintient en tête du groupe B</h3>
-                        <p>1 M vues</p>
+                  <!-- Glass Card 2 -->
+                  <div class="col-md-6">
+                    <div class="glass-card">
+                      <div class="glass-card-image">
+                        <img
+                          src="images/article/article-4.png"
+                          alt="Football News"
+                        />
+                      </div>
+                      <div class="icon-image-save-2">
+                        <!-- icon image -->
+                        <svg
+                          width="16"
+                          height="20"
+                          viewBox="0 0 16 20"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M15.5 0H0.5C0.223858 0 0 0.223857 0 0.499999V19.0801C0 19.4765 0.439287 19.7153 0.771948 19.4997L7.72805 14.9911C7.8935 14.8838 8.10651 14.8838 8.27195 14.9911L15.2281 19.4997C15.5607 19.7153 16 19.4765 16 19.0801V0.5C16 0.223858 15.7761 0 15.5 0Z"
+                            fill="white"
+                          />
+                        </svg>
+                      </div>
+                      <div class="glass-card-content">
+                        <div class="glass-card-badge">CAF U20</div>
+                        <div class="glass-card-text">
+                          <h3>
+                            La sélection U20 fait match nul et se maintient en
+                            tête du groupe B
+                          </h3>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
           </div>
 
           <!-- Derniers résultats - 1/3 width -->
           <div class="col-md-4">
-            <!-- Derniers résultats Section -->
-            <div class="section-header">
-              <h2 class="section-title">Derniers résultats</h2>
-            </div>
-            <div class="results-card">
-              <div class="match-date">Jeudi 10 Déc 2025</div>
-              <div class="tournament-badge">Attyaplus TNT</div>
-              <div class="text-success">Journée 2</div>
-              <button class="voir-plus-btn ">Voir plus</button>
+           
+            <div class="ads-square-box">
+              Ads
             </div>
 
-            <!-- Prochains rendez vous Section -->
-            <div class="section-header" style="margin-top: 30px;">
-              <h2 class="section-title">Prochains rendez vous</h2>
-            </div>
-            <div class="results-card">
-              <div class="match-date">Jeudi  10 Déc 2025</div>
-              <div class="match-score-section">
-                <div class="team-section">
-                  <img src="images/Flag_of_Morocco1.png" alt="Morocco Flag" class="team-flag morocco-flag" />
-                  <span class="team-name">Maroc</span>
-                </div>
-                <div class="score-section">
-                  <span class="final-score">20:00</span>
-                </div>
-                <div class="team-section">
-                  <img src="images/Flag_of_Morocco2.png" alt="Senegal Flag" class="team-flag senegal-flag" />
-                  <span class="team-name">Sénégal</span>
-                </div>
-              </div>
-              <div class="tournament-badge">Attyaplus TNT</div>
-              <div class="match-status upcoming">Journée 2</div>
-              <button class="voir-plus-btn ">Voir plus</button>
-            </div>
-
-            <!-- Classement Section -->
-            <div class="section-header" style="margin-top: 30px;">
-              <h2 class="section-title">Classement</h2>
-            </div>
-            <div class="standings-card">
-              <!-- Table Header -->
-              <div class="standings-header">
-                <div class="team-col">Équipe</div>
-                <div class="stats-cols">
-                  <span>J</span>
-                  <span>G</span>
-                  <span>N</span>
-                  <span>P</span>
-                  <span>Pts</span>
-                  <span>+/-</span>
-                </div>
-              </div>
-              
-            </div>
+            
+            
           </div>
+
+
         </div>
       </section>
       <!-- Footer -->
