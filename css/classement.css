@@ -1,0 +1,229 @@
+.equipe-title-container {
+  margin: 26px 0;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  min-height: 45px;
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+.equipe-title-area {
+  background: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 60px;
+  font-family: 'Urbanist', sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px;
+  color: black;
+  width: 100%;
+  max-width: 1370px;
+  min-width: 320px;
+  text-align: center;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+.equipe-title-area .header-start {
+  display: flex;
+  align-items: center;
+  max-width: 250px;
+  min-width: 250px;
+}
+
+.equipe-title-area .header-middle {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+}
+
+.equipe-title-area .header-end {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  min-width: 100px;
+  max-width: 100px;
+}
+
+.equipe-title-area .header-middle span,
+.equipe-title-area .header-end span {
+  min-width: 30px;
+  text-align: center;
+}
+
+/* New Ranking Table Styles */
+.ranking-table-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 5px 10px;
+  box-sizing: border-box;
+}
+
+.ranking-table {
+  max-width: 1370px;
+  height: 84px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  border: 1px solid rgba(152, 152, 152, 0.3);
+  background: linear-gradient(
+    265deg,
+    rgba(255, 255, 255, 0.1) -2.57%,
+    rgba(0, 0, 0, 0.1) 96.13%
+  );
+  backdrop-filter: blur(7.25px);
+  display: flex;
+  align-items: center;
+  padding: 0 30px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  position: relative;
+  justify-content: space-between;
+}
+
+/* Start Section: Team Info (No + Flag + Name) */
+.team-info-2 {
+  display: flex;
+  max-width: 250px;
+  align-items: center;
+}
+
+.ranking-position {
+  display: flex;
+  width: 60px;
+  height: 31.738px;
+  flex-direction: column;
+  justify-content: center;
+  flex-shrink: 0;
+  color: #fff;
+  font-family: 'Urbanist', sans-serif;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px;
+  text-align: left;
+  margin-right: 20px;
+}
+
+.team-flag {
+  width: 70.661px;
+  height: 47.117px;
+  flex-shrink: 0;
+  object-fit: cover;
+  border-radius: 4px;
+  margin-right: 15px;
+}
+
+.team-name {
+  color: #fff;
+  font-family: 'Urbanist', sans-serif;
+  font-size: 26px;
+  min-width: 150px;
+  max-width: 250px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px;
+}
+
+/* Middle Section: All Stats */
+.team-stats {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+}
+
+.stat-value {
+  color: #fff;
+  font-family: 'Urbanist', sans-serif;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px;
+  text-align: center;
+  min-width: 30px;
+}
+
+/* End Section: Points + Arrow */
+.team-end {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  min-width: 100px;
+}
+
+.team-points {
+  color: #fff;
+  font-family: 'Urbanist', sans-serif;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px;
+  text-align: center;
+  min-width: 30px;
+  margin-right: 20px;
+}
+
+.arrow-icon {
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* Responsive Design */
+@media (max-width: 1300px) {
+  .ranking-table {
+    width: 95%;
+    max-width: 1265px;
+    padding: 0 15px;
+  }
+
+  .team-stats {
+    gap: 20px;
+  }
+
+  .team-name {
+    font-size: 22px;
+    min-width: 100px;
+  }
+
+  .ranking-position,
+  .stat-value,
+  .team-points {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 768px) {
+  .ranking-table {
+    width: 95%;
+    height: auto;
+    min-height: 84px;
+    padding: 10px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .team-flag {
+    width: 50px;
+    height: 33px;
+  }
+
+  .team-name,
+  .ranking-position,
+  .stat-value,
+  .team-points {
+    font-size: 18px;
+  }
+
+  .team-stats {
+    gap: 15px;
+  }
+}
