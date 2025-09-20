@@ -72,7 +72,6 @@
     <link rel="stylesheet" href="/css/components.css" />
     <link rel="stylesheet" href="/css/main_matches.css" />
     <link rel="stylesheet" href="/css/matches.css" />
-    <link rel="stylesheet" href="/css/Compositions.css" />
   </head>
 
   <body>
@@ -238,15 +237,53 @@
       ></div>
 
       <!-- Main Content -->
-      <div class="section-header">
-        <h3 class="section-title">Prochains matchs</h3>
-      </div>
       <section class="main-content-full-width">
         <!-- Navigation Tabs -->
+        <div class="matches-nav-container">
+          <div class="container">
+            <div class="section-header">
+              <h3 class="section-title">Prochains matchs</h3>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="nav navbar-nav navbar-center">
+                <li class="active">
+                  <a href="#calendrier" data-tab="calendrier"> Calendrier </a>
+                </li>
+                <li>
+                  <a href="#classement" data-tab="classement">Classement</a>
+                </li>
+                <li>
+                  <a href="#buteurs" data-tab="buteurs">Buteurs</a>
+                </li>
+                <li>
+                  <a href="#actualites" data-tab="actualites">Actualités</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
 
+        <!-- New Tab Navigation with White Background -->
+        <div class="main-content-container">
+          <div class="tabs-container">
+            <div class="container">
+              <ul class="tabs-nav">
+                <li class="active"><a href="#ligue1">Journée 1</a></li>
+                <li><a href="#ligue2">Journée 2</a></li>
+                <li><a href="#premier-league">Journée 3</a></li>
+                <li><a href="#laliga">Quarts Finale</a></li>
+                <li><a href="#serie-a">Demi Finale</a></li>
+                <li><a href="#bundesliga">3e Place</a></li>
+                <li><a href="#can">Finale</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
         <section class="matches-table-area">
           <div class="title-container">
-            <div class="title-area-match">Vendredi 20 Déc 2025</div>
+            <div style="text-align: center" class="title-area-match">
+              Vendredi 20 Déc 2025
+            </div>
           </div>
 
           <!-- Match Card Section -->
@@ -254,6 +291,93 @@
             <div class="match-cards-wrapper">
               <div class="match-card">
                 <div class="match-time">20:00</div>
+                <div class="separator-line">
+                  <svg
+                    width="2"
+                    height="80"
+                    viewBox="0 0 2 80"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <line
+                      x1="0.75"
+                      x2="0.75"
+                      y2="80"
+                      stroke="white"
+                      stroke-opacity="0.2"
+                      stroke-width="1.5"
+                    />
+                  </svg>
+                </div>
+                <div class="match-teams">
+                  <div class="team team-left">
+                    <span class="team-name">Angola</span>
+                    <img
+                      src="/images/Flag_of_Angola.png"
+                      alt="Angola Flag"
+                      class="team-flag"
+                    />
+                  </div>
+                  <div class="match-vs">
+                    <div class="">
+                      <span class="vs-text-2">2</span>
+                      <span class="vs-text-2">:</span>
+                      <span class="vs-text-2">1</span>
+                    </div>
+                    <div class="tournament-badge">CAN 2025</div>
+                  </div>
+                  <div class="team team-right">
+                    <span class="team-name">Mali</span>
+                    <img
+                      src="/images/Flag_of_Mali.png"
+                      alt="Mali Flag"
+                      class="team-flag"
+                    />
+                  </div>
+                </div>
+                <div class="separator-line">
+                  <svg
+                    width="2"
+                    height="80"
+                    viewBox="0 0 2 80"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <line
+                      x1="0.75"
+                      x2="0.75"
+                      y2="80"
+                      stroke="white"
+                      stroke-opacity="0.2"
+                      stroke-width="1.5"
+                    />
+                  </svg>
+                </div>
+                <div class="match-info">
+                  <div class="match-venue">Stade Mohamed 5</div>
+                </div>
+                <div class="match-details">Détails</div>
+              </div>
+              <div class="match-card">
+                <div class="match-time">20:00</div>
+                <div class="separator-line">
+                  <svg
+                    width="2"
+                    height="80"
+                    viewBox="0 0 2 80"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <line
+                      x1="0.75"
+                      x2="0.75"
+                      y2="80"
+                      stroke="white"
+                      stroke-opacity="0.2"
+                      stroke-width="1.5"
+                    />
+                  </svg>
+                </div>
                 <div class="match-teams">
                   <div class="team team-left">
                     <span class="team-name">Morocco</span>
@@ -265,16 +389,16 @@
                   </div>
                   <div class="match-vs">
                     <div class="">
-                      <span class="vs-text">-</span>
-                      <span class="vs-text">:</span>
-                      <span class="vs-text">-</span>
+                      <span class="vs-text-2">3</span>
+                      <span class="vs-text-2">:</span>
+                      <span class="vs-text-2">0</span>
                     </div>
                     <div class="tournament-badge">CAN 2025</div>
                   </div>
                   <div class="team team-right">
-                    <span class="team-name">Sénégal</span>
+                    <span class="team-name">A. du sud</span>
                     <img
-                      src="/images/Flag_of_senegal.png"
+                      src="/images/flag_of-south.svg"
                       alt="A. du sud Flag"
                       class="team-flag"
                     />
@@ -306,217 +430,156 @@
             </div>
           </div>
         </section>
-        <div class="matches-nav-container">
-          <div class="container">
-            <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="nav navbar-nav navbar-center">
-                <li class="active">
-                  <a href="#calendrier" data-tab="calendrier"> Composition </a>
-                </li>
-                <li>
-                  <a href="#classement" data-tab="classement">Détails</a>
-                </li>
-                <li>
-                  <a href="#buteurs" data-tab="buteurs">Vidéos</a>
-                </li>
-                <li>
-                  <a href="#actualites" data-tab="actualites">Stats</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
 
-        <!-- Titulaires Section -->
-        <div>
-          <div class="title-container-c">
-            <div class="title-area-match-c"><span>Titulaires</span></div>
+        <section class="matches-table-area">
+          <div class="title-container">
+            <div class="title-area-match">Samedi 21 Déc 2025</div>
           </div>
 
-          <main class="main-content-container">
-            <div class="col-md-8">
-              <div class="titulaire-list-wrapper">
-                <!-- items -->
-                <div class="titulaire-item">
-                  <div class="start-item">
-                    <div class="number-circle-l">
-                      <span>1</span>
-                    </div>
-                    <div class="">
-                      <span>Yassine Bounou</span>
-                    </div>
+          <!-- Match Card Section -->
+          <div class="match-card-container">
+            <div class="match-cards-wrapper">
+              <div class="match-card">
+                <div class="match-time">20:00</div>
+                <div class="separator-line">
+                  <svg
+                    width="2"
+                    height="80"
+                    viewBox="0 0 2 80"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <line
+                      x1="0.75"
+                      x2="0.75"
+                      y2="80"
+                      stroke="white"
+                      stroke-opacity="0.2"
+                      stroke-width="1.5"
+                    />
+                  </svg>
+                </div>
+                <div class="match-teams">
+                  <div class="team team-left">
+                    <span class="team-name">Angola</span>
+                    <img
+                      src="/images/Flag_of_Angola.png"
+                      alt="Angola Flag"
+                      class="team-flag"
+                    />
                   </div>
-                  <div class="end-item">
+                  <div class="match-vs">
                     <div class="">
-                      <span>Édouard Mendy</span>
+                      <span class="vs-text-2">2</span>
+                      <span class="vs-text-2">:</span>
+                      <span class="vs-text-2">1</span>
                     </div>
-                    <div class="number-circle-r">
-                      <span>16</span>
-                    </div>
+                    <div class="tournament-badge">CAN 2025</div>
+                  </div>
+                  <div class="team team-right">
+                    <span class="team-name">Mali</span>
+                    <img
+                      src="/images/Flag_of_Mali.png"
+                      alt="Mali Flag"
+                      class="team-flag"
+                    />
                   </div>
                 </div>
-                <!--  -->
-                <div class="titulaire-item">
-                  <div class="start-item">
-                    <div class="number-circle-l">
-                      <span>5</span>
-                    </div>
-                    <div class="">
-                      <span>Nayef Agred</span>
-                    </div>
+                <div class="separator-line">
+                  <svg
+                    width="2"
+                    height="80"
+                    viewBox="0 0 2 80"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <line
+                      x1="0.75"
+                      x2="0.75"
+                      y2="80"
+                      stroke="white"
+                      stroke-opacity="0.2"
+                      stroke-width="1.5"
+                    />
+                  </svg>
+                </div>
+                <div class="match-info">
+                  <div class="match-venue">Stade Mohamed 5</div>
+                </div>
+                <div class="match-details">Détails</div>
+              </div>
+              <div class="match-card">
+                <div class="match-time">20:00</div>
+                <div class="separator-line">
+                  <svg
+                    width="2"
+                    height="80"
+                    viewBox="0 0 2 80"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <line
+                      x1="0.75"
+                      x2="0.75"
+                      y2="80"
+                      stroke="white"
+                      stroke-opacity="0.2"
+                      stroke-width="1.5"
+                    />
+                  </svg>
+                </div>
+                <div class="match-teams">
+                  <div class="team team-left">
+                    <span class="team-name">Morocco</span>
+                    <img
+                      src="/images/Flag_of_Morocco1.png"
+                      alt="Morocco Flag"
+                      class="team-flag"
+                    />
                   </div>
-                  <div class="end-item">
+                  <div class="match-vs">
                     <div class="">
-                      <span>Kalidou Koulibaly</span>
+                      <span class="vs-text-2">0</span>
+                      <span class="vs-text-2">:</span>
+                      <span class="vs-text-2">2</span>
                     </div>
-                    <div class="number-circle-r">
-                      <span>3</span>
-                    </div>
+                    <div class="tournament-badge">CAN 2025</div>
+                  </div>
+                  <div class="team team-right">
+                    <span class="team-name">A. du sud</span>
+                    <img
+                      src="/images/flag_of-south.svg"
+                      alt="A. du sud Flag"
+                      class="team-flag"
+                    />
                   </div>
                 </div>
-                <!--  -->
-                <div class="titulaire-item">
-                  <div class="start-item">
-                    <div class="number-circle-l">
-                      <span>12</span>
-                    </div>
-                    <div class="">
-                      <span>Achraf Dari</span>
-                    </div>
-                  </div>
-                  <div class="end-item">
-                    <div class="">
-                      <span>Ismail Jakobs</span>
-                    </div>
-                    <div class="number-circle-r">
-                      <span>20</span>
-                    </div>
-                  </div>
+                <div class="separator-line">
+                  <svg
+                    width="2"
+                    height="80"
+                    viewBox="0 0 2 80"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <line
+                      x1="0.75"
+                      x2="0.75"
+                      y2="80"
+                      stroke="white"
+                      stroke-opacity="0.2"
+                      stroke-width="1.5"
+                    />
+                  </svg>
                 </div>
-                <!-- items -->
-                <div class="titulaire-item">
-                  <div class="start-item">
-                    <div class="number-circle-l">
-                      <span>1</span>
-                    </div>
-                    <div class="">
-                      <span>Yassine Bounou</span>
-                    </div>
-                  </div>
-                  <div class="end-item">
-                    <div class="">
-                      <span>Édouard Mendy</span>
-                    </div>
-                    <div class="number-circle-r">
-                      <span>16</span>
-                    </div>
-                  </div>
+                <div class="match-info">
+                  <div class="match-venue">Stade Mohamed 5</div>
                 </div>
-                <!--  -->
-                <div class="titulaire-item">
-                  <div class="start-item">
-                    <div class="number-circle-l">
-                      <span>5</span>
-                    </div>
-                    <div class="">
-                      <span>Nayef Agred</span>
-                    </div>
-                  </div>
-                  <div class="end-item">
-                    <div class="">
-                      <span>Kalidou Koulibaly</span>
-                    </div>
-                    <div class="number-circle-r">
-                      <span>3</span>
-                    </div>
-                  </div>
-                </div>
-                <!--  -->
-                <div class="titulaire-item">
-                  <div class="start-item">
-                    <div class="number-circle-l">
-                      <span>12</span>
-                    </div>
-                    <div class="">
-                      <span>Achraf Dari</span>
-                    </div>
-                  </div>
-                  <div class="end-item">
-                    <div class="">
-                      <span>Ismail Jakobs</span>
-                    </div>
-                    <div class="number-circle-r">
-                      <span>20</span>
-                    </div>
-                  </div>
-                </div>
-                <!-- items -->
-                <div class="titulaire-item">
-                  <div class="start-item">
-                    <div class="number-circle-l">
-                      <span>1</span>
-                    </div>
-                    <div class="">
-                      <span>Yassine Bounou</span>
-                    </div>
-                  </div>
-                  <div class="end-item">
-                    <div class="">
-                      <span>Édouard Mendy</span>
-                    </div>
-                    <div class="number-circle-r">
-                      <span>16</span>
-                    </div>
-                  </div>
-                </div>
-                <!--  -->
-                <div class="titulaire-item">
-                  <div class="start-item">
-                    <div class="number-circle-l">
-                      <span>5</span>
-                    </div>
-                    <div class="">
-                      <span>Nayef Agred</span>
-                    </div>
-                  </div>
-                  <div class="end-item">
-                    <div class="">
-                      <span>Kalidou Koulibaly</span>
-                    </div>
-                    <div class="number-circle-r">
-                      <span>3</span>
-                    </div>
-                  </div>
-                </div>
-                <!--  -->
-                <div class="titulaire-item">
-                  <div class="start-item">
-                    <div class="number-circle-l">
-                      <span>12</span>
-                    </div>
-                    <div class="">
-                      <span>Achraf Dari</span>
-                    </div>
-                  </div>
-                  <div class="end-item">
-                    <div class="">
-                      <span>Ismail Jakobs</span>
-                    </div>
-                    <div class="number-circle-r">
-                      <span>20</span>
-                    </div>
-                  </div>
-                </div>
+                <div class="match-details">Détails</div>
               </div>
             </div>
-            <div class="col-md-4">
-              <div class="ads-item-square">Ads</div>
-            </div>
-            <div class="col-md-4">
-              <div class="ads-item-square">Ads</div>
-            </div>
-          </main>
-        </div>
+          </div>
+        </section>
       </section>
 
       <!-- Footer -->

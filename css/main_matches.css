@@ -822,6 +822,7 @@ html {
   display: flex;
   justify-content: space-between;
   align-items: center;
+
   background: var(--Colors, linear-gradient(90deg, #f00 0%, #a21717 100%));
   padding: 10px 20px;
   font-family: 'Urbanist', sans-serif;
@@ -836,6 +837,22 @@ html {
   text-align: center;
   box-sizing: border-box;
   margin: 0 auto;
+}
+
+.ads-banner {
+  margin: 50px auto;
+  max-width: 1350px;
+  height: 100px;
+  background: rgba(0, 0, 0, 0.4);
+  position: relative;
+  line-height: 16px;
+  font-size: 26px;
+  color: white;
+}
+.ads-container,
+.ads-container div {
+  background: transparent !important;
+  /* or other background rules */
 }
 /* Media queries for responsive design */
 /* Large Desktop */
