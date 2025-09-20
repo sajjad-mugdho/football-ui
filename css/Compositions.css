@@ -96,3 +96,148 @@
   font-size: 26px;
   font-weight: 400;
 }
+.fin-du-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+.fin-du-text {
+  color: #05944b;
+  font-family: 'Urbanist', sans-serif;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 16px;
+}
+
+.match-timeline-container {
+  width: 100%;
+  max-width: 370px;
+  margin: 20px auto;
+  padding: 0 15px;
+  position: relative;
+}
+
+.match-timeline {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0; /* Remove padding */
+}
+
+/* Fix the overflowing timeline line */
+.timeline-line {
+  position: absolute;
+  top: 34px; /* Half the height of the first circle */
+  bottom: 34px; /* Half the height of the last circle */
+  left: 50%;
+  width: 2px;
+  background-color: white;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+.timeline-event {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin: 15px 0;
+  min-height: 80px; /* Increased height to accommodate cards above names */
+}
+
+/* Fixed card positioning to ensure visibility above player names */
+.event-card {
+  position: absolute;
+  width: 21px;
+  height: 28px;
+  border-radius: 2px;
+  display: block !important;
+  z-index: 100;
+  top: 0px; /* Position above the text with more space */
+}
+
+.red-card {
+  background-color: #d12222 !important;
+  right: 30px; /* Position near the right edge of left player name */
+}
+
+.yellow-card {
+  background-color: #ffb81c !important;
+  left: 30px; /* Position near the left edge of right player name */
+}
+
+/* Ensure player name containers have proper positioning context */
+.player-left,
+.player-right {
+  width: 40%;
+  position: relative;
+  padding-top: 40px; /* Add space at top for the cards */
+  min-height: 40px; /* Increased height for better visibility */
+}
+
+.player-left {
+  text-align: right;
+  padding-right: 20px;
+  color: #fff;
+  font-family: 'Urbanist', sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px; /* 88.889% */
+  /* Remove text truncation properties to show full names */
+  white-space: normal;
+  overflow: visible;
+  /* text-overflow: ellipsis; - REMOVED */
+}
+
+.player-right {
+  text-align: left;
+  padding-left: 20px;
+  color: #fff;
+  font-family: 'Urbanist', sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px; /* 88.889% */
+  /* Remove text truncation properties to show full names */
+  white-space: normal;
+  overflow: visible;
+  /* text-overflow: ellipsis; - REMOVED */
+}
+
+.event-time {
+  width: 68px;
+  height: 68px;
+  border-radius: 50%;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Urbanist', sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  color: black;
+  z-index: 2;
+  position: relative;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+  .match-timeline-container {
+    max-width: 300px;
+  }
+
+  .player-left,
+  .player-right {
+    font-size: 14px;
+  }
+
+  .event-time {
+    width: 50px;
+    height: 50px;
+    font-size: 18px;
+  }
+}

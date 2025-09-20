@@ -72,6 +72,7 @@
     <link rel="stylesheet" href="/css/components.css" />
     <link rel="stylesheet" href="/css/main_matches.css" />
     <link rel="stylesheet" href="/css/matches.css" />
+    <link rel="stylesheet" href="/css/Compositions.css" />
     <link rel="stylesheet" href="/css/Details.css" />
   </head>
 
@@ -265,11 +266,11 @@
                   </div>
                   <div class="match-vs">
                     <div class="">
-                      <span class="vs-text">-</span>
-                      <span class="vs-text">:</span>
-                      <span class="vs-text">-</span>
+                      <span class="vs-text-2">2</span>
+                      <span class="vs-text-2">:</span>
+                      <span class="vs-text-2">2</span>
                     </div>
-                    <div class="tournament-badge">CAN 2025</div>
+                    <div class="tournament-badge">Arryadia TNT</div>
                   </div>
                   <div class="team team-right">
                     <span class="team-name">Sénégal</span>
@@ -310,10 +311,10 @@
           <div class="container">
             <div class="collapse navbar-collapse" id="navbarNav">
               <ul class="nav navbar-nav navbar-center">
-                <li class="active">
+                <li>
                   <a href="#calendrier" data-tab="calendrier"> Composition </a>
                 </li>
-                <li>
+                <li class="active">
                   <a href="#classement" data-tab="classement">Détails</a>
                 </li>
                 <li>
@@ -326,56 +327,69 @@
             </div>
           </div>
         </div>
-        <div class="title-container">
-          <div class="title-area-match">Titulaires</div>
-        </div>
-        <div class="match-details-container">
-          <div class="match-details-header">
-            <h4>Titulaires</h4>
-            <div class="match-status">Fin du match</div>
+
+        <!-- Titulaires Section -->
+        <div>
+          <div class="title-container-c">
+            <div class="title-area-match-c">
+              <span>Titulaires</span>
+            </div>
           </div>
-          <div class="timeline-container">
-            <div class="timeline-bar"></div>
-            <ul class="timeline-event-list">
-              <li class="timeline-event">
-                <div class="player-name-left">Achraf Hakimi</div>
-                <div class="event-circle normal">88</div>
-              </li>
-              <li class="timeline-event">
-                <div class="player-name-left">Amir Richardson</div>
-                <div class="event-circle normal">65</div>
-                <div class="player-name-right">Ousseynou Ba</div>
-              </li>
-              <li class="timeline-event">
-                <div class="player-name-left"></div>
-                <div class="event-circle normal">51</div>
-                <div class="player-name-right"></div>
-              </li>
-              <li class="timeline-event">
-                <div class="player-name-left">Achraf Dari</div>
-                <div class="event-circle red">42</div>
-                <div class="player-name-right"></div>
-              </li>
-              <li class="timeline-event">
-                <div class="player-name-left"></div>
-                <div class="event-circle yellow">15</div>
-                <div class="player-name-right">
-                  <span class="player-name">Amara Diouf</span>
-                  <div class="player-icon-line">
-                    <div class="yellow-box"></div>
-                    <div class="player-id">124 | 20</div>
-                  </div>
-                </div>
-              </li>
-            </ul>
+        </div>
+
+        <!-- Fin du match -->
+        <div class="fin-du-wrapper">
+          <div class="fin-du-text"><span>Fin du match</span></div>
+        </div>
+
+        <!-- Match Timeline Section -->
+        <div class="match-timeline-container">
+          <div class="match-timeline">
+            <div class="timeline-line"></div>
+
+            <!-- Event 1 -->
+            <div class="timeline-event">
+              <div class="player-left">Achraf Hakimi</div>
+              <div class="event-time">88</div>
+              <div class="player-right"></div>
+            </div>
+
+            <!-- Event 2 -->
+            <div class="timeline-event">
+              <div class="player-left">Amir Richardson</div>
+              <div class="event-time">65</div>
+              <div class="player-right"></div>
+            </div>
+
+            <!-- Event 3 -->
+            <div class="timeline-event">
+              <div class="player-left"></div>
+              <div class="event-time">51</div>
+              <div class="player-right">Ousseynou Ba</div>
+            </div>
+
+            <!-- Event 4 with red card -->
+            <div class="timeline-event">
+              <div class="player-left">
+                <div class="event-card red-card"></div>
+                Achraf Dari
+              </div>
+              <div class="event-time">42</div>
+              <div class="player-right"></div>
+            </div>
+
+            <!-- Event 5 with yellow card -->
+            <div class="timeline-event">
+              <div class="player-left"></div>
+              <div class="event-time">15</div>
+              <div class="player-right">
+                <div class="event-card yellow-card"></div>
+                Amara Diouf
+              </div>
+            </div>
           </div>
         </div>
       </section>
-
-      <div
-        style="display: flex; justify-content: center; align-items: center"
-        class="ads-container"
-      ></div>
 
       <!-- Footer -->
       <footer class="footer-full-width">

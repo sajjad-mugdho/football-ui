@@ -88,6 +88,9 @@ body {
 
 /* Specific color for the circles to match the image */
 .event-circle.red {
+  position: absolute;
+  left: 50%;
+
   background-color: #ff0000;
   color: white;
 }
@@ -106,7 +109,15 @@ body {
 .player-name-right {
   flex-grow: 1;
   padding: 0 20px;
-  font-size: 1.1em;
+  color: #fff;
+  font-family: 'Urbanist', sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .player-name-left {
