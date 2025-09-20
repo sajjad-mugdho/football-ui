@@ -819,6 +819,9 @@ html {
 }
 
 .title-area-match {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   background: var(--Colors, linear-gradient(90deg, #f00 0%, #a21717 100%));
   padding: 10px 20px;
   font-family: 'Urbanist', sans-serif;
