@@ -33,11 +33,9 @@ html {
 }
 
 body {
-  background: linear-gradient(
-      180deg,
+  background: linear-gradient(180deg,
       rgba(6, 8, 8, 0.8) 0%,
-      rgba(1, 32, 15, 0.8) 100%
-    ),
+      rgba(1, 32, 15, 0.8) 100%),
     url('../images/bg-image.jpg');
   background-size: cover;
   background-position: center center;
@@ -178,7 +176,7 @@ body {
   height: 80px;
 }
 
-.navbar-custom .navbar-nav > li > a {
+.navbar-custom .navbar-nav>li>a {
   color: #fff !important;
   text-align: center;
   font-family: 'Poppins', sans-serif;
@@ -197,13 +195,13 @@ body {
   border-radius: 6px;
 }
 
-.navbar-custom .navbar-nav > li > a:hover {
+.navbar-custom .navbar-nav>li>a:hover {
   color: var(--football-primary) !important;
   background-color: transparent !important;
 }
 
-.navbar-custom .navbar-nav > li > a:focus,
-.navbar-custom .navbar-nav > li > a:active {
+.navbar-custom .navbar-nav>li>a:focus,
+.navbar-custom .navbar-nav>li>a:active {
   color: var(--football-text) !important;
   background-color: transparent !important;
   outline: none !important;
@@ -211,12 +209,12 @@ body {
   border: none !important;
 }
 
-.navbar-custom .navbar-nav > li.active > a {
+.navbar-custom .navbar-nav>li.active>a {
   color: var(--football-primary) !important;
   background-color: transparent !important;
 }
 
-.navbar-custom .navbar-nav > li.active > a::after {
+.navbar-custom .navbar-nav>li.active>a::after {
   content: '';
   position: absolute;
   bottom: 8px;
@@ -253,7 +251,7 @@ body {
   height: 80px;
 }
 
-.navbar-custom .navbar-nav.navbar-right > li > a {
+.navbar-custom .navbar-nav.navbar-right>li>a {
   padding: 15px;
   font-size: 16px;
   display: flex;
@@ -264,7 +262,7 @@ body {
   justify-content: center;
 }
 
-.navbar-custom .navbar-nav.navbar-right > li > a:hover {
+.navbar-custom .navbar-nav.navbar-right>li>a:hover {
   color: var(--football-primary) !important;
   background-color: rgba(220, 38, 38, 0.2) !important;
   transform: scale(1.1);
@@ -288,13 +286,13 @@ body {
 }
 
 /* Remove all borders and outlines from navbar links */
-.navbar-custom .navbar-nav > li > a,
-.navbar-custom .navbar-nav > li > a:hover,
-.navbar-custom .navbar-nav > li > a:focus,
-.navbar-custom .navbar-nav > li > a:active,
-.navbar-custom .navbar-nav > li.active > a,
-.navbar-custom .navbar-nav > li.active > a:hover,
-.navbar-custom .navbar-nav > li.active > a:focus {
+.navbar-custom .navbar-nav>li>a,
+.navbar-custom .navbar-nav>li>a:hover,
+.navbar-custom .navbar-nav>li>a:focus,
+.navbar-custom .navbar-nav>li>a:active,
+.navbar-custom .navbar-nav>li.active>a,
+.navbar-custom .navbar-nav>li.active>a:hover,
+.navbar-custom .navbar-nav>li.active>a:focus {
   outline: none !important;
   box-shadow: none !important;
   border: none !important;
@@ -609,6 +607,7 @@ body {
 }
 
 @media (min-width: 769px) {
+
   .mobile-sidebar,
   .mobile-sidebar-overlay,
   .mobile-only {
@@ -810,7 +809,8 @@ body.sidebar-open {
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
-  line-height: 24px; /* 150% */
+  line-height: 24px;
+  /* 150% */
   margin: 0;
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
   display: -webkit-box;
@@ -832,11 +832,9 @@ body.sidebar-open {
   flex-shrink: 0;
   border-radius: 8px;
   border: 1px solid rgba(152, 152, 152, 0.3);
-  background: linear-gradient(
-    265deg,
-    rgba(255, 255, 255, 0.1) -2.57%,
-    rgba(0, 0, 0, 0.1) 96.13%
-  );
+  background: linear-gradient(265deg,
+      rgba(255, 255, 255, 0.1) -2.57%,
+      rgba(0, 0, 0, 0.1) 96.13%);
   backdrop-filter: blur(7.25px);
   display: flex;
   overflow: hidden;
@@ -961,12 +959,14 @@ body.sidebar-open {
   gap: 12px;
   overflow-x: auto;
   padding-bottom: 10px;
-  scrollbar-width: thin;
-  scrollbar-color: rgba(255, 255, 255, 0.3) transparent;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
 }
 
 .quick-play-cards::-webkit-scrollbar {
-  height: 6px;
+  height: 0px;
+  width: 0px;
+  background: transparent;
 }
 
 .quick-play-cards::-webkit-scrollbar-track {
@@ -974,12 +974,11 @@ body.sidebar-open {
 }
 
 .quick-play-cards::-webkit-scrollbar-thumb {
-  background: rgba(255, 255, 255, 0.3);
-  border-radius: 3px;
+  background: transparent;
 }
 
 .quick-play-cards::-webkit-scrollbar-thumb:hover {
-  background: rgba(255, 255, 255, 0.5);
+  background: transparent;
 }
 
 .quick-play-card {
@@ -1014,11 +1013,9 @@ body.sidebar-open {
   flex-shrink: 0;
   border-radius: 8px;
   border: 1px solid rgba(152, 152, 152, 0.3);
-  background: linear-gradient(
-    265deg,
-    rgba(255, 255, 255, 0.1) -2.57%,
-    rgba(0, 0, 0, 0.1) 96.13%
-  );
+  background: linear-gradient(265deg,
+      rgba(255, 255, 255, 0.1) -2.57%,
+      rgba(0, 0, 0, 0.1) 96.13%);
   backdrop-filter: blur(7.25px);
   padding: 12px 12px 45px 12px;
   margin-bottom: 20px;
@@ -1035,7 +1032,8 @@ body.sidebar-open {
   font-size: 12px;
   font-style: normal;
   font-weight: 700;
-  line-height: 16px; /* 133.333% */
+  line-height: 16px;
+  /* 133.333% */
   text-align: center;
   margin: 0 0 0;
   width: 100%;
@@ -1079,7 +1077,8 @@ body.sidebar-open {
   font-size: 12px;
   font-style: normal;
   font-weight: 700;
-  line-height: 16px; /* 133.333% */
+  line-height: 16px;
+  /* 133.333% */
   text-align: center;
   width: 100%;
   display: block;
@@ -1138,7 +1137,8 @@ body.sidebar-open {
   font-size: 12px !important;
   font-style: normal;
   font-weight: 600 !important;
-  line-height: 16px !important; /* 133.333% */
+  line-height: 16px !important;
+  /* 133.333% */
   text-align: center;
   margin: 8px 0 12px 0;
   display: block;
@@ -1150,7 +1150,7 @@ body.sidebar-open {
 }
 
 .voir-plus-btn {
-  width: 406px;
+  width: 100%;
   height: 31px;
   flex-shrink: 0;
   border-radius: 0 0 8px 8px;
@@ -1159,7 +1159,6 @@ body.sidebar-open {
   font-family: 'Poppins', sans-serif;
   font-size: 16px;
   font-weight: 700;
-
   border: none;
   cursor: pointer;
   transition: background-color 0.3s ease;
@@ -2081,7 +2080,8 @@ body.sidebar-open {
   font-size: 12px;
   font-style: normal;
   font-weight: 600;
-  line-height: 26px; /* 216.667% */
+  line-height: 26px;
+  /* 216.667% */
   margin: 0;
 }
 
@@ -2099,7 +2099,8 @@ body.sidebar-open {
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
-  line-height: 27px; /* 150% */
+  line-height: 27px;
+  /* 150% */
   margin: 0;
 }
 
@@ -2495,8 +2496,15 @@ body.sidebar-open {
 
 /* ===== VIDEOS SECTION ===== */
 .videos-section {
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  width: 100vw;
   padding: 50px 0;
   background: transparent;
+  overflow: hidden;
 }
 
 .videos-header {
@@ -2511,12 +2519,14 @@ body.sidebar-open {
   gap: 20px;
   overflow-x: auto;
   padding-bottom: 10px;
-  scrollbar-width: thin;
-  scrollbar-color: rgba(255, 255, 255, 0.3) transparent;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
 }
 
 .videos-grid::-webkit-scrollbar {
-  height: 6px;
+  height: 0px;
+  width: 0px;
+  background: transparent;
 }
 
 .videos-grid::-webkit-scrollbar-track {
@@ -2524,12 +2534,11 @@ body.sidebar-open {
 }
 
 .videos-grid::-webkit-scrollbar-thumb {
-  background: rgba(255, 255, 255, 0.3);
-  border-radius: 3px;
+  background: transparent;
 }
 
 .videos-grid::-webkit-scrollbar-thumb:hover {
-  background: rgba(255, 255, 255, 0.5);
+  background: transparent;
 }
 
 .video-card {
@@ -2875,6 +2884,7 @@ body.sidebar-open {
 
 /* Mobile devices - reduce all font sizes */
 @media (max-width: 768px) {
+
   /* Main section titles */
   .section-title,
   h1,
@@ -3002,6 +3012,7 @@ body.sidebar-open {
 
 /* Extra small mobile devices - further reduce font sizes */
 @media (max-width: 480px) {
+
   /* Even smaller fonts for very small screens */
   .news-title {
     font-size: 13px !important;
@@ -3222,9 +3233,11 @@ body.sidebar-open {
   0% {
     opacity: 1;
   }
+
   50% {
     opacity: 0.5;
   }
+
   100% {
     opacity: 1;
   }
@@ -3419,6 +3432,17 @@ body.sidebar-open {
 }
 
 /* ===== GLASS VIDEOS SECTION ===== */
+.glass-videos-section {
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  width: 100vw;
+  padding: 40px 0;
+  background: transparent;
+  overflow: hidden;
+}
 
 /* ===== BOOTSTRAP 4/5 UTILITY CLASSES ===== */
 
@@ -3426,15 +3450,19 @@ body.sidebar-open {
 .mt-1 {
   margin-top: 0.25rem;
 }
+
 .mt-2 {
   margin-top: 0.5rem;
 }
+
 .mt-3 {
   margin-top: 1rem;
 }
+
 .mt-4 {
   margin-top: 1.5rem;
 }
+
 .mt-5 {
   margin-top: 3rem;
 }
@@ -3442,15 +3470,19 @@ body.sidebar-open {
 .mb-1 {
   margin-bottom: 0.25rem;
 }
+
 .mb-2 {
   margin-bottom: 0.5rem;
 }
+
 .mb-3 {
   margin-bottom: 1rem;
 }
+
 .mb-4 {
   margin-bottom: 1.5rem;
 }
+
 .mb-5 {
   margin-bottom: 3rem;
 }
@@ -3458,15 +3490,19 @@ body.sidebar-open {
 .ml-1 {
   margin-left: 0.25rem;
 }
+
 .ml-2 {
   margin-left: 0.5rem;
 }
+
 .ml-3 {
   margin-left: 1rem;
 }
+
 .ml-4 {
   margin-left: 1.5rem;
 }
+
 .ml-5 {
   margin-left: 3rem;
 }
@@ -3474,15 +3510,19 @@ body.sidebar-open {
 .mr-1 {
   margin-right: 0.25rem;
 }
+
 .mr-2 {
   margin-right: 0.5rem;
 }
+
 .mr-3 {
   margin-right: 1rem;
 }
+
 .mr-4 {
   margin-right: 1.5rem;
 }
+
 .mr-5 {
   margin-right: 3rem;
 }
@@ -3491,18 +3531,22 @@ body.sidebar-open {
   margin-left: 0.25rem;
   margin-right: 0.25rem;
 }
+
 .mx-2 {
   margin-left: 0.5rem;
   margin-right: 0.5rem;
 }
+
 .mx-3 {
   margin-left: 1rem;
   margin-right: 1rem;
 }
+
 .mx-4 {
   margin-left: 1.5rem;
   margin-right: 1.5rem;
 }
+
 .mx-5 {
   margin-left: 3rem;
   margin-right: 3rem;
@@ -3512,18 +3556,22 @@ body.sidebar-open {
   margin-top: 0.25rem;
   margin-bottom: 0.25rem;
 }
+
 .my-2 {
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
 }
+
 .my-3 {
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
+
 .my-4 {
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
 }
+
 .my-5 {
   margin-top: 3rem;
   margin-bottom: 3rem;
@@ -3533,15 +3581,19 @@ body.sidebar-open {
 .pt-1 {
   padding-top: 0.25rem;
 }
+
 .pt-2 {
   padding-top: 0.5rem;
 }
+
 .pt-3 {
   padding-top: 1rem;
 }
+
 .pt-4 {
   padding-top: 1.5rem;
 }
+
 .pt-5 {
   padding-top: 3rem;
 }
@@ -3549,15 +3601,19 @@ body.sidebar-open {
 .pb-1 {
   padding-bottom: 0.25rem;
 }
+
 .pb-2 {
   padding-bottom: 0.5rem;
 }
+
 .pb-3 {
   padding-bottom: 1rem;
 }
+
 .pb-4 {
   padding-bottom: 1.5rem;
 }
+
 .pb-5 {
   padding-bottom: 3rem;
 }
@@ -3565,15 +3621,19 @@ body.sidebar-open {
 .pl-1 {
   padding-left: 0.25rem;
 }
+
 .pl-2 {
   padding-left: 0.5rem;
 }
+
 .pl-3 {
   padding-left: 1rem;
 }
+
 .pl-4 {
   padding-left: 1.5rem;
 }
+
 .pl-5 {
   padding-left: 3rem;
 }
@@ -3581,15 +3641,19 @@ body.sidebar-open {
 .pr-1 {
   padding-right: 0.25rem;
 }
+
 .pr-2 {
   padding-right: 0.5rem;
 }
+
 .pr-3 {
   padding-right: 1rem;
 }
+
 .pr-4 {
   padding-right: 1.5rem;
 }
+
 .pr-5 {
   padding-right: 3rem;
 }
@@ -3598,18 +3662,22 @@ body.sidebar-open {
   padding-left: 0.25rem;
   padding-right: 0.25rem;
 }
+
 .px-2 {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
 }
+
 .px-3 {
   padding-left: 1rem;
   padding-right: 1rem;
 }
+
 .px-4 {
   padding-left: 1.5rem;
   padding-right: 1.5rem;
 }
+
 .px-5 {
   padding-left: 3rem;
   padding-right: 3rem;
@@ -3619,19 +3687,1269 @@ body.sidebar-open {
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
 }
+
 .py-2 {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
 }
+
 .py-3 {
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
+
 .py-4 {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
 }
+
 .py-5 {
   padding-top: 3rem;
   padding-bottom: 3rem;
+}
+
+/* ===== TABLET SPECIFIC FIXES (768px - 979px) ===== */
+@media (min-width: 768px) and (max-width: 979px) {
+
+  /* Main layout adjustments for tablet - keep full width structure */
+  .main-content-container {
+    padding: 0 20px;
+    max-width: 1024px;
+  }
+
+  /* Fix Bootstrap grid for tablet */
+  .row {
+    margin-left: -7.5px;
+    margin-right: -7.5px;
+  }
+
+  /* Full width layout for tablets below 980px */
+  .col-md-8 {
+    width: 100%;
+    float: none;
+    padding-left: 7.5px;
+    padding-right: 7.5px;
+  }
+
+  .col-md-4 {
+    width: 100%;
+    float: none;
+    padding-left: 7.5px;
+    padding-right: 7.5px;
+    margin-top: 30px;
+  }
+
+  /* Smaller titles for tablet */
+  .section-title {
+    font-size: 18px !important;
+  }
+
+  .section-title::before {
+    width: 3px;
+    height: 15px;
+  }
+
+  /* Keep 2 cards per row like desktop */
+  .col-md-6 {
+    width: 50%;
+    float: left;
+    padding-left: 7.5px;
+    padding-right: 7.5px;
+  }
+
+  /* More compact info cards for tablet */
+  .info-card {
+    width: 100%;
+    max-width: 250px;
+    height: 240px;
+    margin-bottom: 16px;
+  }
+
+  .card-title {
+    font-size: 13px;
+    line-height: 18px;
+  }
+
+  .news-badge {
+    width: 90px;
+    height: 19px;
+    font-size: 7px;
+  }
+
+  /* More compact glass cards for tablet */
+  .glass-card {
+    width: 100%;
+    max-width: 250px;
+    height: 110px;
+    margin-bottom: 14px;
+  }
+
+  .glass-card-image {
+    width: 62px;
+    height: 100px;
+    margin: 5px;
+  }
+
+  .glass-card-content {
+    padding: 10px;
+  }
+
+  .glass-card-text h3 {
+    font-size: 11px;
+    line-height: 14px;
+  }
+
+  .glass-card-badge {
+    width: 38px;
+    height: 15px;
+    font-size: 6px;
+  }
+
+  /* Flexible results cards for tablet */
+  .results-card {
+    max-width: 100%;
+    width: 100%;
+    height: 115px;
+    padding: 8px 8px 28px 8px;
+    margin: 0 auto 18px auto;
+  }
+
+  .team-flag {
+    width: 45px !important;
+    height: 30px !important;
+  }
+
+  .team-name {
+    font-size: 10px;
+  }
+
+  .final-score {
+    font-size: 24px;
+  }
+
+  .match-date {
+    font-size: 10px;
+  }
+
+  .tournament-badge {
+    font-size: 10px;
+    padding: 2px 8px;
+  }
+
+  .text-success {
+    font-size: 10px !important;
+  }
+
+  .voir-plus-btn {
+    width: 100%;
+    height: 25px;
+    font-size: 12px;
+  }
+
+  /* Flexible standings for tablet */
+  .standings-card {
+    max-width: 100%;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .standings-header {
+    width: 100%;
+    height: 35px;
+    padding: 0 8px;
+  }
+
+  .standings-header .team-col,
+  .standings-header .stats-cols span {
+    font-size: 14px;
+  }
+
+  .standings-row {
+    width: 100%;
+    height: 30px;
+    padding: 5px 8px;
+    margin-bottom: 8px;
+  }
+
+  .standings-flag {
+    width: 16px !important;
+    height: 11px !important;
+  }
+
+  .team-info .team-name {
+    font-size: 10px;
+  }
+
+  .stats-row span {
+    font-size: 10px;
+  }
+
+  .position {
+    font-size: 10px;
+  }
+
+  .group-header {
+    font-size: 12px;
+    padding: 6px 8px;
+  }
+
+  /* Quick play cards - proportional scaling */
+  .quick-play-card {
+    width: 179px;
+    height: 273px;
+  }
+
+  .quick-play-cards {
+    gap: 10px;
+  }
+
+  /* Video cards - proportional scaling */
+  .video-card {
+    width: 366px;
+    height: 230px;
+  }
+
+  .video-title {
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  .video-meta,
+  .video-date {
+    font-size: 7px;
+  }
+
+  /* Glass video cards - proportional scaling */
+  .glass-video-card {
+    width: 255px;
+    height: 255px;
+  }
+
+  .glass-video-bottom-overlay {
+    width: 255px;
+    height: 86px;
+    padding: 14px;
+  }
+
+  .glass-video-title {
+    font-size: 12px;
+    line-height: 15px;
+  }
+
+  .glass-video-description {
+    font-size: 9px;
+    line-height: 14px;
+  }
+
+  .glass-video-bottom-overlay .video-link {
+    font-size: 9px;
+  }
+
+  /* Quick Play Section - Tablet Alignment */
+  .quick-play-section {
+    padding: 30px 0;
+  }
+
+  .quick-play-section .main-content-container {
+    padding: 0 20px;
+    max-width: 1024px;
+  }
+
+  .quick-play-card {
+    width: 138.325px;
+    height: 234.551px;
+  }
+
+  .quick-play-cards {
+    gap: 10px;
+    padding: 0;
+  }
+
+  /* Videos Section - Tablet Alignment */
+  .videos-section {
+    padding: 30px 0;
+  }
+
+  .videos-section .main-content-container {
+    padding: 0 20px;
+    max-width: 1024px;
+  }
+
+  .video-card {
+    width: 281.302px;
+    height: 180.077px;
+  }
+
+  .videos-grid {
+    gap: 15px;
+    padding: 0;
+  }
+
+  /* Glass Videos Section - Tablet Alignment */
+  .glass-videos-section {
+    padding: 30px 0;
+  }
+
+  .glass-videos-section .main-content-container {
+    padding: 0 20px;
+    max-width: 1024px;
+  }
+
+  .glass-video-card {
+    width: 209.498px;
+    height: 200px;
+  }
+
+  .glass-video-bottom-overlay {
+    width: 209.498px;
+    height: 66.84px;
+  }
+
+  .glass-videos-grid {
+    gap: 15px;
+    padding: 0;
+    justify-content: flex-start;
+  }
+
+  /* Header icons - proportional scaling */
+  .header-icon {
+    width: 67px;
+    height: 66px;
+  }
+
+  .header-icon img {
+    width: 43px;
+    height: 43px;
+  }
+
+  .header-icon:hover {
+    width: 81px;
+    height: 82px;
+  }
+
+  .header-icon:hover img {
+    width: 51px;
+    height: 51px;
+  }
+
+  /* Section titles - slight reduction */
+  .section-title {
+    font-size: 18px;
+  }
+
+  .section-title::before {
+    width: 3px;
+    height: 15px;
+  }
+
+  /* Navbar adjustments - proportional scaling */
+  .navbar-custom .container {
+    padding: 0 25px;
+  }
+
+  .navbar-logo {
+    width: 136px;
+    height: 44px;
+  }
+
+  .navbar-center {
+    gap: 32px;
+  }
+
+  .navbar-custom .navbar-nav>li>a {
+    font-size: 14px;
+    padding: 15px 18px;
+  }
+
+  /* Live matches section - proportional scaling */
+  .live-matches-section .live-video-card {
+    width: 221px;
+    height: 134px;
+  }
+
+  .live-matches-section .tournament-title {
+    font-size: 12px;
+  }
+
+  .live-matches-section .match-score-large {
+    font-size: 27px;
+  }
+
+  .live-matches-section .team-name-large {
+    font-size: 10px;
+  }
+
+  .live-matches-section .team-flag-large {
+    width: 46px;
+    height: 30px;
+  }
+
+  /* Videos grid - maintain horizontal scroll */
+  .videos-grid {
+    gap: 14px;
+  }
+
+  /* Glass videos grid - maintain layout */
+  .glass-videos-grid {
+    gap: 14px;
+    justify-content: space-between;
+  }
+
+  /* Tournament badge - slight scaling */
+  .tournament-badge {
+    font-size: 11px;
+    padding: 3px 10px;
+  }
+
+  /* Match date - slight scaling */
+  .match-date {
+    font-size: 11px;
+  }
+
+  /* Text success - slight scaling */
+  .text-success {
+    font-size: 11px !important;
+  }
+
+  /* Voir plus link - slight scaling */
+  .voir-plus-link {
+    font-size: 20px;
+  }
+
+  /* Play button - slight scaling */
+  .play-button-svg {
+    transform: scale(0.9);
+  }
+
+  /* Video time section - slight scaling */
+  .video-time-section {
+    font-size: 7px;
+    padding: 2px 4px;
+  }
+
+  /* Video bookmark - slight scaling */
+  .video-bookmark {
+    width: 21px;
+    height: 21px;
+  }
+
+  /* Footer adjustments - proportional scaling */
+  .footer-content {
+    gap: 60px;
+  }
+
+  .footer-description {
+    width: 433px;
+    font-size: 11px;
+    line-height: 23px;
+  }
+
+  .newsletter-input {
+    width: 337px;
+    height: 38px;
+  }
+
+  .newsletter-btn {
+    width: 89px;
+    height: 38px;
+    font-size: 12px;
+  }
+
+  /* Clear floats for proper layout */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  /* Ensure sections have proper spacing */
+  .section-header {
+    margin-bottom: 15px;
+  }
+
+  .new-cards-section {
+    margin-top: 25px !important;
+  }
+}
+
+/* ===== IPAD SPECIFIC (980px+) - DESKTOP LAYOUT ===== */
+@media (min-width: 980px) and (max-width: 1024px) {
+
+  /* Switch to desktop layout (2/3 + 1/3) for iPad */
+  .col-md-8 {
+    width: 66.66666667% !important;
+    float: left !important;
+    padding-left: 7.5px;
+    padding-right: 7.5px;
+  }
+
+  .col-md-4 {
+    width: 33.33333333% !important;
+    float: left !important;
+    padding-left: 7.5px;
+    padding-right: 7.5px;
+    margin-top: 0 !important;
+  }
+
+  /* Smaller titles for iPad */
+  .section-title {
+    font-size: 16px !important;
+  }
+
+  .section-title::before {
+    width: 3px;
+    height: 14px;
+  }
+
+  /* Compact info cards for iPad */
+  .info-card {
+    width: 100%;
+    max-width: 280px;
+    height: 260px;
+    margin-bottom: 15px;
+  }
+
+  .card-title {
+    font-size: 13px;
+    line-height: 18px;
+  }
+
+  .news-badge {
+    width: 100px;
+    height: 20px;
+    font-size: 8px;
+  }
+
+  /* Compact glass cards for iPad */
+  .glass-card {
+    width: 100%;
+    max-width: 280px;
+    height: 115px;
+    margin-bottom: 12px;
+  }
+
+  .glass-card-image {
+    width: 75px;
+    height: 120px;
+    margin: 5px;
+  }
+
+  .glass-card-content {
+    padding: 10px;
+  }
+
+  .glass-card-text h3 {
+    font-size: 11px;
+    line-height: 14px;
+  }
+
+  .glass-card-badge {
+    width: 38px;
+    height: 14px;
+    font-size: 6px;
+  }
+
+  /* Flexible and compact sidebar for iPad */
+  .results-card {
+    max-width: 100%;
+    width: 100%;
+    height: 120px;
+    padding: 8px 8px 28px 8px;
+    margin-bottom: 15px;
+  }
+
+  .team-flag {
+    width: 40px !important;
+    height: 27px !important;
+  }
+
+  .team-name {
+    font-size: 9px;
+  }
+
+  .final-score {
+    font-size: 20px;
+  }
+
+  .match-date {
+    font-size: 9px;
+  }
+
+  .tournament-badge {
+    font-size: 8px;
+    padding: 2px 6px;
+  }
+
+  .text-success {
+    font-size: 9px !important;
+  }
+
+  /* Flexible standings for iPad */
+  .standings-card {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .standings-header {
+    width: 100%;
+    height: 35px;
+    padding: 0 8px;
+  }
+
+  .standings-header .team-col,
+  .standings-header .stats-cols span {
+    font-size: 13px;
+  }
+
+  .standings-row {
+    width: 100%;
+    height: 28px;
+    padding: 4px 8px;
+    margin-bottom: 8px;
+  }
+
+  .standings-flag {
+    width: 16px !important;
+    height: 11px !important;
+  }
+
+  .team-info .team-name {
+    font-size: 9px;
+  }
+
+  .stats-row span {
+    font-size: 9px;
+  }
+
+  .position {
+    font-size: 9px;
+  }
+
+  .group-header {
+    font-size: 11px;
+    padding: 6px 8px;
+  }
+
+  .voir-plus-btn {
+    width: 100%;
+    height: 22px;
+    font-size: 11px;
+  }
+
+  /* Quick Play Section - iPad Alignment */
+  .quick-play-section {
+    padding: 35px 0;
+  }
+
+  .quick-play-section .main-content-container {
+    padding: 0 18px;
+    max-width: 1024px;
+  }
+
+  .quick-play-card {
+    width: 155px;
+    height: 263px;
+  }
+
+  .quick-play-cards {
+    gap: 12px;
+    padding: 0;
+  }
+
+  /* Videos Section - iPad Alignment */
+  .videos-section {
+    padding: 35px 0;
+  }
+
+  .videos-section .main-content-container {
+    padding: 0 18px;
+    max-width: 1024px;
+  }
+
+  .video-card {
+    width: 315px;
+    height: 202px;
+  }
+
+  .videos-grid {
+    gap: 16px;
+    padding: 0;
+  }
+
+  /* Glass Videos Section - iPad Alignment */
+  .glass-videos-section {
+    padding: 35px 0;
+  }
+
+  .glass-videos-section .main-content-container {
+    padding: 0 18px;
+    max-width: 1024px;
+  }
+
+  .glass-video-card {
+    width: 235px;
+    height: 224px;
+  }
+
+  .glass-video-bottom-overlay {
+    width: 235px;
+    height: 75px;
+  }
+
+  .glass-videos-grid {
+    gap: 16px;
+    padding: 0;
+    justify-content: flex-start;
+  }
+
+  /* Live Matches Section - iPad Pro Single Row Layout */
+  .live-matches-section {
+    padding: 35px 0;
+  }
+
+  .live-matches-section .main-content-container {
+    padding: 0 18px;
+    max-width: 1024px;
+  }
+
+  .live-matches-section .live-matches-grid {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    gap: 12px;
+    margin-top: 25px;
+    padding-bottom: 10px;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+
+  .live-matches-section .live-matches-grid::-webkit-scrollbar {
+    height: 0px;
+    width: 0px;
+    background: transparent;
+  }
+
+  .live-matches-section .live-video-card {
+    width: 186px;
+    height: 113px;
+    flex-shrink: 0;
+    margin: 0;
+  }
+
+  /* Fluid content layout for better UI */
+  .live-matches-section .card-content-layout {
+    padding: 8px;
+    gap: 6px;
+  }
+
+  .live-matches-section .card-thumbnail {
+    width: 65px;
+    height: 55px;
+  }
+
+  .live-matches-section .tournament-title {
+    font-size: 10px;
+    margin-bottom: 2px;
+  }
+
+  .live-matches-section .match-day {
+    font-size: 7px;
+  }
+
+  .live-matches-section .match-teams-layout {
+    padding: 0 8px;
+    margin-top: 8px;
+    gap: 8px;
+  }
+
+  .live-matches-section .team-flag-large {
+    width: 32px;
+    height: 21px;
+  }
+
+  .live-matches-section .team-name-large {
+    font-size: 8px;
+  }
+
+  .live-matches-section .match-score-large {
+    font-size: 18px;
+    margin: 0 0 8px 0;
+  }
+
+  .live-matches-section .video-description p {
+    font-size: 8px;
+    width: 90px;
+  }
+
+  .live-matches-section .live-status span:not(.live-dot) {
+    font-size: 8px;
+  }
+
+  .live-matches-section .live-dot {
+    width: 6px;
+    height: 6px;
+  }
+
+  .live-matches-section .progress-bar {
+    width: 170px;
+    height: 4px;
+  }
+}
+
+/* ===== LARGE TABLET SPECIFIC (1025px - 1200px) ===== */
+@media (min-width: 1025px) and (max-width: 1200px) {
+
+  /* Large tablet - closer to desktop but slightly scaled */
+  .main-content-container {
+    padding: 0 30px;
+    max-width: 1200px;
+  }
+
+  /* Fix Bootstrap grid for large tablet */
+  .row {
+    margin-left: -7.5px;
+    margin-right: -7.5px;
+  }
+
+  .col-md-8 {
+    width: 66.66666667%;
+    float: left;
+    padding-left: 7.5px;
+    padding-right: 7.5px;
+  }
+
+  .col-md-4 {
+    width: 33.33333333%;
+    float: left;
+    padding-left: 7.5px;
+    padding-right: 7.5px;
+  }
+
+  /* Force 2 cards per row in tablet by adjusting col-md-6 width */
+  .col-md-8 .col-md-6 {
+    width: 50%;
+    float: left;
+    padding-left: 7.5px;
+    padding-right: 7.5px;
+    box-sizing: border-box;
+  }
+
+  /* Ensure cards container has proper width */
+  .col-md-8 .row {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .info-card {
+    width: 100%;
+    max-width: 320px;
+    height: 299px;
+  }
+
+  .glass-card {
+    width: 100%;
+    max-width: 320px;
+    height: 128px;
+  }
+
+  /* Clear floats for proper layout */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .glass-card-image {
+    width: 86px;
+    height: 138px;
+  }
+
+  /* Results cards - large tablet specifications */
+  .results-card {
+    max-width: 295px;
+    width: 295px;
+    height: 135px;
+    padding: 9px 9px 33px 9px;
+  }
+
+  .team-flag {
+    width: 47px !important;
+    height: 31px !important;
+  }
+
+  .team-name {
+    font-size: 10px;
+  }
+
+  .final-score {
+    font-size: 26px;
+  }
+
+  .match-date {
+    font-size: 10px;
+  }
+
+  .tournament-badge {
+    font-size: 10px;
+    padding: 2px 8px;
+  }
+
+  .text-success {
+    font-size: 10px !important;
+  }
+
+  .voir-plus-btn {
+    width: 100%;
+    height: 26px;
+    font-size: 12px;
+  }
+
+  /* Standings - large tablet specifications */
+  .standings-card {
+    max-width: 295px;
+    width: 295px;
+  }
+
+  .standings-header {
+    width: 295px;
+    height: 40px;
+    padding: 0 10px;
+  }
+
+  .standings-row {
+    width: 286px;
+    height: 33px;
+    padding: 6px 10px;
+  }
+
+  .glass-card-text h3 {
+    font-size: 13px;
+    line-height: 17px;
+  }
+
+  .video-card {
+    width: 387px;
+    height: 243px;
+  }
+
+  .glass-video-card {
+    width: 270px;
+    height: 270px;
+  }
+
+  .glass-video-bottom-overlay {
+    width: 270px;
+    height: 90px;
+  }
+
+  .quick-play-card {
+    width: 189px;
+    height: 288px;
+  }
+
+  .header-icon {
+    width: 71px;
+    height: 70px;
+  }
+
+  .header-icon img {
+    width: 45px;
+    height: 45px;
+  }
+
+  .navbar-logo {
+    width: 144px;
+    height: 47px;
+  }
+
+  .navbar-center {
+    gap: 38px;
+  }
+
+  .results-card {
+    max-width: 365px;
+    height: 162px;
+  }
+
+  .voir-plus-btn {
+    width: 100%;
+  }
+
+  .standings-row {
+    width: 357px;
+  }
+}
+
+
+
+/* ===== MEDIUM TABLET SPECIFIC (900px - 979px) ===== */
+@media (min-width: 900px) and (max-width: 979px) {
+
+  /* Medium tablet - between small tablet and large tablet scaling */
+  .main-content-container {
+    padding: 0 18px;
+    max-width: 1024px;
+  }
+
+  /* Fix Bootstrap grid for medium tablet */
+  .row {
+    margin-left: -7.5px;
+    margin-right: -7.5px;
+  }
+
+  .col-md-8 {
+    width: 66.66666667%;
+    float: left;
+    padding-left: 7.5px;
+    padding-right: 7.5px;
+  }
+
+  .col-md-4 {
+    width: 33.33333333%;
+    float: left;
+    padding-left: 7.5px;
+    padding-right: 7.5px;
+  }
+
+  /* Force 2 cards per row in tablet by adjusting col-md-6 width */
+  .col-md-8 .col-md-6 {
+    width: 50%;
+    float: left;
+    padding-left: 7.5px;
+    padding-right: 7.5px;
+    box-sizing: border-box;
+  }
+
+  /* Ensure cards container has proper width */
+  .col-md-8 .row {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .info-card {
+    width: 100%;
+    max-width: 290px;
+    height: 271px;
+  }
+
+  .glass-card {
+    width: 100%;
+    max-width: 290px;
+    height: 124px;
+  }
+
+  /* Clear floats for proper layout */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .glass-card-image {
+    width: 87px;
+    height: 139px;
+  }
+
+  /* Results cards - medium tablet specifications */
+  .results-card {
+    max-width: 280px;
+    width: 280px;
+    height: 126px;
+    padding: 8px 8px 31px 8px;
+  }
+
+  .team-flag {
+    width: 43px !important;
+    height: 29px !important;
+  }
+
+  .team-name {
+    font-size: 9px;
+  }
+
+  .final-score {
+    font-size: 23px;
+  }
+
+  .match-date {
+    font-size: 9px;
+  }
+
+  .tournament-badge {
+    font-size: 9px;
+    padding: 2px 7px;
+  }
+
+  .text-success {
+    font-size: 9px !important;
+  }
+
+  .voir-plus-btn {
+    width: 100%;
+    height: 24px;
+    font-size: 11px;
+  }
+
+  /* Standings - medium tablet specifications */
+  .standings-card {
+    max-width: 280px;
+    width: 280px;
+  }
+
+  .standings-header {
+    width: 280px;
+    height: 36px;
+    padding: 0 9px;
+  }
+
+  .standings-row {
+    width: 271px;
+    height: 31px;
+    padding: 5px 9px;
+  }
+
+  /* Video cards - maintain horizontal scroll */
+  .video-card {
+    width: 387px;
+    height: 243px;
+  }
+
+  /* Glass videos - maintain horizontal layout */
+  .glass-video-card {
+    width: 270px;
+    height: 270px;
+  }
+
+  .glass-video-bottom-overlay {
+    width: 270px;
+    height: 90px;
+  }
+
+  .quick-play-card {
+    width: 189px;
+    height: 288px;
+  }
+
+  .header-icon {
+    width: 71px;
+    height: 70px;
+  }
+
+  .navbar-logo {
+    width: 144px;
+    height: 47px;
+  }
+
+  .navbar-center {
+    gap: 38px;
+  }
+}
+
+/* ===== LARGE TABLET UPDATES (1025px - 1200px) ===== */
+@media (min-width: 1025px) and (max-width: 1200px) {
+
+  /* Large tablet - maintain desktop behavior with slight scaling */
+  .videos-grid {
+    gap: 17px;
+  }
+
+  .glass-videos-grid {
+    gap: 17px;
+    justify-content: space-between;
+  }
+}
+
+/* ===== TABLET PORTRAIT ORIENTATION FIXES ===== */
+@media (min-width: 768px) and (max-width: 979px) and (orientation: portrait) {
+
+  /* Portrait tablet - stack main content vertically but keep card layouts */
+  .col-md-8 {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .col-md-4 {
+    width: 100%;
+  }
+
+  /* Keep 2-column layout for info cards in portrait */
+  .col-md-6 {
+    width: 50%;
+    padding: 0 8px;
+  }
+
+  /* Adjust container for portrait */
+  .main-content-container {
+    padding: 0 20px;
+  }
+
+  /* Slightly smaller cards for portrait mode */
+  .info-card {
+    width: 300px;
+    height: 270px;
+  }
+
+  .glass-card {
+    width: 300px;
+    height: 135px;
+  }
+
+  .results-card {
+    max-width: 100%;
+  }
+
+  .standings-row {
+    width: 100%;
+  }
+
+  .voir-plus-btn {
+    width: 100%;
+  }
+}
+
+/* ===== TABLET LANDSCAPE ORIENTATION FIXES ===== */
+@media (min-width: 768px) and (max-width: 979px) and (orientation: landscape) {
+
+  /* Landscape tablet - maintain desktop layout with appropriate scaling */
+  .main-content-container {
+    padding: 0 30px;
+  }
+
+  /* Maintain horizontal scrolling for videos in landscape */
+  .videos-grid {
+    gap: 16px;
+  }
+
+  .glass-videos-grid {
+    gap: 16px;
+    justify-content: space-between;
+  }
+
+  /* Slightly reduce card sizes for landscape constraints */
+  .info-card {
+    width: 320px;
+    height: 290px;
+  }
+
+  .glass-card {
+    width: 320px;
+    height: 145px;
+  }
+
+  .video-card {
+    width: 344px;
+    height: 216px;
+  }
+
+  .glass-video-card {
+    width: 240px;
+    height: 240px;
+  }
+
+  .glass-video-bottom-overlay {
+    width: 240px;
+    height: 80px;
+  }
 }
