@@ -4953,3 +4953,252 @@ body.sidebar-open {
     height: 80px;
   }
 }
+
+/* ===== ARTICLE PAGE RESPONSIVE STYLES ===== */
+
+/* Article page main layout adjustments */
+.article-page.main-layout {
+  padding-top: 80px;
+  /* Reduce from 100px to 80px for article pages */
+}
+
+/* Article page specific responsive adjustments */
+@media (min-width: 768px) and (max-width: 1024px) {
+
+  /* Article page layout for tablet */
+  .article-page .col-md-8 {
+    width: 100%;
+    float: none;
+    margin-bottom: 30px;
+  }
+
+  .article-page .col-md-4 {
+    width: 100%;
+    float: none;
+    margin-top: 0;
+  }
+
+  /* Reduce top padding for tablet */
+  .article-page.main-layout {
+    padding-top: 60px;
+  }
+
+  /* Article page info cards for tablet */
+  .article-page .info-card {
+    width: 100%;
+    max-width: 400px;
+    height: 280px;
+    margin: 0 auto 20px;
+  }
+
+  /* Article page glass cards for tablet */
+  .article-page .glass-card {
+    width: 100%;
+    max-width: 350px;
+    height: 140px;
+    margin: 0 auto 15px;
+  }
+
+  .article-page .glass-card-image {
+    width: 75px;
+    height: 120px;
+    margin: 6px;
+  }
+
+  .article-page .glass-card-content {
+    padding: 12px;
+  }
+
+  .article-page .glass-card-text h3 {
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .article-page .glass-card-badge {
+    width: 40px;
+    height: 16px;
+    font-size: 7px;
+  }
+
+  /* Article page section spacing */
+  .article-page .new-cards-section {
+    margin-top: 25px !important;
+  }
+}
+
+@media (max-width: 767px) {
+
+  /* Article page layout for mobile */
+  .article-page .col-md-8 {
+    width: 100%;
+    float: none;
+    margin-bottom: 25px;
+    padding: 0 15px;
+  }
+
+  .article-page .col-md-4 {
+    width: 100%;
+    float: none;
+    margin-top: 0;
+    padding: 0 15px;
+  }
+
+  /* Article page main content container */
+  .article-page .main-content-container {
+    padding: 0 15px;
+  }
+
+  /* Reduce top padding for mobile */
+  .article-page.main-layout {
+    padding-top: 60px;
+  }
+
+  /* Article page info cards for mobile */
+  .article-page .info-card {
+    width: 100%;
+    max-width: 100%;
+    height: 250px;
+    margin-bottom: 20px;
+  }
+
+  .article-page .card-title {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .article-page .news-badge {
+    width: 80px;
+    height: 18px;
+    font-size: 8px;
+  }
+
+  /* Article page glass cards for mobile */
+  .article-page .glass-card {
+    width: 100%;
+    max-width: 100%;
+    height: 120px;
+    margin-bottom: 15px;
+  }
+
+  .article-page .glass-card-image {
+    width: 65px;
+    height: 100px;
+    margin: 5px;
+  }
+
+  .article-page .glass-card-content {
+    padding: 10px;
+  }
+
+  .article-page .glass-card-text h3 {
+    font-size: 12px;
+    line-height: 16px;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+  }
+
+  .article-page .glass-card-badge {
+    width: 35px;
+    height: 14px;
+    font-size: 6px;
+  }
+
+  /* Article page section titles */
+  .article-page .section-title {
+    font-size: 16px !important;
+  }
+
+  .article-page .section-title::before {
+    width: 3px;
+    height: 13px;
+  }
+
+  /* Article page section spacing */
+  .article-page .new-cards-section {
+    margin-top: 20px !important;
+  }
+
+  /* Article page row adjustments */
+  .article-page .row {
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+}
+
+@media (max-width: 480px) {
+
+  /* Article page layout for small mobile */
+  .article-page .col-md-8,
+  .article-page .col-md-4 {
+    padding: 0 10px;
+  }
+
+  .article-page .main-content-container {
+    padding: 0 10px;
+  }
+
+  /* Further reduce top padding for small mobile */
+  .article-page.main-layout {
+    padding-top: 60px;
+  }
+
+  /* Article page info cards for small mobile */
+  .article-page .info-card {
+    height: 220px;
+    margin-bottom: 15px;
+  }
+
+  .article-page .card-title {
+    font-size: 13px;
+    line-height: 18px;
+  }
+
+  .article-page .news-badge {
+    width: 70px;
+    height: 16px;
+    font-size: 7px;
+  }
+
+  /* Article page glass cards for small mobile */
+  .article-page .glass-card {
+    height: 110px;
+    margin-bottom: 12px;
+  }
+
+  .article-page .glass-card-image {
+    width: 60px;
+    height: 90px;
+    margin: 4px;
+  }
+
+  .article-page .glass-card-content {
+    padding: 8px;
+  }
+
+  .article-page .glass-card-text h3 {
+    font-size: 11px;
+    line-height: 15px;
+  }
+
+  .article-page .glass-card-badge {
+    width: 32px;
+    height: 12px;
+    font-size: 6px;
+  }
+
+  /* Article page section titles */
+  .article-page .section-title {
+    font-size: 15px !important;
+  }
+
+  /* Article page section spacing */
+  .article-page .new-cards-section {
+    margin-top: 15px !important;
+  }
+
+  /* Article page row adjustments */
+  .article-page .row {
+    margin-left: -10px;
+    margin-right: -10px;
+  }
+}

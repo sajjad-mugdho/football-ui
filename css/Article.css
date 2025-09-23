@@ -1,28 +1,192 @@
+/* ===== ARTICLE PAGE STYLES ===== */
+
+/* Main Article Image */
 .player-image {
-  width: 900px;
+  width: 100%;
+  max-width: 900px;
   height: 360px;
   border-radius: 12px;
   object-fit: cover;
+  display: block;
+  margin: 0 auto;
 }
+
+/* Save Icon */
 .icon-image-save {
   position: absolute;
   top: 16px;
   right: 16px;
+  z-index: 10;
+  cursor: pointer;
+  transition: transform 0.2s ease;
 }
+
+.icon-image-save:hover {
+  transform: scale(1.1);
+}
+
+/* Article Image Container */
+.article-image-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+/* Article Content */
+.article-section {
+  margin-top: 30px;
+}
+
+.article-container {
+  width: 100%;
+  max-width: 100%;
+}
+
+.article-content {
+  padding: 0;
+}
+
 .article-title {
-  font: Urbanist;
-  font-style: Bold;
+  font-family: 'Urbanist', sans-serif;
+  font-weight: 700;
   font-size: 24px;
   line-height: 32px;
-  letter-spacing: 0%;
-  vertical-align: middle;
   color: #ffffff;
+  margin: 0 0 16px 0;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 }
+
 .article-description {
-  font: Urbanist;
-  font-style: SemiBold;
+  font-family: 'Urbanist', sans-serif;
+  font-weight: 600;
   font-size: 16px;
   line-height: 26px;
   color: white;
-  margin-top: 16px;
+  margin: 16px 0;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+/* Margin utility for article section */
+.margin {
+  margin-top: 30px;
+}
+
+/* ===== TABLET RESPONSIVE (768px - 1024px) ===== */
+@media (min-width: 768px) and (max-width: 1024px) {
+
+  /* Main image for tablet */
+  .player-image {
+    width: 573.245px;
+    height: 290.748px;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  /* Article content for tablet */
+  .article-title {
+    font-size: 22px;
+    line-height: 30px;
+  }
+
+  .article-description {
+    font-size: 15px;
+    line-height: 24px;
+  }
+
+  /* Article section spacing */
+  .article-section {
+    margin-top: 25px;
+  }
+
+  .margin {
+    margin-top: 25px;
+  }
+}
+
+/* ===== MOBILE RESPONSIVE (max-width: 767px) ===== */
+@media (max-width: 767px) {
+
+  /* Main image for mobile */
+  .player-image {
+    width: 100%;
+    height: 200px;
+    margin: 0 auto 20px;
+  }
+
+  /* Article content for mobile */
+  .article-title {
+    font-size: 20px;
+    line-height: 28px;
+    margin-bottom: 12px;
+  }
+
+  .article-description {
+    font-size: 14px;
+    line-height: 22px;
+    margin: 12px 0;
+  }
+
+  /* Article section spacing */
+  .article-section {
+    margin-top: 20px;
+  }
+
+  .margin {
+    margin-top: 20px;
+  }
+
+  /* Save icon adjustment for mobile */
+  .icon-image-save {
+    top: 12px;
+    right: 12px;
+  }
+
+  .icon-image-save svg {
+    width: 14px;
+    height: 18px;
+  }
+}
+
+/* ===== SMALL MOBILE (max-width: 480px) ===== */
+@media (max-width: 480px) {
+
+  /* Main image for small mobile */
+  .player-image {
+    height: 180px;
+    margin-bottom: 15px;
+  }
+
+  /* Article content for small mobile */
+  .article-title {
+    font-size: 18px;
+    line-height: 26px;
+    margin-bottom: 10px;
+  }
+
+  .article-description {
+    font-size: 13px;
+    line-height: 20px;
+    margin: 10px 0;
+  }
+
+  /* Article section spacing */
+  .article-section {
+    margin-top: 15px;
+  }
+
+  .margin {
+    margin-top: 15px;
+  }
+
+  /* Save icon adjustment for small mobile */
+  .icon-image-save {
+    top: 10px;
+    right: 10px;
+  }
+
+  .icon-image-save svg {
+    width: 12px;
+    height: 16px;
+  }
 }
