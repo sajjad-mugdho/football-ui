@@ -2193,7 +2193,47 @@ body.sidebar-open {
 }
 
 /* Responsive Footer */
-@media (max-width: 768px) {
+/* Tablet Footer Responsive (768px - 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .footer-content {
+    gap: 50px;
+  }
+
+  .footer-description {
+    width: 361.956px;
+    font-size: 11px;
+    line-height: 22px;
+  }
+
+  .newsletter-input {
+    width: 282.311px;
+    height: 40px;
+    font-size: 11px;
+  }
+
+  .newsletter-btn {
+    width: 90px;
+    height: 40px;
+    font-size: 13px;
+  }
+
+  .newsletter-title {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .footer-logo-img {
+    width: 110px;
+    height: 115px;
+  }
+
+  .app-store-btn img,
+  .google-play-btn img {
+    height: 40px;
+  }
+}
+
+@media (max-width: 767px) {
   .footer-content {
     flex-direction: column;
     gap: 40px;
@@ -2209,16 +2249,26 @@ body.sidebar-open {
   }
 
   .newsletter-input {
+    width: 100%;
+    max-width: 350px;
     border-radius: 8px;
     border-right: 1px solid #333333;
   }
 
   .newsletter-btn {
+    width: 100%;
+    max-width: 350px;
     border-radius: 8px;
   }
 
   .app-buttons {
     justify-content: center;
+  }
+
+  .footer-description {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
   }
 }
 
