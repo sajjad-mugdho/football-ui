@@ -33,9 +33,11 @@ html {
 }
 
 body {
-  background: linear-gradient(180deg,
+  background: linear-gradient(
+      180deg,
       rgba(6, 8, 8, 0.8) 0%,
-      rgba(1, 32, 15, 0.8) 100%),
+      rgba(1, 32, 15, 0.8) 100%
+    ),
     url('../images/bg-image.jpg');
   background-size: cover;
   background-position: center center;
@@ -176,7 +178,7 @@ body {
   height: 80px;
 }
 
-.navbar-custom .navbar-nav>li>a {
+.navbar-custom .navbar-nav > li > a {
   color: #fff !important;
   text-align: center;
   font-family: 'Poppins', sans-serif;
@@ -195,13 +197,13 @@ body {
   border-radius: 6px;
 }
 
-.navbar-custom .navbar-nav>li>a:hover {
+.navbar-custom .navbar-nav > li > a:hover {
   color: var(--football-primary) !important;
   background-color: transparent !important;
 }
 
-.navbar-custom .navbar-nav>li>a:focus,
-.navbar-custom .navbar-nav>li>a:active {
+.navbar-custom .navbar-nav > li > a:focus,
+.navbar-custom .navbar-nav > li > a:active {
   color: var(--football-text) !important;
   background-color: transparent !important;
   outline: none !important;
@@ -209,12 +211,12 @@ body {
   border: none !important;
 }
 
-.navbar-custom .navbar-nav>li.active>a {
+.navbar-custom .navbar-nav > li.active > a {
   color: var(--football-primary) !important;
   background-color: transparent !important;
 }
 
-.navbar-custom .navbar-nav>li.active>a::after {
+.navbar-custom .navbar-nav > li.active > a::after {
   content: '';
   position: absolute;
   bottom: 8px;
@@ -251,7 +253,7 @@ body {
   height: 80px;
 }
 
-.navbar-custom .navbar-nav.navbar-right>li>a {
+.navbar-custom .navbar-nav.navbar-right > li > a {
   padding: 15px;
   font-size: 16px;
   display: flex;
@@ -262,7 +264,7 @@ body {
   justify-content: center;
 }
 
-.navbar-custom .navbar-nav.navbar-right>li>a:hover {
+.navbar-custom .navbar-nav.navbar-right > li > a:hover {
   color: var(--football-primary) !important;
   background-color: rgba(220, 38, 38, 0.2) !important;
   transform: scale(1.1);
@@ -286,13 +288,13 @@ body {
 }
 
 /* Remove all borders and outlines from navbar links */
-.navbar-custom .navbar-nav>li>a,
-.navbar-custom .navbar-nav>li>a:hover,
-.navbar-custom .navbar-nav>li>a:focus,
-.navbar-custom .navbar-nav>li>a:active,
-.navbar-custom .navbar-nav>li.active>a,
-.navbar-custom .navbar-nav>li.active>a:hover,
-.navbar-custom .navbar-nav>li.active>a:focus {
+.navbar-custom .navbar-nav > li > a,
+.navbar-custom .navbar-nav > li > a:hover,
+.navbar-custom .navbar-nav > li > a:focus,
+.navbar-custom .navbar-nav > li > a:active,
+.navbar-custom .navbar-nav > li.active > a,
+.navbar-custom .navbar-nav > li.active > a:hover,
+.navbar-custom .navbar-nav > li.active > a:focus {
   outline: none !important;
   box-shadow: none !important;
   border: none !important;
@@ -607,7 +609,6 @@ body {
 }
 
 @media (min-width: 769px) {
-
   .mobile-sidebar,
   .mobile-sidebar-overlay,
   .mobile-only {
@@ -832,9 +833,11 @@ body.sidebar-open {
   flex-shrink: 0;
   border-radius: 8px;
   border: 1px solid rgba(152, 152, 152, 0.3);
-  background: linear-gradient(265deg,
-      rgba(255, 255, 255, 0.1) -2.57%,
-      rgba(0, 0, 0, 0.1) 96.13%);
+  background: linear-gradient(
+    265deg,
+    rgba(255, 255, 255, 0.1) -2.57%,
+    rgba(0, 0, 0, 0.1) 96.13%
+  );
   backdrop-filter: blur(7.25px);
   display: flex;
   overflow: hidden;
@@ -1013,9 +1016,11 @@ body.sidebar-open {
   flex-shrink: 0;
   border-radius: 8px;
   border: 1px solid rgba(152, 152, 152, 0.3);
-  background: linear-gradient(265deg,
-      rgba(255, 255, 255, 0.1) -2.57%,
-      rgba(0, 0, 0, 0.1) 96.13%);
+  background: linear-gradient(
+    265deg,
+    rgba(255, 255, 255, 0.1) -2.57%,
+    rgba(0, 0, 0, 0.1) 96.13%
+  );
   backdrop-filter: blur(7.25px);
   padding: 12px 12px 45px 12px;
   margin-bottom: 20px;
@@ -2934,7 +2939,6 @@ body.sidebar-open {
 
 /* Mobile devices - reduce all font sizes */
 @media (max-width: 768px) {
-
   /* Main section titles */
   .section-title,
   h1,
@@ -3062,7 +3066,6 @@ body.sidebar-open {
 
 /* Extra small mobile devices - further reduce font sizes */
 @media (max-width: 480px) {
-
   /* Even smaller fonts for very small screens */
   .news-title {
     font-size: 13px !important;
@@ -3760,7 +3763,6 @@ body.sidebar-open {
 
 /* ===== TABLET SPECIFIC FIXES (768px - 979px) ===== */
 @media (min-width: 768px) and (max-width: 979px) {
-
   /* Main layout adjustments for tablet - keep full width structure */
   .main-content-container {
     padding: 0 20px;
@@ -3953,6 +3955,24 @@ body.sidebar-open {
     gap: 10px;
   }
 
+  /* Reels page tablet responsive - 4 column grid layout */
+  .quick-play-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    width: 100%;
+    overflow-x: visible;
+    padding-bottom: 0;
+    margin-bottom: 20px;
+  }
+
+  .quick-play-cards .quick-play-card {
+    width: 194.34px;
+    height: 329.533px;
+    justify-self: center;
+    margin-bottom: 0;
+  }
+
   /* Video cards - proportional scaling */
   .video-card {
     width: 366px;
@@ -4106,7 +4126,7 @@ body.sidebar-open {
     gap: 32px;
   }
 
-  .navbar-custom .navbar-nav>li>a {
+  .navbar-custom .navbar-nav > li > a {
     font-size: 14px;
     padding: 15px 18px;
   }
@@ -4207,7 +4227,7 @@ body.sidebar-open {
 
   /* Clear floats for proper layout */
   .row:after {
-    content: "";
+    content: '';
     display: table;
     clear: both;
   }
@@ -4224,7 +4244,6 @@ body.sidebar-open {
 
 /* ===== IPAD SPECIFIC (980px+) - DESKTOP LAYOUT ===== */
 @media (min-width: 980px) and (max-width: 1024px) {
-
   /* Switch to desktop layout (2/3 + 1/3) for iPad */
   .col-md-8 {
     width: 66.66666667% !important;
@@ -4406,6 +4425,24 @@ body.sidebar-open {
     padding: 0;
   }
 
+  /* Reels page iPad responsive - 4 column grid layout */
+  .quick-play-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+    width: 100%;
+    overflow-x: visible;
+    padding-bottom: 0;
+    margin-bottom: 20px;
+  }
+
+  .quick-play-cards .quick-play-card {
+    width: 194.34px;
+    height: 329.533px;
+    justify-self: center;
+    margin-bottom: 0;
+  }
+
   /* Videos Section - iPad Alignment */
   .videos-section {
     padding: 35px 0;
@@ -4548,7 +4585,6 @@ body.sidebar-open {
 
 /* ===== LARGE TABLET SPECIFIC (1025px - 1200px) ===== */
 @media (min-width: 1025px) and (max-width: 1200px) {
-
   /* Large tablet - closer to desktop but slightly scaled */
   .main-content-container {
     padding: 0 30px;
@@ -4605,7 +4641,7 @@ body.sidebar-open {
 
   /* Clear floats for proper layout */
   .row:after {
-    content: "";
+    content: '';
     display: table;
     clear: both;
   }
@@ -4698,6 +4734,24 @@ body.sidebar-open {
     height: 288px;
   }
 
+  /* Reels page large tablet responsive - 4 column grid layout */
+  .quick-play-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    width: 100%;
+    overflow-x: visible;
+    padding-bottom: 0;
+    margin-bottom: 20px;
+  }
+
+  .quick-play-cards .quick-play-card {
+    width: 194.34px;
+    height: 329.533px;
+    justify-self: center;
+    margin-bottom: 0;
+  }
+
   .header-icon {
     width: 71px;
     height: 70px;
@@ -4731,11 +4785,8 @@ body.sidebar-open {
   }
 }
 
-
-
 /* ===== MEDIUM TABLET SPECIFIC (900px - 979px) ===== */
 @media (min-width: 900px) and (max-width: 979px) {
-
   /* Medium tablet - between small tablet and large tablet scaling */
   .main-content-container {
     padding: 0 18px;
@@ -4792,7 +4843,7 @@ body.sidebar-open {
 
   /* Clear floats for proper layout */
   .row:after {
-    content: "";
+    content: '';
     display: table;
     clear: both;
   }
@@ -4899,7 +4950,6 @@ body.sidebar-open {
 
 /* ===== LARGE TABLET UPDATES (1025px - 1200px) ===== */
 @media (min-width: 1025px) and (max-width: 1200px) {
-
   /* Large tablet - maintain desktop behavior with slight scaling */
   .videos-grid {
     gap: 17px;
@@ -4913,7 +4963,6 @@ body.sidebar-open {
 
 /* ===== TABLET PORTRAIT ORIENTATION FIXES ===== */
 @media (min-width: 768px) and (max-width: 979px) and (orientation: portrait) {
-
   /* Portrait tablet - stack main content vertically but keep card layouts */
   .col-md-8 {
     width: 100%;
@@ -4961,7 +5010,6 @@ body.sidebar-open {
 
 /* ===== TABLET LANDSCAPE ORIENTATION FIXES ===== */
 @media (min-width: 768px) and (max-width: 979px) and (orientation: landscape) {
-
   /* Landscape tablet - maintain desktop layout with appropriate scaling */
   .main-content-container {
     padding: 0 30px;
@@ -5014,7 +5062,6 @@ body.sidebar-open {
 
 /* Article page specific responsive adjustments */
 @media (min-width: 768px) and (max-width: 1024px) {
-
   /* Article page layout for tablet */
   .article-page .col-md-8 {
     width: 100%;
@@ -5077,7 +5124,6 @@ body.sidebar-open {
 }
 
 @media (max-width: 767px) {
-
   /* Article page layout for mobile */
   .article-page .col-md-8 {
     width: 100%;
@@ -5176,7 +5222,6 @@ body.sidebar-open {
 }
 
 @media (max-width: 480px) {
-
   /* Article page layout for small mobile */
   .article-page .col-md-8,
   .article-page .col-md-4 {
@@ -5250,5 +5295,13 @@ body.sidebar-open {
   .article-page .row {
     margin-left: -10px;
     margin-right: -10px;
+  }
+}
+
+/* ===== TABLET OPTIMIZATIONS FOR FAST SECTION (768px - 1024px) ===== */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .fast-section .main-content-container {
+    max-width: 905px;
+    height: 576px;
   }
 }

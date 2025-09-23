@@ -15,9 +15,7 @@
 /* Main Section Glass Morphism Background Container */
 .fast-section-bg {
   width: 1440px;
-  height: 835px;
-  flex-shrink: 0;
-  margin: 0 auto;
+  margin: auto;
   border-radius: 8px;
   border: 1px solid rgba(152, 152, 152, 0.3);
   background: linear-gradient(
@@ -28,9 +26,6 @@
   backdrop-filter: blur(7.25px);
   -webkit-backdrop-filter: blur(7.25px);
   padding: 40px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 .fast-section .section-subtitle {
@@ -392,13 +387,19 @@
   }
 }
 
-@media (max-width: 768px) {
+/* ===== TABLET RESPONSIVE (768px - 1024px) ===== */
+@media (min-width: 768px) and (max-width: 1024px) {
   .fast-section {
     padding: 40px 0;
   }
 
+  .fast-section-bg {
+    padding: 30px;
+  }
+
   .fast-video-container {
-    height: 500px;
+    width: 307px;
+    height: 507px;
     border-radius: 12px;
   }
 
@@ -421,14 +422,24 @@
     height: 53px;
   }
 
+  .fast-content-wrapper {
+    gap: 30px;
+    justify-content: flex-start;
+  }
+
+  .fast-side-content {
+    flex: 1;
+    max-width: calc(100% - 337px); /* 307px video + 30px gap */
+  }
+
   .fast-grid {
-    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    grid-template-columns: repeat(5, 1fr);
     gap: 12px;
   }
 
   .fast-card {
-    width: auto;
-    height: 200px;
+    width: 84.892px;
+    height: 143.948px;
   }
 
   .fast-card-play-button svg {
