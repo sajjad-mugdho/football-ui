@@ -370,11 +370,14 @@ html {
 
 /* Tablet Landscape */
 @media (min-width: 1024px) and (max-width: 1199px) {
+  /* Tablet (landscape) - center cards and constrain to 900px like other sections */
   .match-card {
-    width: 95%;
-    max-width: 1000px;
-    min-width: auto;
-    padding: 0 25px;
+    width: 100%;
+    max-width: 900px;
+    min-width: 0;
+    padding: 0 20px;
+    margin: 0 auto; /* center the card */
+    box-sizing: border-box;
   }
 
   .match-time {
@@ -390,14 +393,24 @@ html {
     min-width: 140px;
   }
 
+  /* Use requested tablet flag size */
   .team-flag {
-    width: 70px;
-    height: 50px;
+    width: 89px;
+    height: 59px;
+    object-fit: contain;
   }
 
   .team-name {
     font-size: 16px;
     width: 90px;
+  }
+
+  /* Ensure the wrapper doesn't exceed the same width and stays centered */
+  .match-cards-wrapper {
+    max-width: 900px;
+    width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
   }
 
   .vs-text {
@@ -598,6 +611,70 @@ html {
 
   .separator-line {
     display: none;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1199px) {
+  .main-content-full-width .matches-table-area .title-area-match {
+    max-width: 900px !important;
+    width: 100% !important;
+    margin: 0 auto !important;
+    box-sizing: border-box !important;
+  }
+
+  .main-content-full-width .matches-table-area .match-cards-wrapper,
+  .main-content-full-width .matches-table-area .match-card {
+    max-width: 900px !important;
+    width: 100% !important;
+    margin: 0 auto !important;
+    box-sizing: border-box !important;
+  }
+
+  .main-content-full-width .matches-table-area .match-card .team-flag {
+    width: 89px !important;
+    height: 59px !important;
+    object-fit: contain !important;
+    flex-shrink: 0 !important;
+  }
+
+  .main-content-full-width .matches-table-area .match-card .team-name {
+    width: 90px !important;
+    font-size: 16px !important;
+    text-align: center !important;
+  }
+
+  .main-content-full-width .tabs-container .container {
+    max-width: 900px !important;
+    width: 100% !important;
+    margin: 0 auto !important;
+    padding: 0 20px !important;
+    box-sizing: border-box !important;
+  }
+
+  .main-content-full-width .matches-table-area .match-card .tournament-badge {
+    width: 66.87px !important;
+    height: 25px !important;
+    padding: 0 !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    white-space: nowrap !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+    font-size: 10px !important;
+    font-style: normal !important;
+    font-weight: 700 !important;
+    line-height: 16px !important;
+    box-sizing: border-box !important;
+  }
+
+  .main-content-container > div[style*='max-width: 1350px'],
+  .main-content-container .ads-banner {
+    max-width: 900px !important;
+    width: 100% !important;
+    margin: 50px auto !important;
+    padding: 0 20px !important;
+    box-sizing: border-box !important;
   }
 }
 
