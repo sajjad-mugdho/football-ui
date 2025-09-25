@@ -353,6 +353,50 @@
   }
 }
 
+/* Tablet-specific: constrain title, tables and player cards to 900px and center them */
+@media (min-width: 768px) and (max-width: 1199px) {
+  .equipe-title-area {
+    max-width: 900px;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 10px 20px;
+  }
+
+  .buteurs-table-container {
+    max-width: 900px;
+    width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding: 0;
+  }
+
+  .buteurs-table {
+    max-width: 900px;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0 auto 10px auto;
+    padding: 10px 20px;
+    min-width: unset;
+  }
+
+  .player-buts-area {
+    max-width: 900px;
+    width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding: 8px;
+  }
+
+  .player-buts-card {
+    max-width: 900px;
+    width: 100%;
+    min-width: unset;
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+}
+
 /* Start Section: Team Info (Position + Flag + Team Name) */
 .team-info-2 {
   display: flex;
@@ -514,7 +558,7 @@
 /* Responsive Design */
 @media (max-width: 1300px) {
   .buteurs-table {
-    width: 95%;
+    width: 100%;
     max-width: 1265px;
     padding: 0 15px;
   }
