@@ -1206,4 +1206,20 @@ html {
     padding-left: 15px;
     padding-right: 15px;
   }
+  /* Tablet-specific ads box sizing to match info-card proportions */
+  .ads-square-box {
+    width: 290px !important;
+    height: 256px !important;
+    background: rgba(0, 0, 0, 0.3);
+    text-align: center;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Poppins;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+  }
 }
