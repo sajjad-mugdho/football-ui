@@ -1192,3 +1192,18 @@ html {
     padding: 0 5px;
   }
 }
+
+/* Tablet: align top navbar, matches navigation and tabs to 900px max width */
+@media (min-width: 768px) and (max-width: 1199px) {
+  .navbar-custom .container,
+  .matches-nav-container .container,
+  .tabs-container .container,
+  nav .container {
+    max-width: 900px !important;
+    width: 100%;
+    margin: 0 auto !important;
+    box-sizing: border-box;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}

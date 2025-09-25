@@ -276,3 +276,40 @@
     gap: 15px;
   }
 }
+
+/* Tablet-specific: constrain title, ranking tables and card/ad to 900px and center them */
+@media (min-width: 768px) and (max-width: 1199px) {
+  .equipe-title-area {
+    max-width: 900px;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 10px 20px;
+  }
+
+  .ranking-table-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 5px 10px;
+    box-sizing: border-box;
+  }
+
+  .ranking-table {
+    max-width: 900px;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0 auto 10px auto;
+    padding: 0 15px;
+    min-width: unset;
+  }
+
+  /* The ad/card under the table uses inline styles; force it to 900px on tablet */
+  .ads-container > div {
+    width: 900px !important;
+    max-width: 100%;
+    box-sizing: border-box;
+    margin: 50px auto !important;
+    height: 100px; /* keep original height */
+  }
+}
