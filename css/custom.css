@@ -17,6 +17,38 @@
     'Courier New', monospace;
 }
 
+/* Tablet: precise footer text and newsletter input sizing */
+@media (min-width: 768px) and (max-width: 1199px) {
+  /* Footer description area size (tablet exact) */
+  .footer-description {
+    width: 361.956px !important;
+    height: 97.422px !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+    display: block !important;
+    box-sizing: border-box !important;
+  }
+
+  /* Newsletter form/input sizing on tablet */
+  .newsletter-form {
+    max-width: 282.311px !important;
+    width: 100% !important;
+    margin: 0 !important;
+    box-sizing: border-box !important;
+  }
+
+  .newsletter-input {
+    width: 282.311px !important;
+    max-width: 100% !important;
+    height: 32px !important;
+    background: #ffffff !important;
+    color: #000000 !important;
+    padding: 0 10px !important;
+    border-radius: 6px !important;
+    box-sizing: border-box !important;
+  }
+}
+
 /* Font Loading Optimization */
 html {
   min-height: 100vh;
@@ -82,7 +114,7 @@ body {
   margin-left: -50vw;
   margin-right: -50vw;
   width: 100vw;
-  padding: 40px 0;
+  padding: 0 0;
   min-height: 60vh;
   overflow: hidden;
 }
@@ -91,7 +123,7 @@ body {
   width: 100%;
   max-width: 1440px;
   margin: 0 auto;
-  padding: 0 40px;
+  padding: 0 80px;
 }
 
 /* ===== NAVIGATION ===== */
@@ -126,7 +158,7 @@ body {
   height: 80px;
   max-width: 1440px;
   margin: 0 auto;
-  padding: 0 40px;
+  padding: 0 60px;
   width: 100%;
 }
 
@@ -713,12 +745,12 @@ body.sidebar-open {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 /* ===== INFO CARDS ===== */
 .info-card {
-  width: 400px;
+  width: 410px;
   height: 363px;
   flex-shrink: 0;
   border-radius: 12px;
@@ -828,7 +860,7 @@ body.sidebar-open {
 }
 
 .glass-card {
-  width: 400px;
+  width: 410px;
   height: 161px;
   flex-shrink: 0;
   border-radius: 8px;
@@ -843,7 +875,7 @@ body.sidebar-open {
   overflow: hidden;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .glass-card:hover {
@@ -1012,7 +1044,7 @@ body.sidebar-open {
 .results-card {
   width: 100%;
   max-width: 405px;
-  height: 180px;
+  height: 160px;
   flex-shrink: 0;
   border-radius: 8px;
   border: 1px solid rgba(152, 152, 152, 0.3);
@@ -1023,7 +1055,6 @@ body.sidebar-open {
   );
   backdrop-filter: blur(7.25px);
   padding: 12px 12px 45px 12px;
-  margin-bottom: 20px;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -2044,7 +2075,7 @@ body.sidebar-open {
   width: 100%;
   max-width: 1440px;
   margin: 0 auto;
-  padding: 0 40px;
+  padding: 0 80px;
 }
 
 .footer-content {
@@ -2122,8 +2153,8 @@ body.sidebar-open {
   height: 45px;
   flex-shrink: 0;
   border-radius: 5px;
-  background: transparent;
-  color: #fff;
+  background: #ffffff;
+  color: #000000;
   font-family: 'Urbanist', sans-serif;
   font-size: 12px;
   font-style: normal;
@@ -2217,9 +2248,13 @@ body.sidebar-open {
 }
 
 .newsletter-input {
+  /* keep a fallback smaller size for mid screens; actual tablet sizing
+     will be enforced with the 768-1199px rule below */
   width: 282.311px;
   height: 40px;
   font-size: 11px;
+  background: #ffffff;
+  color: #000000;
 }
 
 .newsletter-btn {
@@ -2245,10 +2280,84 @@ body.sidebar-open {
 
 /* Tablet: ensure .video-card uses requested exact dimensions across pages */
 @media (min-width: 768px) and (max-width: 1199px) {
+  /* Tablet: constrain newsletter input area to max 300px and keep white bg */
+  /* Ensure footer container aligns with other centered sections (900px) */
+  .footer-container {
+    max-width: 900px !important;
+    width: 100% !important;
+    margin: 0 auto !important;
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+    box-sizing: border-box !important;
+  }
+  .footer-newsletter-section {
+    display: flex;
+    align-items: flex-start;
+  }
+
+  .newsletter-form {
+    max-width: 300px;
+    width: 100%;
+    margin: 0;
+    display: flex !important;
+    align-items: center !important;
+    gap: 8px !important;
+    box-sizing: border-box !important;
+  }
+
+  .newsletter-input {
+    /* allow input to shrink/grow inside the form while keeping the
+       button visible */
+    flex: 1 1 auto !important;
+    width: auto !important;
+    max-width: 100% !important;
+    background: #ffffff !important;
+    color: #000000 !important;
+    border-radius: 8px !important;
+    padding: 0 12px !important;
+    height: 40px !important;
+  }
+
+  .newsletter-btn {
+    height: 40px !important;
+    flex: 0 0 auto !important;
+    padding: 0 14px !important;
+  }
+
   .video-card {
     width: 286.349px !important;
     height: 186.016px !important;
     box-sizing: border-box !important;
+  }
+  /* Footer layout: align logo + text left, newsletter right, center vertically */
+  .footer-content {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    gap: 20px !important;
+  }
+
+  .footer-logo-section {
+    display: flex !important;
+    align-items: center !important;
+    gap: 16px !important;
+    flex: 0 0 auto !important;
+  }
+
+  .footer-description {
+    width: 361.956px !important;
+    height: 97.422px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    color: #ffffff !important;
+  }
+
+  .footer-newsletter-section {
+    flex: 0 0 auto !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: flex-end !important;
+    gap: 12px !important;
   }
 }
 
@@ -3134,7 +3243,7 @@ body.sidebar-open {
 
 /* ===== SCOPED LIVE MATCHES SECTION - PREVENTS CONFLICTS WITH VIDEOS SECTION ===== */
 .live-matches-section {
-  padding: 40px 0;
+  padding: 0 40px;
   background: transparent;
   position: relative;
   left: 50%;
@@ -3150,7 +3259,7 @@ body.sidebar-open {
   width: 100%;
   max-width: 1440px;
   margin: 0 auto;
-  padding: 0 40px;
+  padding: 0 80px;
 }
 
 .live-matches-section .live-matches-grid {
@@ -3158,6 +3267,7 @@ body.sidebar-open {
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 20px;
   margin-top: 30px;
+  margin: 0 50px;
 }
 
 /* Scope all live video card styles to prevent conflicts with videos section */
@@ -3972,7 +4082,7 @@ body.sidebar-open {
   /* Reels page tablet responsive - 4 column grid layout */
   .quick-play-cards {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(6, 1fr);
     gap: 10px;
     width: 100%;
     overflow-x: visible;
@@ -4430,8 +4540,8 @@ body.sidebar-open {
   }
 
   .quick-play-card {
-    width: 155px;
-    height: 263px;
+    width: 138px !important;
+    height: 234px !important;
   }
 
   .quick-play-cards {
@@ -4442,7 +4552,7 @@ body.sidebar-open {
   /* Reels page iPad responsive - 4 column grid layout */
   .quick-play-cards {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(6, 1fr);
     gap: 12px;
     width: 100%;
     overflow-x: visible;
@@ -4488,12 +4598,12 @@ body.sidebar-open {
   }
 
   .glass-video-card {
-    width: 235px;
+    width: 210px;
     height: 224px;
   }
 
   .glass-video-bottom-overlay {
-    width: 235px;
+    width: 210px;
     height: 75px;
   }
 
@@ -4518,6 +4628,7 @@ body.sidebar-open {
     flex-wrap: nowrap;
     overflow-x: auto;
     gap: 12px;
+    margin: 0 50px;
     margin-top: 25px;
     padding-bottom: 10px;
     scrollbar-width: none;
