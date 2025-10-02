@@ -875,7 +875,8 @@ body.sidebar-open {
   overflow: hidden;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
-  margin-bottom: 20px;
+  margin-bottom: 22px;
+  position: relative;
 }
 
 .glass-card:hover {
@@ -963,7 +964,7 @@ body.sidebar-open {
   margin-left: -50vw;
   margin-right: -50vw;
   width: 100vw;
-  padding: 40px 0;
+  padding: 0 0;
   background: transparent;
   overflow: hidden;
 }
@@ -3623,7 +3624,7 @@ body.sidebar-open {
   margin-left: -50vw;
   margin-right: -50vw;
   width: 100vw;
-  padding: 40px 0;
+  padding: 0 0;
   background: transparent;
   overflow: hidden;
 }
