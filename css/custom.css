@@ -47,6 +47,63 @@
     border-radius: 6px !important;
     box-sizing: border-box !important;
   }
+
+  /* Results card tablet styling */
+  .results-card {
+    width: 288px !important;
+    height: 106px !important;
+    box-sizing: border-box !important;
+  }
+
+  /* Team flags tablet sizing */
+  .results-card .team-flag {
+    width: 45px !important;
+    height: 30px !important;
+    flex-shrink: 0 !important;
+    aspect-ratio: 3/2 !important;
+  }
+
+  /* Adjust middle section for compact tablet layout */
+  .result-card-middle {
+    padding: 4px 8px !important;
+  }
+
+  .match-date {
+    font-size: 8px !important;
+    line-height: 12px !important;
+  }
+
+  .final-score {
+    font-size: 16px !important;
+    line-height: 16px !important;
+  }
+
+  .tournament-badge {
+    font-size: 8px !important;
+    line-height: 10px !important;
+    font-weight: 500 !important;
+    padding: 2px 6px !important;
+    margin-bottom: 2px !important;
+  }
+
+  .results-card .match-status,
+  .results-card .text-success {
+    font-size: 8px !important;
+    line-height: 10px !important;
+    margin: 4px 0 6px 0 !important;
+  }
+
+  .team-name {
+    font-size: 10px !important;
+    line-height: 12px !important;
+  }
+
+  .voir-plus-btn {
+    height: 18px !important;
+    font-size: 8px !important;
+    line-height: 10px !important;
+    margin-top: 4px !important;
+  }
 }
 
 /* Font Loading Optimization */
@@ -673,7 +730,6 @@ body.sidebar-open {
   justify-content: center;
   align-items: center;
   gap: 15px;
-  margin: 20px auto;
   width: 100%;
 }
 
@@ -928,32 +984,33 @@ body.sidebar-open {
 }
 
 .glass-card-text {
-  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  height: 100px;
+  justify-content: center;
+  margin-top: 15px;
 }
 
-.glass-card-text h3 {
+.glass-card-text-h3 {
   color: #fff;
   font-family: 'Urbanist', sans-serif;
-  font-size: 14px;
+  font-size: 12px;
   font-style: normal;
   font-weight: 700;
   line-height: 18px;
-  margin: 0 0 8px 0;
-  display: -webkit-box;
-  -webkit-line-clamp: 3;
-  -webkit-box-orient: vertical;
-  line-clamp: 3;
   overflow: hidden;
   text-overflow: ellipsis;
+  margin: 0 !important;
 }
 
-.glass-card-text p {
+.glass-card-text-p {
   color: rgba(255, 255, 255, 0.7);
   font-family: 'Poppins', sans-serif;
   font-size: 12px;
   font-weight: 400;
   margin: 0;
-  margin-top: auto;
+  line-height: 16px;
 }
 
 /* ===== QUICK PLAY SECTION ===== */
@@ -1388,6 +1445,7 @@ body.sidebar-open {
   font-style: normal;
   font-weight: 700;
   line-height: 16px;
+  text-align: start;
 }
 
 .stats-row {
@@ -1907,7 +1965,7 @@ body.sidebar-open {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .glass-videos-section {
     padding: 40px 0;
   }
@@ -2237,8 +2295,8 @@ body.sidebar-open {
 }
 
 /* Responsive Footer */
-/* Tablet Footer Responsive (768px - 1024px) */
-@media (min-width: 768px) and (max-width: 1024px) {
+/* Tablet Footer Responsive (768px - 1199px) */
+@media (min-width: 768px) and (max-width: 1199px) {
   .main-content-container {
     max-width: 900px !important;
     width: 100%;
@@ -2367,6 +2425,45 @@ body.sidebar-open {
     justify-content: flex-end !important;
     gap: 12px !important;
   }
+
+  .news-badge {
+    width: 88.986px !important;
+    height: 16.853px !important;
+    flex-shrink: 0 !important;
+    color: #fff !important;
+    font-family: 'Urbanist', sans-serif !important;
+    font-size: 6px !important;
+    font-style: normal !important;
+    font-weight: 600 !important;
+    line-height: 16px !important;
+  }
+
+  /* Tablet-specific styling for glass video descriptions and links */
+  .glass-video-description {
+    width: 140px !important;
+    height: auto !important;
+    font-size: 8px !important;
+    line-height: 12px !important;
+    margin: 0 0 6px 0 !important;
+  }
+
+  .glass-video-bottom-overlay .video-description-row {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 4px !important;
+    margin-top: 20px !important;
+  }
+
+  .glass-video-bottom-overlay .video-description-row .glass-video-description {
+    margin: -20px 0 !important;
+    margin-top: 4px !important;
+  }
+
+  .glass-video-bottom-overlay .video-link {
+    font-size: 8px !important;
+    line-height: 12px !important;
+    align-self: flex-end !important;
+  }
 }
 
 @media (max-width: 767px) {
@@ -2406,6 +2503,33 @@ body.sidebar-open {
     max-width: 400px;
     height: auto;
   }
+
+  /* Mobile-specific styling for glass video descriptions and links */
+  .glass-video-description {
+    width: 120px !important;
+    height: auto !important;
+    font-size: 7px !important;
+    line-height: 10px !important;
+    margin: 10px 0 4px 0 !important;
+  }
+
+  .glass-video-bottom-overlay .video-description-row {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 3px !important;
+    margin-top: 4px !important;
+  }
+
+  .glass-video-bottom-overlay .video-description-row .glass-video-description {
+    margin: 0 !important;
+    margin-bottom: 3px !important;
+  }
+
+  .glass-video-bottom-overlay .video-link {
+    font-size: 7px !important;
+    line-height: 10px !important;
+    align-self: flex-end !important;
+  }
 }
 
 /* ===== INFO CARDS RESPONSIVE ===== */
@@ -2427,7 +2551,7 @@ body.sidebar-open {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .info-card {
     height: 280px;
     margin-bottom: 20px;
@@ -2573,7 +2697,7 @@ body.sidebar-open {
 }
 
 /* ===== MAIN CONTENT RESPONSIVE ===== */
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .main-content-container {
     padding: 0 20px;
   }
@@ -2907,7 +3031,7 @@ body.sidebar-open {
 }
 
 /* Videos Responsive Design */
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .videos-section {
     padding: 0 0;
   }
@@ -3069,7 +3193,7 @@ body.sidebar-open {
    ======================================== */
 
 /* Mobile devices - reduce all font sizes */
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   /* Main section titles */
   .section-title,
   h1,
@@ -3513,7 +3637,7 @@ body.sidebar-open {
 }
 
 /* Mobile Responsive for Live Matches - Scoped */
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .live-matches-section {
     padding: 30px 0;
   }
@@ -3893,8 +4017,8 @@ body.sidebar-open {
   padding-bottom: 3rem;
 }
 
-/* ===== TABLET SPECIFIC FIXES (768px - 979px) ===== */
-@media (min-width: 768px) and (max-width: 979px) {
+/* ===== TABLET SPECIFIC FIXES (768px - 1199px) ===== */
+@media (min-width: 768px) and (max-width: 1199px) {
   /* Main layout adjustments for tablet - keep full width structure */
   .main-content-container {
     padding: 0 20px;
@@ -3994,13 +4118,19 @@ body.sidebar-open {
     max-width: 100%;
     width: 100%;
     height: 115px;
-    padding: 8px 8px 28px 8px;
+    padding: 8px 20px 28px 20px;
     margin: 0 auto 18px auto;
   }
 
-  .team-flag {
+  .results-card .team-flag {
     width: 45px !important;
     height: 30px !important;
+    flex-shrink: 0 !important;
+    aspect-ratio: 3/2 !important;
+    border-radius: 2px !important;
+    border: 1px solid rgba(255, 255, 255, 0.2) !important;
+    object-fit: cover !important;
+    object-position: center !important;
   }
 
   .team-name {
@@ -4020,8 +4150,9 @@ body.sidebar-open {
     padding: 2px 8px;
   }
 
-  .text-success {
+  .results-card .text-success {
     font-size: 10px !important;
+    line-height: 12px !important;
   }
 
   .voir-plus-btn {
@@ -4309,8 +4440,9 @@ body.sidebar-open {
   }
 
   /* Text success - slight scaling */
-  .text-success {
+  .results-card .text-success {
     font-size: 11px !important;
+    line-height: 13px !important;
   }
 
   /* Voir plus link - slight scaling */
@@ -4455,13 +4587,18 @@ body.sidebar-open {
     max-width: 100%;
     width: 100%;
     height: 120px;
-    padding: 8px 8px 28px 8px;
+    padding: 8px 30px 10px 30px;
     margin-bottom: 15px;
   }
 
-  .team-flag {
+  .results-card .team-flag {
     width: 40px !important;
     height: 27px !important;
+    flex-shrink: 0 !important;
+    aspect-ratio: 3/2 !important;
+  }
+  .result-card-middle {
+    gap: 8px;
   }
 
   .team-name {
@@ -4481,8 +4618,9 @@ body.sidebar-open {
     padding: 2px 6px;
   }
 
-  .text-success {
+  .results-card .text-success {
     font-size: 9px !important;
+    line-height: 11px !important;
   }
 
   /* Flexible standings for iPad */
@@ -4792,9 +4930,11 @@ body.sidebar-open {
     padding: 9px 9px 33px 9px;
   }
 
-  .team-flag {
+  .results-card .team-flag {
     width: 47px !important;
     height: 31px !important;
+    flex-shrink: 0 !important;
+    aspect-ratio: 3/2 !important;
   }
 
   .team-name {
@@ -4814,8 +4954,9 @@ body.sidebar-open {
     padding: 2px 8px;
   }
 
-  .text-success {
+  .results-card .text-success {
     font-size: 10px !important;
+    line-height: 12px !important;
   }
 
   .voir-plus-btn {
@@ -4994,9 +5135,11 @@ body.sidebar-open {
     padding: 8px 8px 31px 8px;
   }
 
-  .team-flag {
+  .results-card .team-flag {
     width: 43px !important;
     height: 29px !important;
+    flex-shrink: 0 !important;
+    aspect-ratio: 3/2 !important;
   }
 
   .team-name {
@@ -5016,8 +5159,9 @@ body.sidebar-open {
     padding: 2px 7px;
   }
 
-  .text-success {
+  .results-card .text-success {
     font-size: 9px !important;
+    line-height: 11px !important;
   }
 
   .voir-plus-btn {
@@ -5095,7 +5239,7 @@ body.sidebar-open {
 }
 
 /* ===== TABLET PORTRAIT ORIENTATION FIXES ===== */
-@media (min-width: 768px) and (max-width: 979px) and (orientation: portrait) {
+@media (min-width: 768px) and (max-width: 1199px) and (orientation: portrait) {
   /* Portrait tablet - stack main content vertically but keep card layouts */
   .col-md-8 {
     width: 100%;
@@ -5142,7 +5286,7 @@ body.sidebar-open {
 }
 
 /* ===== TABLET LANDSCAPE ORIENTATION FIXES ===== */
-@media (min-width: 768px) and (max-width: 979px) and (orientation: landscape) {
+@media (min-width: 768px) and (max-width: 1199px) and (orientation: landscape) {
   /* Landscape tablet - maintain desktop layout with appropriate scaling */
   .main-content-container {
     padding: 0 30px;
@@ -5194,7 +5338,7 @@ body.sidebar-open {
 }
 
 /* Article page specific responsive adjustments */
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1199px) {
   /* Article page layout for tablet */
   .article-page .col-md-8 {
     width: 100%;
@@ -5431,8 +5575,8 @@ body.sidebar-open {
   }
 }
 
-/* ===== TABLET OPTIMIZATIONS FOR FAST SECTION (768px - 1024px) ===== */
-@media (min-width: 768px) and (max-width: 1024px) {
+/* ===== TABLET OPTIMIZATIONS FOR FAST SECTION (768px - 1199px) ===== */
+@media (min-width: 768px) and (max-width: 1199px) {
   .fast-section .main-content-container {
     max-width: 905px;
     height: 576px;
