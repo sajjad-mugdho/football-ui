@@ -3383,7 +3383,7 @@ body.sidebar-open {
   margin-left: -50vw;
   margin-right: -50vw;
   width: 100vw;
-  min-height: 300px;
+  min-height: 220px;
   overflow: hidden;
 }
 
@@ -3639,7 +3639,7 @@ body.sidebar-open {
 /* Mobile Responsive for Live Matches - Scoped */
 @media (max-width: 767px) {
   .live-matches-section {
-    padding: 30px 0;
+    padding: 0px 0;
   }
 
   .live-matches-section .main-content-container {
@@ -4782,7 +4782,7 @@ body.sidebar-open {
 
   /* Live Matches Section - iPad Pro Single Row Layout */
   .live-matches-section {
-    padding: 35px 0;
+    padding: 0px 0;
   }
 
   .live-matches-section .main-content-container {
