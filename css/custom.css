@@ -69,40 +69,40 @@
   }
 
   .match-date {
-    font-size: 8px !important;
-    line-height: 12px !important;
+    font-size: 9px !important;
+    line-height: 13px !important;
   }
 
   .final-score {
-    font-size: 16px !important;
-    line-height: 16px !important;
+    font-size: 18px !important;
+    line-height: 18px !important;
   }
 
   .tournament-badge {
-    font-size: 8px !important;
-    line-height: 10px !important;
+    font-size: 9px !important;
+    line-height: 11px !important;
     font-weight: 500 !important;
-    padding: 2px 6px !important;
-    margin-bottom: 2px !important;
+    padding: 3px 7px !important;
+    margin-bottom: 3px !important;
   }
 
   .results-card .match-status,
   .results-card .text-success {
-    font-size: 8px !important;
-    line-height: 10px !important;
-    margin: 4px 0 6px 0 !important;
+    font-size: 9px !important;
+    line-height: 11px !important;
+    margin: 5px 0 7px 0 !important;
   }
 
   .team-name {
-    font-size: 10px !important;
-    line-height: 12px !important;
+    font-size: 11px !important;
+    line-height: 13px !important;
   }
 
   .voir-plus-btn {
-    height: 18px !important;
-    font-size: 8px !important;
-    line-height: 10px !important;
-    margin-top: 4px !important;
+    height: 20px !important;
+    font-size: 9px !important;
+    line-height: 11px !important;
+    margin-top: 5px !important;
   }
 }
 
@@ -4021,96 +4021,141 @@ body.sidebar-open {
 @media (min-width: 768px) and (max-width: 1199px) {
   /* Main layout adjustments for tablet - keep full width structure */
   .main-content-container {
-    padding: 0 20px;
+    padding: 0 24px;
     max-width: 1024px;
   }
 
   /* Fix Bootstrap grid for tablet */
   .row {
-    margin-left: -7.5px;
-    margin-right: -7.5px;
+    margin-left: -10px;
+    margin-right: -10px;
+  }
+
+  /* Proper section spacing for tablet */
+  .section-header {
+    margin-bottom: 20px;
   }
 
   /* Full width layout for tablets below 980px */
   .col-md-8 {
     width: 100%;
     float: none;
-    padding-left: 7.5px;
-    padding-right: 7.5px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 
   .col-md-4 {
     width: 100%;
     float: none;
-    padding-left: 7.5px;
-    padding-right: 7.5px;
-    margin-top: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 32px;
   }
 
-  /* Smaller titles for tablet */
+  /* Section titles for tablet - maintain desktop size but with better spacing */
   .section-title {
-    font-size: 18px !important;
+    font-size: 20px !important;
+    margin-bottom: 4px;
   }
 
   .section-title::before {
-    width: 3px;
-    height: 15px;
+    width: 4px;
+    height: 16px;
   }
 
   /* Keep 2 cards per row like desktop */
   .col-md-6 {
     width: 50%;
     float: left;
-    padding-left: 7.5px;
-    padding-right: 7.5px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 
-  /* More compact info cards for tablet */
+  /* Tablet info cards - maintain desktop proportions with appropriate scaling */
   .info-card {
     width: 100%;
-    max-width: 250px;
-    height: 240px;
-    margin-bottom: 16px;
+    max-width: 340px;
+    height: 300px;
+    margin-bottom: 18px;
+    border-radius: 10px;
+  }
+
+  .card-overlay {
+    padding: 16px;
   }
 
   .card-title {
-    font-size: 13px;
-    line-height: 18px;
+    font-size: 14px;
+    line-height: 20px;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
   }
 
   .news-badge {
-    width: 90px;
-    height: 19px;
-    font-size: 7px;
+    width: 100px;
+    height: 22px;
+    font-size: 8px;
+    margin-bottom: 8px;
   }
 
-  /* More compact glass cards for tablet */
+  /* Tablet glass cards - maintain desktop proportions with appropriate scaling */
   .glass-card {
     width: 100%;
-    max-width: 250px;
-    height: 110px;
-    margin-bottom: 14px;
+    max-width: 340px;
+    height: 133px;
+    margin-bottom: 18px;
+    border-radius: 6px;
   }
 
   .glass-card-image {
-    width: 62px;
-    height: 100px;
-    margin: 5px;
+    width: 75px;
+    height: 120px;
+    margin: 6.5px;
+    border-radius: 3px;
   }
 
   .glass-card-content {
-    padding: 10px;
+    padding: 12px;
   }
 
-  .glass-card-text h3 {
-    font-size: 11px;
-    line-height: 14px;
+  .glass-card-text {
+    height: 82px;
+    margin-top: 12px;
+  }
+
+  .glass-card-text-h3 {
+    font-size: 10px;
+    line-height: 15px;
+  }
+
+  .glass-card-text-p {
+    font-size: 8px;
+    line-height: 13px;
   }
 
   .glass-card-badge {
-    width: 38px;
-    height: 15px;
-    font-size: 6px;
+    width: 45px;
+    height: 17px;
+    font-size: 7px;
+    margin-bottom: 8px;
+  }
+
+  /* New cards section spacing */
+  .new-cards-section {
+    margin-top: 14px !important;
+    margin-bottom: 8px;
+  }
+
+  /* Main content section spacing */
+  .main-content-full-width {
+    padding: 32px 0;
+  }
+
+  /* Better button styling for tablet */
+  .voir-plus-btn {
+    border-radius: 4px;
+    padding: 0 8px;
+    font-weight: 500;
   }
 
   /* Flexible results cards for tablet */
@@ -4133,79 +4178,58 @@ body.sidebar-open {
     object-position: center !important;
   }
 
-  .team-name {
-    font-size: 10px;
-  }
+  /* Results card font sizes already defined above in the main tablet section */
 
-  .final-score {
-    font-size: 24px;
-  }
-
-  .match-date {
-    font-size: 10px;
-  }
-
-  .tournament-badge {
-    font-size: 10px;
-    padding: 2px 8px;
-  }
-
-  .results-card .text-success {
-    font-size: 10px !important;
-    line-height: 12px !important;
-  }
-
-  .voir-plus-btn {
-    width: 100%;
-    height: 25px;
-    font-size: 12px;
-  }
-
-  /* Flexible standings for tablet */
+  /* Flexible standings for tablet - better readability */
   .standings-card {
     max-width: 100%;
     width: 100%;
     margin: 0 auto;
+    padding: 12px;
   }
 
   .standings-header {
     width: 100%;
-    height: 35px;
-    padding: 0 8px;
+    height: 38px;
+    padding: 0 10px;
   }
 
   .standings-header .team-col,
   .standings-header .stats-cols span {
-    font-size: 14px;
+    font-size: 12px;
+    font-weight: 600;
   }
 
   .standings-row {
     width: 100%;
-    height: 30px;
-    padding: 5px 8px;
-    margin-bottom: 8px;
+    height: 32px;
+    padding: 6px 10px;
+    margin-bottom: 6px;
+    border-radius: 4px;
   }
 
   .standings-flag {
-    width: 16px !important;
-    height: 11px !important;
+    width: 18px !important;
+    height: 12px !important;
   }
 
   .team-info .team-name {
-    font-size: 10px;
+    font-size: 11px;
   }
 
   .stats-row span {
-    font-size: 10px;
+    font-size: 11px;
   }
 
   .position {
-    font-size: 10px;
+    font-size: 11px;
+    font-weight: 600;
   }
 
   .group-header {
-    font-size: 12px;
-    padding: 6px 8px;
+    font-size: 13px;
+    padding: 8px 10px;
+    font-weight: 600;
   }
 
   /* Quick play cards - proportional scaling */
@@ -4500,10 +4524,6 @@ body.sidebar-open {
   .section-header {
     margin-bottom: 15px;
   }
-
-  .new-cards-section {
-    margin-top: 25px !important;
-  }
 }
 
 /* ===== IPAD SPECIFIC (980px+) - DESKTOP LAYOUT ===== */
@@ -4572,8 +4592,9 @@ body.sidebar-open {
   }
 
   .glass-card-text h3 {
-    font-size: 11px;
+    font-size: 8px;
     line-height: 14px;
+    font-weight: 600;
   }
 
   .glass-card-badge {
