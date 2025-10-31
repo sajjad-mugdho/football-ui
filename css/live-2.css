@@ -70,10 +70,10 @@
 /* Glassmorphism Match Scoreboard */
 .match-scoreboard-container {
   position: absolute;
-  bottom: -20px;
+  bottom: 0;
   left: 50%;
   transform: translateX(-50%);
-  width: 672px;
+  width: 772px;
   min-width: 320px;
   max-width: calc(100% - 40px);
   height: auto;
@@ -89,7 +89,8 @@
   border: 1px solid rgba(152, 152, 152, 0.3);
   padding: 20px 30px;
   z-index: 10;
-  margin-bottom: 20px;
+  margin-bottom: 0;
+  transition: all 0.3s ease-in-out;
 }
 
 .match-date {
@@ -148,7 +149,7 @@
   font-size: 22px;
   font-weight: bold;
   text-align: left;
-  margin: 40px 0;
+  margin: 40px 0 20px 0;
   font-family: 'Urbanist', sans-serif;
   color: #fff;
   line-height: 20px;
@@ -270,7 +271,7 @@
 
   .match-title-main {
     font-size: 20px;
-    margin: 35px 0;
+    margin: 35px 0 18px 0;
   }
 }
 
@@ -333,7 +334,7 @@
 
   .match-title-main {
     font-size: 18px;
-    margin: 30px 0;
+    margin: 30px 0 16px 0;
   }
 }
 
@@ -404,7 +405,7 @@
 
   .match-title-main {
     font-size: 16px;
-    margin: 25px 0;
+    margin: 20px 0 12px 0;
     line-height: 18px;
   }
 
@@ -414,6 +415,10 @@
 
   .live-section-progress-bar:hover {
     height: 10px;
+  }
+
+  .main-content-container {
+    padding: 0 15px;
   }
 }
 
@@ -477,7 +482,7 @@
 
   .match-title-main {
     font-size: 15px;
-    margin: 20px 0;
+    margin: 16px 0 10px 0;
   }
 
   .live-section-progress-bar {
@@ -523,7 +528,7 @@
 
   .match-title-main {
     font-size: 14px;
-    margin: 18px 0;
+    margin: 14px 0 8px 0;
   }
 }
 
