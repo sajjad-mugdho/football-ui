@@ -1,0 +1,740 @@
+.live-image-container {
+  position: relative;
+  width: 100%;
+  min-height: 460px;
+  overflow: visible;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.3) 0%,
+    rgba(0, 0, 0, 0.7) 100%
+  );
+}
+.live-image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.live-image-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #ffffff;
+  text-align: center;
+  padding: 0 20px;
+}
+.live-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.live-subtitle {
+  font-size: 1.25rem;
+  font-weight: normal;
+  margin-bottom: 0;
+}
+
+/* YouTube-like Progress Bar */
+.live-section-progress-bar {
+  position: relative;
+  width: 100%;
+  height: 10.5326px;
+  background-color: #cccccc;
+  border-radius: 2.5px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: height 0.2s ease;
+}
+
+.live-section-progress-bar:hover {
+  height: 12px;
+}
+
+.progress-bar-fill {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background-color: #d12222;
+  border-radius: 2.5px;
+  transition: width 0.3s ease;
+  box-shadow: 0 0 5px rgba(209, 34, 34, 0.5);
+}
+
+.live-section-bottom {
+  position: relative;
+  height: 0;
+}
+
+/* Glassmorphism Match Scoreboard */
+.match-scoreboard-container {
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 672px;
+  min-width: 320px;
+  max-width: calc(100% - 40px);
+  height: auto;
+  min-height: 166px;
+  /* Match .match-card glass background and border */
+  background: linear-gradient(
+    265deg,
+    rgba(0, 0, 0, 0.1) -1%,
+    rgba(0, 0, 0, 0.3)
+  );
+  backdrop-filter: blur(14.25px);
+  -webkit-backdrop-filter: blur(14.25px);
+  border: 1px solid rgba(152, 152, 152, 0.3);
+  padding: 20px 30px;
+  z-index: 10;
+  margin-bottom: 20px;
+}
+
+.match-date {
+  font-family: 'Urbanist', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: #fff;
+  text-align: center;
+  margin: 0 0 16px 0;
+  text-transform: capitalize;
+  letter-spacing: 0px;
+  line-height: 16px;
+}
+
+.scoreboard-row {
+  display: flex;
+  justify-content: space-around; /* ensure left, center, right alignment */
+  align-items: center;
+  gap: 16px;
+}
+
+.team-svg-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.team-svg-section h4,
+.team-svg-section p {
+  margin: 0;
+  color: #ffffff;
+  font-family: 'Urbanist', sans-serif;
+  font-weight: 600;
+}
+
+.middle-section-scoreboard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  flex: 0 0 auto;
+  min-width: 160px;
+}
+
+.score-event-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+}
+
+.match-title-main {
+  font-size: 22px;
+  font-weight: bold;
+  text-align: left;
+  margin: 40px 0;
+  font-family: 'Urbanist', sans-serif;
+  color: #fff;
+  line-height: 20px;
+}
+
+/* Left and right team columns: vertical stack so svg, flag and labels align */
+.team-left-side {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  width: 180px;
+  box-sizing: border-box;
+}
+.team-right-side {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  width: 180px;
+  box-sizing: border-box;
+}
+
+/* team-svg-section already defined above; ensure headings look correct */
+.team-svg-section h4 {
+  font-family: 'Urbanist', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: #ffffff;
+  text-align: center;
+  margin: 0;
+  text-transform: none;
+  line-height: 18px;
+}
+
+/* Use consistent flag sizing that matches other components */
+.team-flag-2 {
+  width: 90px !important;
+  height: 60px !important;
+  object-fit: cover;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
+}
+
+/* team name styling (ensure not overridden elsewhere) */
+.team-name {
+  font-family: 'Urbanist', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: #ffffff;
+  text-align: center;
+  margin: 0;
+}
+
+/* center area: keep compact and centered */
+.middle-section-scoreboard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  flex: 0 0 auto;
+}
+
+/* ============================================
+   RESPONSIVE DESIGN - MOBILE & TABLET
+   Desktop design preserved above 992px
+   ============================================ */
+
+/* Tablet Landscape & Small Desktop (768px - 991px) */
+@media (max-width: 991px) and (min-width: 768px) {
+  .live-image-container {
+    min-height: 380px;
+  }
+
+  .match-scoreboard-container {
+    width: 90%;
+    max-width: 600px;
+    padding: 18px 25px;
+    min-height: 150px;
+  }
+
+  .match-date {
+    font-size: 15px;
+    margin-bottom: 14px;
+  }
+
+  .scoreboard-row {
+    gap: 12px;
+  }
+
+  .team-left-side,
+  .team-right-side {
+    gap: 30px;
+    width: 160px;
+  }
+
+  .team-flag-2 {
+    width: 75px !important;
+    height: 50px !important;
+  }
+
+  .team-svg-section h4 {
+    font-size: 13px;
+  }
+
+  .team-name {
+    font-size: 15px;
+  }
+
+  .middle-section-scoreboard {
+    min-width: 140px;
+  }
+
+  .middle-section-scoreboard svg {
+    transform: scale(0.9);
+  }
+
+  .match-title-main {
+    font-size: 20px;
+    margin: 35px 0;
+  }
+}
+
+/* Tablet Portrait (577px - 767px) */
+@media (max-width: 767px) and (min-width: 577px) {
+  .live-image-container {
+    min-height: 320px;
+  }
+
+  .match-scoreboard-container {
+    width: 92%;
+    max-width: 550px;
+    padding: 16px 20px;
+    min-height: 140px;
+    bottom: -15px;
+  }
+
+  .match-date {
+    font-size: 14px;
+    margin-bottom: 12px;
+  }
+
+  .scoreboard-row {
+    gap: 10px;
+  }
+
+  .team-left-side,
+  .team-right-side {
+    gap: 20px;
+    width: 140px;
+  }
+
+  .team-flag-2 {
+    width: 65px !important;
+    height: 45px !important;
+  }
+
+  .team-svg-section svg {
+    width: 36px;
+    height: 36px;
+  }
+
+  .team-svg-section h4 {
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .team-name {
+    font-size: 14px;
+  }
+
+  .middle-section-scoreboard {
+    min-width: 120px;
+    gap: 6px;
+  }
+
+  .middle-section-scoreboard svg {
+    transform: scale(0.85);
+  }
+
+  .match-title-main {
+    font-size: 18px;
+    margin: 30px 0;
+  }
+}
+
+/* Mobile (320px - 576px) */
+@media (max-width: 576px) {
+  .live-image-container {
+    min-height: 280px;
+  }
+
+  .live-image-overlay svg {
+    width: 70px;
+    height: 70px;
+  }
+
+  .match-scoreboard-container {
+    width: 95%;
+    max-width: 100%;
+    padding: 14px 16px;
+    min-height: auto;
+    bottom: -10px;
+  }
+
+  .match-date {
+    font-size: 13px;
+    margin-bottom: 10px;
+    line-height: 14px;
+  }
+
+  .scoreboard-row {
+    gap: 8px;
+    flex-wrap: nowrap;
+  }
+
+  .team-left-side,
+  .team-right-side {
+    gap: 12px;
+    width: auto;
+    flex: 1;
+  }
+
+  .team-flag-2 {
+    width: 50px !important;
+    height: 35px !important;
+  }
+
+  .team-svg-section svg {
+    width: 30px;
+    height: 30px;
+  }
+
+  .team-svg-section h4 {
+    font-size: 11px;
+    line-height: 14px;
+  }
+
+  .team-name {
+    font-size: 12px;
+  }
+
+  .middle-section-scoreboard {
+    min-width: 90px;
+    gap: 4px;
+  }
+
+  .middle-section-scoreboard svg {
+    transform: scale(0.7);
+  }
+
+  .match-title-main {
+    font-size: 16px;
+    margin: 25px 0;
+    line-height: 18px;
+  }
+
+  .live-section-progress-bar {
+    height: 8px;
+  }
+
+  .live-section-progress-bar:hover {
+    height: 10px;
+  }
+}
+
+/* Extra Small Mobile (320px - 375px) */
+@media (max-width: 375px) {
+  .live-image-container {
+    min-height: 250px;
+  }
+
+  .live-image-overlay svg {
+    width: 60px;
+    height: 60px;
+  }
+
+  .match-scoreboard-container {
+    padding: 12px 14px;
+    bottom: -8px;
+  }
+
+  .match-date {
+    font-size: 12px;
+    margin-bottom: 8px;
+  }
+
+  .scoreboard-row {
+    gap: 6px;
+  }
+
+  .team-left-side,
+  .team-right-side {
+    gap: 10px;
+  }
+
+  .team-flag-2 {
+    width: 45px !important;
+    height: 30px !important;
+  }
+
+  .team-svg-section svg {
+    width: 26px;
+    height: 26px;
+  }
+
+  .team-svg-section h4 {
+    font-size: 10px;
+    line-height: 12px;
+  }
+
+  .team-name {
+    font-size: 11px;
+  }
+
+  .middle-section-scoreboard {
+    min-width: 80px;
+    gap: 3px;
+  }
+
+  .middle-section-scoreboard svg {
+    transform: scale(0.6);
+  }
+
+  .match-title-main {
+    font-size: 15px;
+    margin: 20px 0;
+  }
+
+  .live-section-progress-bar {
+    height: 7px;
+  }
+}
+
+/* Very Small Devices (below 320px) */
+@media (max-width: 319px) {
+  .live-image-container {
+    min-height: 220px;
+  }
+
+  .match-scoreboard-container {
+    padding: 10px 12px;
+  }
+
+  .match-date {
+    font-size: 11px;
+  }
+
+  .team-flag-2 {
+    width: 40px !important;
+    height: 28px !important;
+  }
+
+  .team-svg-section svg {
+    width: 24px;
+    height: 24px;
+  }
+
+  .team-svg-section h4 {
+    font-size: 9px;
+  }
+
+  .team-name {
+    font-size: 10px;
+  }
+
+  .middle-section-scoreboard svg {
+    transform: scale(0.5);
+  }
+
+  .match-title-main {
+    font-size: 14px;
+    margin: 18px 0;
+  }
+}
+
+/* ============================================
+   NAVIGATION TABS STYLING
+   ============================================ */
+
+/* Container styling - remove background, make items align horizontally with title */
+.matches-nav-container {
+  background: transparent;
+  border-bottom: none;
+  position: static;
+  z-index: auto;
+  padding: 0;
+  min-height: auto;
+}
+
+.matches-nav-container .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.matches-nav-container .section-header {
+  margin: 0;
+  flex: 0 0 auto;
+}
+
+.matches-nav-container .section-title {
+  margin: 0;
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+/* Make navbar collapse centered in the middle */
+.matches-nav-container .navbar-collapse {
+  display: block !important;
+  height: auto !important;
+  padding: 0;
+  border: none;
+  box-shadow: none;
+  width: auto;
+  float: none;
+  flex: 1;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Navigation items inline with 100px gap */
+.matches-nav-container .navbar-nav {
+  float: none;
+  margin: 0;
+  display: flex;
+  gap: 100px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Override navbar styling for inline layout and white text */
+.matches-nav-container .navbar-nav > li {
+  float: none;
+  display: inline-block;
+  position: relative;
+}
+
+.matches-nav-container .navbar-nav > li > a {
+  color: white !important;
+  background: transparent !important;
+  padding: 8px 0 !important;
+  height: auto !important;
+  display: inline-block !important;
+  border-radius: 0 !important;
+  font-family: 'Urbanist', sans-serif;
+  font-size: 22px;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 16px;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  position: relative;
+  outline: none !important;
+  border: none !important;
+  box-shadow: none !important;
+  white-space: nowrap;
+}
+
+.matches-nav-container .navbar-nav > li > a:hover,
+.matches-nav-container .navbar-nav > li > a:focus,
+.matches-nav-container .navbar-nav > li > a:active,
+.matches-nav-container .navbar-nav > li > a:visited {
+  color: white !important;
+  background: transparent !important;
+  outline: none !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+/* Red underline ONLY for active navigation item */
+.matches-nav-container .navbar-nav > li.active > a::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background: #d12222;
+  opacity: 1;
+}
+
+/* Tab content styling */
+.matches-tab-content {
+  min-height: 500px;
+  padding: 20px 0;
+}
+
+.matches-tab-pane {
+  display: none;
+}
+
+.matches-tab-pane.active {
+  display: block;
+}
+
+/* ============================================
+   RESPONSIVE NAVIGATION TABS
+   ============================================ */
+
+/* Tablet Landscape & Small Desktop (768px - 991px) */
+@media (max-width: 991px) and (min-width: 768px) {
+  .matches-nav-container .navbar-nav {
+    gap: 60px;
+  }
+
+  .matches-nav-container .navbar-nav > li > a {
+    font-size: 20px;
+  }
+
+  .matches-nav-container .container {
+    max-width: 900px;
+  }
+}
+
+/* Tablet Portrait (577px - 767px) */
+@media (max-width: 767px) and (min-width: 577px) {
+  .matches-nav-container .container {
+    padding: 15px 20px;
+  }
+
+  .matches-nav-container .navbar-nav {
+    gap: 40px;
+  }
+
+  .matches-nav-container .navbar-nav > li > a {
+    font-size: 18px;
+  }
+}
+
+/* Mobile (320px - 576px) */
+@media (max-width: 576px) {
+  .matches-nav-container .container {
+    padding: 12px 15px;
+  }
+
+  .matches-nav-container .navbar-nav {
+    gap: 25px;
+    flex-wrap: wrap;
+  }
+
+  .matches-nav-container .navbar-nav > li > a {
+    font-size: 16px;
+    padding: 6px 0 !important;
+  }
+
+  .matches-nav-container .navbar-nav > li.active > a::after {
+    height: 3px;
+    bottom: -6px;
+  }
+}
+
+/* Extra Small Mobile (320px - 375px) */
+@media (max-width: 375px) {
+  .matches-nav-container .navbar-nav {
+    gap: 20px;
+  }
+
+  .matches-nav-container .navbar-nav > li > a {
+    font-size: 15px;
+  }
+}
+
+/* Very Small Devices (below 320px) */
+@media (max-width: 319px) {
+  .matches-nav-container .navbar-nav {
+    gap: 15px;
+  }
+
+  .matches-nav-container .navbar-nav > li > a {
+    font-size: 14px;
+  }
+
+  .matches-nav-container .navbar-nav > li.active > a::after {
+    height: 2px;
+  }
+}
