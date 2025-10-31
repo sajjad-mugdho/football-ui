@@ -23,7 +23,17 @@
   color: #ffffff;
   text-align: center;
   padding: 0 20px;
+  z-index: 5;
 }
+
+/* Play button SVG sizing */
+.live-image-overlay svg {
+  width: 200px;
+  height: 200px;
+  display: block;
+  margin: 0 auto;
+}
+
 .live-title {
   font-size: 2.5rem;
   font-weight: bold;
@@ -220,10 +230,23 @@
    Desktop design preserved above 992px
    ============================================ */
 
+/* Large Desktop & Desktop (992px and above) */
+@media (min-width: 992px) {
+  .live-image-overlay svg {
+    width: 150px;
+    height: 150px;
+  }
+}
+
 /* Tablet Landscape & Small Desktop (768px - 991px) */
 @media (max-width: 991px) and (min-width: 768px) {
   .live-image-container {
     min-height: 380px;
+  }
+
+  .live-image-overlay svg {
+    width: 150px;
+    height: 150px;
   }
 
   .match-scoreboard-container {
@@ -279,6 +302,11 @@
 @media (max-width: 767px) and (min-width: 577px) {
   .live-image-container {
     min-height: 320px;
+  }
+
+  .live-image-overlay svg {
+    width: 150px;
+    height: 150px;
   }
 
   .match-scoreboard-container {
@@ -345,8 +373,8 @@
   }
 
   .live-image-overlay svg {
-    width: 70px;
-    height: 70px;
+    width: 100px;
+    height: 100px;
   }
 
   .match-scoreboard-container {
@@ -429,8 +457,8 @@
   }
 
   .live-image-overlay svg {
-    width: 60px;
-    height: 60px;
+    width: 80px;
+    height: 80px;
   }
 
   .match-scoreboard-container {
