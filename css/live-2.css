@@ -9,12 +9,56 @@
     rgba(0, 0, 0, 0.7) 100%
   );
 }
+
 .live-image-container img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   object-position: center;
+  display: block; /* Remove any inline spacing */
 }
+
+/* Hero Navigation Icons */
+.hero-nav-icons {
+  position: absolute;
+  top: 120px;
+  left: 0;
+  right: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px;
+  z-index: 10;
+  box-sizing: border-box;
+}
+
+.hero-back-btn,
+.hero-share-btn {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  padding: 0;
+}
+
+.hero-back-btn:hover,
+.hero-share-btn:hover {
+  transform: scale(1.1);
+  opacity: 0.8;
+}
+
+.hero-back-btn svg,
+.hero-share-btn svg {
+  width: 22px;
+  height: 22px;
+}
+
 .live-image-overlay {
   position: absolute;
   top: 50%;
@@ -244,9 +288,26 @@
     min-height: 380px;
   }
 
+  .hero-nav-icons {
+    top: 40px;
+    padding: 0 18px;
+  }
+
+  .hero-back-btn,
+  .hero-share-btn {
+    width: 40px;
+    height: 40px;
+  }
+
+  .hero-back-btn svg,
+  .hero-share-btn svg {
+    width: 20px;
+    height: 20px;
+  }
+
   .live-image-overlay svg {
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
   }
 
   .match-scoreboard-container {
@@ -302,6 +363,23 @@
 @media (max-width: 767px) and (min-width: 577px) {
   .live-image-container {
     min-height: 320px;
+  }
+
+  .hero-nav-icons {
+    top: 16px;
+    padding: 0 16px;
+  }
+
+  .hero-back-btn,
+  .hero-share-btn {
+    width: 38px;
+    height: 38px;
+  }
+
+  .hero-back-btn svg,
+  .hero-share-btn svg {
+    width: 18px;
+    height: 18px;
   }
 
   .live-image-overlay svg {
@@ -370,6 +448,23 @@
 @media (max-width: 576px) {
   .live-image-container {
     min-height: 280px;
+  }
+
+  .hero-nav-icons {
+    top: 12px;
+    padding: 0 12px;
+  }
+
+  .hero-back-btn,
+  .hero-share-btn {
+    width: 36px;
+    height: 36px;
+  }
+
+  .hero-back-btn svg,
+  .hero-share-btn svg {
+    width: 16px;
+    height: 16px;
   }
 
   .live-image-overlay svg {
@@ -454,6 +549,23 @@
 @media (max-width: 375px) {
   .live-image-container {
     min-height: 250px;
+  }
+
+  .hero-nav-icons {
+    top: 10px;
+    padding: 0 10px;
+  }
+
+  .hero-back-btn,
+  .hero-share-btn {
+    width: 34px;
+    height: 34px;
+  }
+
+  .hero-back-btn svg,
+  .hero-share-btn svg {
+    width: 15px;
+    height: 15px;
   }
 
   .live-image-overlay svg {
