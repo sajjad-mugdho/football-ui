@@ -28,7 +28,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 40px;
+  padding: 0 200px;
   z-index: 10;
   box-sizing: border-box;
 }
@@ -282,15 +282,71 @@
   }
 }
 
+/* Extra Large Screens (1440px and above) */
+@media (min-width: 1440px) {
+  .live-image-container {
+    min-height: 500px;
+    max-height: 100svh;
+  }
+
+  .match-scoreboard-container {
+    width: 900px;
+    padding: 25px 35px;
+    min-height: 180px;
+  }
+
+  .match-date {
+    font-size: 18px;
+    margin-bottom: 18px;
+  }
+
+  .scoreboard-row {
+    gap: 20px;
+  }
+
+  .team-left-side,
+  .team-right-side {
+    width: 200px;
+    gap: 45px;
+  }
+
+  .team-flag-2 {
+    width: 100px !important;
+    height: 65px !important;
+  }
+
+  .team-svg-section h4 {
+    font-size: 16px;
+  }
+
+  .team-name {
+    font-size: 18px;
+  }
+
+  .middle-section-scoreboard {
+    min-width: 180px;
+    gap: 10px;
+  }
+
+  .middle-section-scoreboard svg {
+    transform: scale(1.1);
+  }
+
+  .live-image-overlay svg {
+    width: 180px;
+    height: 180px;
+  }
+}
+
 /* Tablet Landscape & Small Desktop (768px - 991px) */
-@media (max-width: 991px) and (min-width: 768px) {
+@media (max-width: 1040px) and (min-width: 768px) {
   .live-image-container {
     min-height: 380px;
   }
 
   .hero-nav-icons {
-    top: 40px;
-    padding: 0 18px;
+    top: 50px;
+    padding: 0 40px;
   }
 
   .hero-back-btn,
@@ -306,8 +362,8 @@
   }
 
   .live-image-overlay svg {
-    width: 200px;
-    height: 200px;
+    width: 90px;
+    height: 90px;
   }
 
   .match-scoreboard-container {
@@ -383,8 +439,8 @@
   }
 
   .live-image-overlay svg {
-    width: 150px;
-    height: 150px;
+    width: 90px;
+    height: 90px;
   }
 
   .match-scoreboard-container {
@@ -468,8 +524,8 @@
   }
 
   .live-image-overlay svg {
-    width: 100px;
-    height: 100px;
+    width: 90px;
+    height: 90px;
   }
 
   .match-scoreboard-container {
@@ -569,8 +625,8 @@
   }
 
   .live-image-overlay svg {
-    width: 80px;
-    height: 80px;
+    width: 90px;
+    height: 90px;
   }
 
   .match-scoreboard-container {
@@ -634,6 +690,11 @@
 @media (max-width: 319px) {
   .live-image-container {
     min-height: 220px;
+  }
+
+  .live-image-overlay svg {
+    width: 90px;
+    height: 90px;
   }
 
   .match-scoreboard-container {
